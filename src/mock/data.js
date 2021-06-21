@@ -1,10 +1,26 @@
 import { nanoid } from 'nanoid';
 
+// HEADER DATA
+export const headerData = {
+  logoHREF: '/#hero',
+  brandName: 'Palo Criativo',
+  linkURL1: '/#hero',
+  linkText1: 'Home',
+  linkURL2: '/#about-qnchor',
+  linkText2: 'Sobre Nos',
+  linkURL3: '/nossos-clientes',
+  linkText3: 'Clientes',
+  linkURL4: '/#services-qnchor',
+  linkText4: 'Serviços',
+  linkURL5: '/#contacts-qnchor',
+  linkText5: 'Contactos',
+};
+
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Dan Title', // e.g: 'Name | Developer'
+  lang: 'pt', // e.g: en, es, fr, jp
+  description: 'Dan Description', // e.g: Welcome to my website
 };
 
 // HERO DATA
