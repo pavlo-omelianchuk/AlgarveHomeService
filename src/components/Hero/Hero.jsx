@@ -1,32 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade, Zoom } from 'react-reveal';
 import { Link } from 'react-scroll';
 import { StaticQuery, graphql } from 'gatsby';
+import pinkComponent from '../../images/component2-pink.png';
 
 const Hero = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
   return (
     <StaticQuery
       query={graphql`
         query MyQuery {
           strapiHero {
-            Button
-            Subtitle
+            MainPhoto {
+              formats {
+                large {
+                  url
+                }
+              }
+            }
             Title
+            Subtitle
             TitleName
+            Button
           }
         }
       `}
@@ -36,42 +31,31 @@ const Hero = () => {
             <section id="hero" className="jumbotron">
               <Container>
                 <div id="hero__overlay" />
-                <Fade
-                  left={isDesktop}
-                  bottom={isMobile}
-                  duration={1000}
-                  delay={500}
-                  distance="30px"
-                >
-                  <h1 className="hero-title">
-                    {data.strapiHero.Title || 'Hi, my name is'}{' '}
-                    <span className="text-color-main">
-                      {data.strapiHero.TitleName || 'Your Name'}
-                    </span>
-                    <br />
-                    {data.strapiHero.Subtitle || "I'm the Unknown Developer."}
-                  </h1>
+                {/* <img src={'http://localhost:1337' + data.strapiHero.MainPhoto.formats.large.url} alt="hero-background-image" /> */}
+                <Fade big duration={4000}>
+                  <img src={pinkComponent} alt="pink component" />
                 </Fade>
-                <Fade
-                  left={isDesktop}
-                  bottom={isMobile}
-                  duration={1000}
-                  delay={1000}
-                  distance="30px"
-                >
+                <Fade bottom distance="30px">
+                  <h3 className="hero-subtitle">{data.strapiHero.Subtitle}</h3>
+                </Fade>
+                <Fade bottom duration={4000} distance="300px">
+                  <h1 className="hero-title">{data.strapiHero.Title}</h1>
+                  <h2 className="hero-title hero-title-name text-color-main">
+                    {` ${data.strapiHero.TitleName}`}
+                  </h2>
+                </Fade>
+                <Zoom duration={1000} delay={2000}>
                   <p className="hero-cta">
                     <span className="cta-btn cta-btn--hero">
                       <Link to="about" smooth duration={1000}>
-                        {data.strapiHero.Button || 'Know more'}
+                        {data.strapiHero.Button}
                       </Link>
                     </span>
                   </p>
-                </Fade>
+                </Zoom>
               </Container>
             </section>
-            );
           </div>
-          )
         </>
       )}
     />

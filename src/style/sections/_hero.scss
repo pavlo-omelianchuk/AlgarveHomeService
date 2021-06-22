@@ -5,7 +5,7 @@
   align-items: center;
   border-bottom: 0px;
   background: red;
-  font-weight: 400;
+  font-weight: 300;
   color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
@@ -25,19 +25,22 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
+  .hero-subtitle{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
 
   .hero-title {
     font-size: 5.6rem;
-    font-weight: 700;
-    margin-bottom: 3.2rem;
-    text-align: left;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
 
     @include respond(tab-land) {
       font-size: 4rem;
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
-      text-align: center;
     }
     @include respond(phone) {
       font-size: 3.5rem;
@@ -46,20 +49,28 @@
     @include respond(phone-xs) {
       font-size: 2.8rem;
     }
+
+    &-name{
+      margin-bottom: 1em;
+      font-size: 5em;
+    }
+  }
+
+  .hero-title-name{
+    font-weight: 400;
   }
 
   .hero-cta {
     display: flex;
-
-    @include respond(tab-port) {
-      justify-content: center;
-    }
+    justify-content: center;
 
     & a {
-      font-size: 2.4rem;
+      font-size: 1em;
+      padding: 20px ;
+
 
       @include respond(phone) {
-        font-size: 2rem;
+        font-size: 1em;
       }
     }
   }
