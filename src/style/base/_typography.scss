@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Mr+De+Haviland&family=Raleway:wght@100;400&display=swap');
 
 h1 {
-  font-family:"Raleway", Sans-serif;
+  font-family: 'Raleway', Sans-serif;
   font-weight: 300;
   letter-spacing: 6.8px;
 }
 
-h3{
-  font-family: "Mr De Haviland", Sans-serif;
+h3 {
+  font-family: 'Mr De Haviland', Sans-serif;
 }
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', Sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: $default-font-size;
 }
 
@@ -41,7 +43,7 @@ a:hover {
 }
 
 .dark-blue-text {
-  color: #F9A392 !important;
+  color: #f9a392 !important;
 }
 
 .text-color-main {
