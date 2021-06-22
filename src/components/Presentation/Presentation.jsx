@@ -7,8 +7,8 @@ import ProjectImg from '../Image/ProjectImg';
 const Presentation = () => (
   <section id="presentation">
     <Container>
-      <Row className="presentation-wrapper">
-        <Col className="presentation-wrapper__col" md={4} sm={12}>
+      <Row className="presentation-row">
+        <Col className="presentation-row__col" md={4} sm={12}>
           <Fade left duration={1000} delay={100} distance="300px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImg1.jpg" alt="contacts" />
@@ -20,12 +20,12 @@ const Presentation = () => (
                 </Fade>
                 <hr className="hr-styled" />
                 <Fade bottom duration={1000} delay={1000} distance="30px">
-                  <p className="presentation-wrapper__info-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa
-                    animi maiores repellendu distinctioaperiam
+                  <p className="presentation-wrapper__info-text mt-5">
+                    You are welcome to call but you can also book a massage online! Please feel free
+                    to reach out
                   </p>
-                  <span className="d-flex mt-3">
-                    <a className="cta-btn cta-btn--contacts" href="/">
+                  <span className="d-flex justify-content-center mt-5">
+                    <a className="cta-btn cta-btn--pres" href="/">
                       Contacts
                     </a>
                   </span>
@@ -34,51 +34,51 @@ const Presentation = () => (
             </div>
           </Fade>
         </Col>
-        <Col className="presentation-wrapper__col" md={4} sm={12}>
+        <Col className="presentation-row__col" md={4} sm={12}>
           <Fade bottom duration={1000} delay={100} distance="200px">
-            <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg1.jpg" alt="contacts" />
-            </div>
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="CONTACT US" />
+                  <TitleSmall title="BOOK MASSAGE" />
                 </Fade>
                 <hr className="hr-styled" />
                 <Fade bottom duration={1000} delay={1000} distance="30px">
-                  <p className="presentation-wrapper__info-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa
-                    animi maiores repellendu distinctioaperiam
+                  <p className="presentation-wrapper__info-text mt-5">
+                    Book your massage online and view orthopedic massage therapy pricing at our
+                    midtown
                   </p>
-                  <span className="d-flex mt-3">
-                    <a className="cta-btn cta-btn--contacts" href="/">
-                      Contacts
+                  <span className="d-flex justify-content-center mt-5">
+                    <a className="cta-btn cta-btn--pres" href="/">
+                      book now
                     </a>
                   </span>
                 </Fade>
               </div>
             </div>
+            <div className="presentation-wrapper__image">
+              <ProjectImg filename="presImg2.jpg" alt="contacts" />
+            </div>
           </Fade>
         </Col>
-        <Col className="presentation-wrapper__col" md={4} sm={12}>
+        <Col className="presentation-row__col" md={4} sm={12}>
           <Fade right duration={1000} delay={100} distance="300px">
             <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg1.jpg" alt="contacts" />
+              <ProjectImg filename="presImg3.jpg" alt="contacts" />
             </div>
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="CONTACT US" />
+                  <TitleSmall title="OUR SPECIALISTS" />
                 </Fade>
                 <hr className="hr-styled" />
                 <Fade bottom duration={1000} delay={1000} distance="30px">
-                  <p className="presentation-wrapper__info-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa
-                    animi maiores repellendu distinctioaperiam
+                  <p className="presentation-wrapper__info-text mt-5">
+                    Each one of our staff members are licensed massage therapists who have gone
+                    above and beyond
                   </p>
-                  <span className="d-flex mt-3">
-                    <a className="cta-btn cta-btn--contacts" href="/">
-                      Contacts
+                  <span className="d-flex justify-content-center mt-5">
+                    <a className="cta-btn cta-btn--pres" href="/">
+                      view all
                     </a>
                   </span>
                 </Fade>

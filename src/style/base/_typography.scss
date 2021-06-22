@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Mr+De+Haviland&family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Marck+Script&family=Montserrat:wght@100;400&family=Mr+De+Haviland&family=Raleway:wght@100;400&display=swap');
+
+$font-amiri: 'Amiri', Sans-serif;
+$font-marck: 'Marck Script', cursive;
+$font-haviland: 'Mr De Haviland', cursive;
+$font-ralewey: 'Raleway', sans-serif;
 
 h1 {
-  font-family: 'Raleway', Sans-serif;
+  font-family: $font-ralewey;
   font-weight: 300;
   letter-spacing: 6.8px;
 }
 
-p,
+p {
+  font-family: $font-amiri;
+  letter-spacing: 1px;
+  font-size: $default-font-size;
+}
 a {
-  font-family: 'Raleway', Sans-serif;
+  font-family: $font-ralewey;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: $default-font-size;
@@ -41,7 +50,7 @@ a:hover {
   color: black;
   margin: 0px;
   margin-bottom: 1.5rem;
-  font-size: $big-font-size;
+  font-size: 1.5em;
   font-weight: 400;
   text-transform: uppercase;
 

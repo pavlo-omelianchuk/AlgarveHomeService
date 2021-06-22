@@ -61,7 +61,7 @@
 }
 
 /* Resume Style */
-.cta-btn--resume {
+.cta-btn--contacts {
   color: $white-color;
   border: 2px solid $white-color;
 
@@ -71,6 +71,29 @@
 
   &:hover {
     color: $secondary-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+/* Resume Style */
+.cta-btn--pres {
+  color: $alfa-secondary-color;
+  border: 2px solid $alfa-secondary-color;
+  font-size: 0.611em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  letter-spacing: 2.2px;
+
+  &::after {
+    background: $alfa-secondary-color;
+  }
+
+  &:hover {
+    color: $white-color;
     text-decoration: none;
 
     &::after {

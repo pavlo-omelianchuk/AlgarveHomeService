@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `MOBILE MASSAGE ALGARVE`,
+        short_name: `MOBILE MASSAGE`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
@@ -36,7 +36,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`messages`],
+        // collectionTypes: [`messages`],
         singleTypes: [`Hero`],
       },
     },
