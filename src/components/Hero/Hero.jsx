@@ -47,8 +47,13 @@ const Hero = () => {
                 <Zoom duration={1000} delay={2000}>
                   <p className="hero-cta">
                     <span className="cta-btn cta-btn--hero">
-                      <Link to="about" smooth duration={1000}>
+                      <Link to="/" smooth duration={1000}>
                         {data.strapiHero.Button}
+                        {/* <a href="https://api.whatsapp.com/send?phone=+351 925 142 109">
+                        <i className="fa fa-whatsapp"
+                          ariaHidden="true"
+                        ></i>
+                      </a> */}
                       </Link>
                     </span>
                   </p>
