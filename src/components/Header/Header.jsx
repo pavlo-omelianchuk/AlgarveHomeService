@@ -6,7 +6,7 @@ import Logo from '../../images/logo.png';
 const Header = () => {
   const header = [
     '/#hero',
-    'Mobile Beauty Algarve',
+    'Algarve Home Massage and beauty',
     '/#hero',
     'Home',
     '/#services',
