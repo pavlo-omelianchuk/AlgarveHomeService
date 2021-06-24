@@ -1,9 +1,9 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
+import { nanoid } from 'nanoid';
 import TitleSmall from '../TitleSmall/TitleSmall';
 import ProjectImg from '../Image/ProjectImg';
-
 import 'react-multi-carousel/lib/styles.css';
 
 const responsiveCarousel = {
@@ -26,21 +26,21 @@ const responsiveCarousel = {
 
 const staffArray = [
   {
-    filename: 'Anna​',
+    filename: 'Olena',
     alt: 'Olena',
     title: 'Olena Fox',
     sub: 'Beautician',
   },
   {
-    filename: 'TaniaB',
+    filename: 'TaniaBr',
     alt: 'Tania',
-    title: 'Olena Fox​',
+    title: 'Tania Bramhs​​​',
     sub: 'Beautician',
   },
   {
     filename: 'Eli',
     alt: 'Eli',
-    title: 'Tania Bramhs​​',
+    title: 'ELIZABETH Mike',
     sub: 'Beautician',
   },
   {
@@ -75,11 +75,13 @@ const StaffCarousel = () => {
       // removeArrowOnDeviceType={['tablet', 'mobile']}
       // deviceType={this.props.deviceType}
       dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
+      itemClass="react-carousel-item"
+      // renderButtonGroupOutside={true}
+      // centerMode={true}
     >
       {staffArray.map((staff) => {
         return (
-          <Fade>
+          <Fade key={nanoid()}>
             <div className="staff-wrapper__image">
               <ProjectImg filename={staff.filename} alt={staff.alt} />
             </div>

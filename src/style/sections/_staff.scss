@@ -1,7 +1,48 @@
-.staff-wrapper__image {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.image-item {
-  padding: 20px 0 20px 20px;
+#staff {
+  .staff-row-title {
+    .staff-subtitle {
+      font-family: $font-haviland;
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      color: $secondary-color;
+    }
+    .section-title {
+      color: #323232;
+      font-family: $font-ralewey;
+      font-size: 5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.2em;
+      letter-spacing: 5.8px;
+      margin-bottom: 2rem;
+    }
+  }
+  .react-carousel-item {
+    padding: 20px;
+    .staff-wrapper__image {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .section-title-small {
+      color: #323232;
+      font-family: $font-ralewey;
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 2rem;
+    }
+    h6 {
+      position: relative;
+      top: -2rem;
+      color: #949494;
+      font-family: 'Amiri', Sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-style: italic;
+      line-height: 1em;
+      letter-spacing: 0px;
+    }
+  }
 }

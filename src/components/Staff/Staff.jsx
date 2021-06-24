@@ -23,7 +23,7 @@ const Staff = () => (
         </Col>
       </Row>
       <Row className="staff-row">
-        <Col sm={12}>
+        <Col>
           <Fade big duration={4000}>
             <StaffMaker />
           </Fade>
