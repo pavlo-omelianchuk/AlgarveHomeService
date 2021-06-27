@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import Title from '../Title/Title';
 import pinkComponent from '../../images/component3-pink.png';
 
-import StaffMaker from '../StaffMaker/StaffMaker';
+import StaffMaker from './StaffMaker';
 
 const Staff = () => (
   <section id="staff">

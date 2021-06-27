@@ -77,7 +77,7 @@ const Presentation = () => (
                     above and beyond
                   </p>
                   <span className="d-flex justify-content-center mt-5">
-                    <a className="cta-btn cta-btn--pres" href="/">
+                    <a className="cta-btn cta-btn--pres" href="#staff">
                       view all
                     </a>
                   </span>

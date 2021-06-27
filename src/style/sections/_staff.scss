@@ -19,9 +19,23 @@
   }
   .react-carousel-item {
     padding: 20px;
+    cursor: pointer;
+
     .staff-wrapper__image {
       border-radius: 50%;
       overflow: hidden;
+      position: relative;
+      transition-delay: 0.3s;
+      transition: 0.3s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      opacity: 1;
+      top: 0px;
+
+      &:hover {
+        opacity: 0.5;
+        top: -1rem;
+      }
     }
     .section-title-small {
       color: #323232;
@@ -31,6 +45,14 @@
       text-transform: uppercase;
       letter-spacing: 4px;
       margin-bottom: 2rem;
+      transition-delay: 0s;
+      transition-duration: 0.3s;
+      transition-property: all;
+      transition-timing-function: ease;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
     h6 {
       position: relative;

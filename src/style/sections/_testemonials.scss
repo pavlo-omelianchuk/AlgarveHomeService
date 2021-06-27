@@ -1,0 +1,50 @@
+#testemonials {
+  // position: relative;
+  .testemonials-carousel-container {
+    .react-carousel-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 80vw;
+      height: 80vh;
+      z-index: 15;
+      // background: #000;
+      // opacity: 0.2;
+      border: 1px solid rgb(255, 0, 0);
+    }
+    .react-multi-carousel-item > .react-reveal > .react-reveal {
+      border: 1px solid #000;
+      width: 80vw;
+      height: 60vh;
+      .section-title-small {
+        color: #323232;
+        font-family: $font-ralewey;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: ease;
+  
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      h6 {
+        position: relative;
+        top: -2rem;
+        color: #949494;
+        font-family: $font-amiri;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-style: italic;
+        line-height: 1em;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}

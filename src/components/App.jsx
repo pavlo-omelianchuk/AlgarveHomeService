@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 import Presentation from './Presentation/Presentation';
 import Services from './Services/Services';
 import Staff from './Staff/Staff';
+import Testemonials from './Testemonials/Testemonials';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -46,6 +47,7 @@ function App() {
       <Presentation />
       <Services />
       <Staff />
+      <Testemonials />
       {/* <About />
       <Projects />
       <Contact /> */}
