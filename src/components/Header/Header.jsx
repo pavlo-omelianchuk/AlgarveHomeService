@@ -6,7 +6,7 @@ import Logo from '../../images/logo.png';
 const Header = () => {
   const header = [
     '/#hero',
-    'Algarve Home Massage and beauty',
+    'AH Massage & Beauty',
     '/#hero',
     'Home',
     '/#services',
@@ -15,7 +15,7 @@ const Header = () => {
     'Testemonials',
     '/prices',
     'Prices',
-    '/#about-us',
+    '/#presentation',
     'About us',
   ];
   const [

@@ -16,34 +16,31 @@ const responsiveCarousel = {
 
 const testemonialsArray = [
   {
-    filename: 'Olena',
+    overTitle: 'Testemonials',
+    title: 'WHAT PEOPLE SAY ABOUT US',
+    message: `I've been here a few times for massages and always leave feeling like a new woman…I wouldn't go anywhere else in the city for a massage. Sincerely, the best massage I've had ever. Great staff and great experience!`,
+    sub: 'Beautician',
+    img: 'Olena',
     alt: 'Olena',
-    title: 'Olena Fox',
-    sub: 'Beautician',
+    name: 'OLENA FOX',
   },
   {
-    filename: 'TaniaBr',
+    overTitle: 'Testemonials',
+    title: 'WHAT PEOPLE SAY ABOUT US',
+    message: `I've been here a few times for massages and always leave feeling like a new woman…I wouldn't go anywhere else in the city for a massage. Sincerely, the best massage I've had ever. Great staff and great experience!`,
+    sub: 'Beautician',
+    img: 'Tania',
     alt: 'Tania',
-    title: 'Tania Bramhs​​​',
-    sub: 'Beautician',
+    name: 'TANIA BRAMHS​​​',
   },
   {
-    filename: 'Eli',
+    overTitle: 'Testemonials',
+    title: 'WHAT PEOPLE SAY ABOUT US',
+    message: `I've been here a few times for massages and always leave feeling like a new woman…I wouldn't go anywhere else in the city for a massage. Sincerely, the best massage I've had ever. Great staff and great experience!`,
+    sub: 'Beautician',
+    img: 'Eli',
     alt: 'Eli',
-    title: 'ELIZABETH Mike',
-    sub: 'Beautician',
-  },
-  {
-    filename: 'mary',
-    alt: 'Mary',
-    title: 'mary Whinks',
-    sub: 'Hairdresses',
-  },
-  {
-    filename: 'Nansy',
-    alt: 'Nansy',
-    title: 'NANCY SMITHEY​​',
-    sub: 'Orthopaedic Doctor',
+    name: 'ELIZABETH MILES',
   },
 ];
 
@@ -54,27 +51,25 @@ const TestemonialsCarousel = () => {
       draggable={false}
       showDots={false}
       responsive={responsiveCarousel}
-      // ssr={true} // means to render carousel on server-side.
       infinite
       autoPlay={false}
       autoPlaySpeed={4000}
-      // keyBoardControl={true}
-      // customTransition="all 5"
-      // transitionDuration={5000}
       containerClass="testemonials-carousel-container"
-      // removeArrowOnDeviceType={['tablet', 'mobile']}
-      // deviceType={this.props.deviceType}
       dotListClass="custom-dot-list-style"
       itemClass="react-carousel-item"
       renderButtonGroupOutside
-      // centerMode={true}
     >
       {testemonialsArray.map((testemonial) => {
         return (
           <Fade key={nanoid()}>
-            <Fade bottom duration={1000} delay={100} distance="300px">
-              <TestemonialsInfoAll title={testemonial.title} sub={testemonial.sub} />
-            </Fade>
+            <TestemonialsInfoAll
+              overTitle={testemonial.overTitle}
+              title={testemonial.title}
+              message={testemonial.message}
+              img={testemonial.img}
+              name={testemonial.name}
+              alt={testemonial.alt}
+            />
           </Fade>
         );
       })}

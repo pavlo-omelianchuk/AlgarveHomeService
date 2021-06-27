@@ -30,7 +30,7 @@ const Hero = () => {
           <div>
             <section id="hero" className="jumbotron">
               <Container>
-                <div id="hero__overlay" />
+                <div id="hero-overlay" />
                 {/* <img src={'http://localhost:1337' + data.strapiHero.MainPhoto.formats.large.url} alt="hero-background-image" /> */}
                 <Fade big duration={4000}>
                   <img src={pinkComponent} alt="pink component" />

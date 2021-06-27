@@ -7,19 +7,12 @@ import BackgroundImage from 'gatsby-background-image';
 import TestemonialsMaker from '../Testemonials/TestemonialsMaker';
 
 const MultiBackground = ({ className }) => {
-  const { astronaut } = useStaticQuery(
+  const { stoneMassage } = useStaticQuery(
     graphql`
       query {
-        astronaut: file(relativePath: { eq: "bgtestemonials1.jpg" }) {
+        stoneMassage: file(relativePath: { eq: "bgtestemonials1.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        seamlessBackground: file(relativePath: { eq: "bgtestemonials2.jpg" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 420) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -28,15 +21,7 @@ const MultiBackground = ({ className }) => {
     `
   );
 
-  /// ////////////////////////////////////// Перевірити шлях у соємі граф к'ю елі./////////////////////////////////////
-
-  // Watch out for CSS's stacking order, especially when styling the individual
-  // positions! The lowermost image comes last!
-  const backgroundFluidImageStack = [
-    // seamlessBackground.childImageSharp.fluid,
-    // `linear-gradient(rgba(220, 15, 15, 0.73), rgba(4, 243, 67, 0.73))`,
-    astronaut.childImageSharp.fluid,
-  ].reverse();
+  const backgroundFluidImageStack = [stoneMassage.childImageSharp.fluid];
 
   return (
     <BackgroundImage
@@ -46,6 +31,7 @@ const MultiBackground = ({ className }) => {
       fluid={backgroundFluidImageStack}
     >
       <StyledInnerWrapper>
+        <div id="testemonials-background-overlay" />
         <TestemonialsMaker />
       </StyledInnerWrapper>
     </BackgroundImage>

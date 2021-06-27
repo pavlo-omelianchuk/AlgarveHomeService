@@ -19,7 +19,7 @@ const responsiveCarousel = {
   },
   mobile: {
     breakpoint: { max: 594, min: 0 },
-    items: 2,
+    items: 1,
     paritialVisibilityGutter: 30,
   },
 };
@@ -38,6 +38,12 @@ const staffArray = [
     sub: 'Beautician',
   },
   {
+    filename: 'Katya',
+    alt: 'Katya',
+    title: 'KATYA VODONAEVA​​',
+    sub: 'Orthopaedic Doctor',
+  },
+  {
     filename: 'Eli',
     alt: 'Eli',
     title: 'ELIZABETH Mike',
@@ -48,12 +54,6 @@ const staffArray = [
     alt: 'Mary',
     title: 'mary Whinks',
     sub: 'Hairdresses',
-  },
-  {
-    filename: 'Nansy',
-    alt: 'Nansy',
-    title: 'NANCY SMITHEY​​',
-    sub: 'Orthopaedic Doctor',
   },
 ];
 
