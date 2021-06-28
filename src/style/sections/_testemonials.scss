@@ -1,12 +1,15 @@
 #testemonials {
   padding-bottom: 0;
   .testemonials-carousel-container {
+    // max-width: 90vw !important;
+    // border: 5px solid #000;
     .react-carousel-item {
       display: flex;
       align-items: center;
       justify-content: center;
       align-content: center;
       width: 80vw;
+      min-height: 420px;
       height: 80vh;
       z-index: 5;
     }
@@ -60,8 +63,9 @@
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
+  width: 98.9vw;
   height: 80vh;
+  min-height: 420px;
   background-color: black;
   opacity: 0.4;
 }
