@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row } from 'react-bootstrap';
-import StyledMultiBackground from '../Image/BackgroundImage';
+import StyledMultiBackground from './TestemonialsBackgroundImage';
 
 const Testemonials = () => (
   <section id="testemonials">

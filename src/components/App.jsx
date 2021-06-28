@@ -10,6 +10,7 @@ import Services from './Services/Services';
 import Staff from './Staff/Staff';
 import Testemonials from './Testemonials/Testemonials';
 import Promo from './Promo/Promo';
+import LastCall from './LastCall/LastCall';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -50,6 +51,7 @@ function App() {
       <Staff />
       <Testemonials />
       <Promo />
+      <LastCall />
       {/* <About />
       <Projects />
       <Contact /> */}
