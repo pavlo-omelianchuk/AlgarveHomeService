@@ -47,6 +47,8 @@
     "react-multi-carousel": "^2.6.3",
     "react-parallax": "^3.3.0",
     "react-reveal": "^1.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scroll": "^1.7.16",
     "react-tilt": "^0.1.4",
     "sass": "^1.35.1",
