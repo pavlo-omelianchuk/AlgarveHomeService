@@ -25,6 +25,8 @@
 
           .hr-styled {
             width: 25%;
+            margin-right: auto;
+            margin-left: auto;
           }
 
           &-text {
@@ -33,7 +35,6 @@
             text-transform: none;
             line-height: 1.45em;
             letter-spacing: 0px;
-
           }
         }
       }

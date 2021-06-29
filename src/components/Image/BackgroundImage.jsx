@@ -41,7 +41,7 @@ BackgroundSection.propTypes = {
   className: PropTypes.string,
   filename: PropTypes.string,
   alt: PropTypes.string,
-  bgContent: PropTypes.func,
+  bgContent: PropTypes.element,
 };
 
 export default BackgroundSection;

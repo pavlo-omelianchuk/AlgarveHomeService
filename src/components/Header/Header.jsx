@@ -1,12 +1,10 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
-import Logo from '../../images/logo.png';
-
 const Header = () => {
   const header = [
     '/#hero',
-    'AH Massage & Beauty',
+    `Algarve Home Massage & Beauty`,
     '/#hero',
     'Home',
     '/#services',
@@ -35,13 +33,13 @@ const Header = () => {
   return (
     <Navbar expand="lg" fixed="top">
       <Navbar.Brand href={logoHREF}>
-        <img
+        {/* <img
           alt="logo"
           src={Logo}
           width="40"
           height="40"
           className="d-inline-block align-top mr-4"
-        />
+        /> */}
         {brandName}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
