@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row } from 'react-bootstrap';
-import StyledBackground from '../Image/BackgroundImage';
+import StyledBackground from '../Image/LastCallBackgroundImage';
 
 const LastCall = () => {
   const BgContent = () => (

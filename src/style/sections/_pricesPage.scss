@@ -1,0 +1,29 @@
+#prices-welcome-bg {
+  .prices-page-bg {
+    display: flex;
+    justify-content: center;
+    .background-image-children {
+      align-items: center;
+      display: flex;
+      .section-title {
+        margin-top: 56px;
+        z-index: 10;
+        color: $white-color;
+        font-size: 5.6rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        text-transform: none;
+      }
+    }
+  }
+}
+#prices-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 450px;
+  background-color: black;
+  opacity: 0.5;
+}
