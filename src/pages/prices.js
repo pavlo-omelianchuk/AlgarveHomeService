@@ -4,6 +4,7 @@ import { headData } from '../mock/data';
 import PageWrapepr from '../layout/pageWrapper';
 import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcomeBg';
 import PricesTable from '../components/PricesPage-component/PricesTable';
+import '../style/main.scss';
 
 const PricesPage = () => {
   const { title, lang, description } = headData;
