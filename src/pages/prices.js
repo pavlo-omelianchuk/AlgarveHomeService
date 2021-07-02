@@ -18,7 +18,9 @@ const PricesPage = () => {
       </Helmet>
       <PageWrapepr>
         <PricesWelcomeBg />
-        <PricesTable />
+        <section id="price-list">
+          <PricesTable />
+        </section>
       </PageWrapepr>
     </>
   );

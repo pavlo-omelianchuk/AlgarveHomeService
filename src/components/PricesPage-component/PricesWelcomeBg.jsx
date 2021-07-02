@@ -8,7 +8,8 @@ const PricesWelcomeBg = () => {
     <>
       <div id="prices-overlay" />
       <Fade bottom duration={1000} delay={300} distance="30px">
-        <h1 className="section-title">Best offers​​ for you</h1>
+        <h3 className="prices-over-title">Best Offers</h3>
+        <h1 className="prices-welcome-bg-title ">Algarve Home Massage & Beauty</h1>
       </Fade>
     </>
   );

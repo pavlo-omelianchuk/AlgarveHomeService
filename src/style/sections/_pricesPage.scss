@@ -3,10 +3,19 @@
     display: flex;
     justify-content: center;
     .background-image-children {
-      align-items: center;
       display: flex;
-      .section-title {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .prices-over-title {
         margin-top: 56px;
+        font-family: $font-haviland;
+        color: $white-color;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+      .prices-welcome-bg-title {
         z-index: 10;
         color: $white-color;
         font-size: 5.6rem;
@@ -17,6 +26,7 @@
     }
   }
 }
+
 #prices-overlay {
   position: absolute;
   top: 0;
