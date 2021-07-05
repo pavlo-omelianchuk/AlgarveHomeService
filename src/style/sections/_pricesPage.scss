@@ -27,6 +27,24 @@
   }
 }
 
+.main-form{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  // align-items: stretch;
+  // width: 100%;
+  // justify-content: start;
+  // align-content: flex-start;
+  font-size: 2rem;
+  &>*{
+  padding: 5px;
+  }
+  .error{
+    color: red;
+  }
+}
+
 #prices-overlay {
   position: absolute;
   top: 0;

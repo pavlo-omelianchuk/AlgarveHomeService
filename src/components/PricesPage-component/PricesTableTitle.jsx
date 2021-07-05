@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PricesTableTitle = ({ className, title }) => <h2 className={className}>{title}</h2>;
+const PricesTableTitle = ({ className, title }) => (
+  <>
+    {' '}
+    <br />
+    <br />
+    <br />
+    <h2 className={className}>{title}</h2>
+  </>
+);
 
 PricesTableTitle.propTypes = {
   className: PropTypes.string,
