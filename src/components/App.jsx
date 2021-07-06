@@ -30,13 +30,15 @@ function App() {
       }}
     >
       <PageWrapepr>
-        <Hero />
-        <Presentation />
-        <Services />
-        <Staff />
-        <Testemonials />
-        <Promo />
-        <LastCall />
+        <>
+          <Hero />
+          <Presentation />
+          <Services />
+          <Staff />
+          <Testemonials />
+          <Promo />
+          <LastCall />
+        </>
       </PageWrapepr>
     </PortfolioProvider>
   );

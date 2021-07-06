@@ -1,5 +1,4 @@
 import React from 'react';
-import PricesTableTitle from './PricesTableTitle';
 
 const priceListMassage = [
   {
@@ -26,7 +25,6 @@ const priceListMassage = [
 
 const PricesMassage = () => (
   <>
-    <PricesTableTitle className="price-list-section-title" title="Massage" />
     <ul className="pricelist-wrapper">
       {priceListMassage.map((position) => {
         const { name, price60, price80 } = position;

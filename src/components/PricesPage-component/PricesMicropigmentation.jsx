@@ -1,7 +1,6 @@
 import React from 'react';
-import PricesTableTitle from './PricesTableTitle';
 
-const priceListEyebrows = [
+const priceListMicropigmentation = [
   {
     name: 'Eyebrows micropigmentation',
     price60: 250,
@@ -19,9 +18,8 @@ const priceListEyebrows = [
 
 const PricesMicropigmentation = () => (
   <>
-    <PricesTableTitle className="price-list-section-title" title="Micropigmentation" />
     <ul className="pricelist-wrapper">
-      {priceListEyebrows.map((position) => {
+      {priceListMicropigmentation.map((position) => {
         const { name, price60, price80 } = position;
         return (
           <li key={name}>

@@ -1,20 +1,35 @@
-#price-list {
+#price-list{
+  .nav-tabs{
+    border-bottom: 1px solid $alfa-secondary-color;
+    &>.active{
+border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
+    }
+  }
   .price-list-section-title {
-    color: $primary-color;
-    text-align: left;
+    color: lighten($primary-color, 5%);
+    // text-align: left;
+    text-transform: capitalize;
     font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    &:hover{
+      color: darken($primary-color, 10%);
+    }
+    &.active{
+      color: $primary-color !important;
+    }
   }
   .pricelist-wrapper {
     list-style-type: none;
-    margin: 0;
+    margin: 3rem 0;
     padding: 0;
     text-align: left;
     .price-list-item {
       display: flex;
       flex-direction: column;
-
+      
       .price-list-header {
         display: flex;
         -webkit-box-align: center;
@@ -22,9 +37,10 @@
         flex-basis: 100%;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 3rem;
+        font-size: 2rem;
         .price-list-name {
           max-width: 80%;
+          font-weight: 800;
         }
         .price-list-separator {
           height: 0;

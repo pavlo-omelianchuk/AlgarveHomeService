@@ -3,12 +3,8 @@ import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import styled from '@emotion/styled';
 import PricesTableTitle from '../PricesPage-component/PricesTableTitle';
-// import './styles.css';
-// import './styles-custom.css';
 
-const MyTextInput = ({ label, ...props }) => {
-  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-  // which we can spread on <input> and alse replace ErrorMessage entirely.
+const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
@@ -18,9 +14,8 @@ const MyTextInput = ({ label, ...props }) => {
     </>
   );
 };
+
 const PhoneNumberInput = ({ label, ...props }) => {
-  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-  // which we can spread on <input> and alse replace ErrorMessage entirely.
   const [field, meta] = useField(props);
   return (
     <>
@@ -44,7 +39,19 @@ const MyCheckbox = ({ children, ...props }) => {
   );
 };
 
-// Styled components ....
+const TreatmentSelect = ({ label, ...props }) => {
+
+  const [field, meta] = useField(props);
+  return (
+    <>
+      <StyledLabel htmlFor={props.id || props.name}>{label}</StyledLabel>
+      <StyledSelect {...field} {...props} />
+      {meta.touched && meta.error ? <StyledErrorMessage>{meta.error}</StyledErrorMessage> : null}
+    </>
+  );
+};
+
+
 const StyledSelect = styled.select`
   color: var(--blue);
 `;
@@ -67,20 +74,7 @@ const StyledLabel = styled.label`
   margin-top: 1rem;
 `;
 
-const MySelect = ({ label, ...props }) => {
-  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-  // which we can spread on <input> and alse replace ErrorMessage entirely.
-  const [field, meta] = useField(props);
-  return (
-    <>
-      <StyledLabel htmlFor={props.id || props.name}>{label}</StyledLabel>
-      <StyledSelect {...field} {...props} />
-      {meta.touched && meta.error ? <StyledErrorMessage>{meta.error}</StyledErrorMessage> : null}
-    </>
-  );
-};
-let OnSubmitHello;
-// And now we can use these
+
 const SignupForm = () => {
   const phoneRegExp = /^(\+|00)[1-9][0-9 \-\(\)\.]{7,}$/;
   const treatments = [
@@ -134,8 +128,8 @@ const SignupForm = () => {
           clientsName: '',
           email: '',
           phoneNumber: '',
-          acceptedTerms: false, // added for our checkbox
-          treatment: '', // added for our select
+          acceptedTerms: false,
+          treatment: '',
         }}
         validationSchema={Yup.object({
           email: Yup.string().email('Invalid email addresss`').required('Required'),
@@ -153,20 +147,15 @@ const SignupForm = () => {
             .required('Required'),
         })}
         onSubmit={(values, { setSubmitting }) => {
-          let OnSubmitHello = () => {
-            return <div className="onSubmitHello">Hello from submit</div>;
-          };
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             setSubmitting(true);
           }, 400);
-          return OnSubmitHello = OnSubmitHello;
         }}
       >
-        
         <Form className="main-form">
-          <MyTextInput label="Clients Name" name="clientsName" type="text" placeholder="Name" />
-          <MyTextInput
+          <TextInput label="Clients Name" name="clientsName" type="text" placeholder="Name" />
+          <TextInput
             label="Email Address"
             name="email"
             type="email"
@@ -176,18 +165,17 @@ const SignupForm = () => {
             label="Phone Number"
             name="phoneNumber"
             type="tel"
-            placeholder="+351 123 123 123"
+            placeholder="+351 916 916 916"
           />
-          <MySelect label="Choose treatment" name="treatment">
+          <TreatmentSelect label="Choose treatment" name="treatment">
             <option value="">Choose treatment</option>
             {treatments.map((treatment) => {
-              return <option value={treatment}>{treatment}</option>;
+              return <option key={treatment} value={treatment}>{treatment}</option>;
             })}
-          </MySelect>
+          </TreatmentSelect>
           <MyCheckbox name="acceptedTerms">I accept the terms and conditions</MyCheckbox>
 
           <button type="submit">Submit</button>
-          {<OnSubmitHello /> && ''}
         </Form>
       </Formik>
     </>
