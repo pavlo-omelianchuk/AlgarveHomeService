@@ -31,7 +31,7 @@ const PricesMassage = () => (
       {priceListMassage.map((position) => {
         const { name, price60, price80 } = position;
         return (
-          <li>
+          <li key={name}>
             <div className="price-list-item">
               <div className="price-list-header">
                 <span className="price-list-name">{name}</span>

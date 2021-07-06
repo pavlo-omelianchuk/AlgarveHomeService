@@ -1,37 +1,30 @@
 import React from 'react';
 import PricesTableTitle from './PricesTableTitle';
 
-const priceListEstetic = [
+const priceListEyebrows = [
   {
-    name: 'Therapeutic massage',
-    price60: 55,
-    price80: 70,
+    name: 'Eyebrows micropigmentation',
+    price60: 250,
+    price80: 90,
   },
   {
-    name: 'Sports Massage',
-    price60: 55,
-    price80: 70,
+    name: 'Eyebrows design',
+    price60: 20,
   },
   {
-    name: 'Relax Massage',
-    price60: 55,
-    price80: 70,
-  },
-  {
-    name: ' Massage for couples',
-    price60: 100,
-    price80: 125,
+    name: 'Eyebrows design + eyelash tint',
+    price60: 30,
   },
 ];
 
-const PricesEstetic = () => (
+const PricesMicropigmentation = () => (
   <>
-    <PricesTableTitle className="price-list-section-title" title="Estetic" />
+    <PricesTableTitle className="price-list-section-title" title="Micropigmentation" />
     <ul className="pricelist-wrapper">
-      {priceListEstetic.map((position) => {
+      {priceListEyebrows.map((position) => {
         const { name, price60, price80 } = position;
         return (
-          <li>
+          <li key={name}>
             <div className="price-list-item">
               <div className="price-list-header">
                 <span className="price-list-name">{name}</span>
@@ -42,12 +35,9 @@ const PricesEstetic = () => (
                 </span>
               </div>
               <p className="price-list-description">
-                {`60 min. `}
-                {price60}
-                {` €`}
-                {` // 80 min. `}
+                {price80 && `+ correction after 1-3 months `}
                 {price80}
-                {` €`}
+                {price80 && ` €`}
               </p>
             </div>
           </li>
@@ -57,4 +47,4 @@ const PricesEstetic = () => (
   </>
 );
 
-export default PricesMassage;
+export default PricesMicropigmentation;
