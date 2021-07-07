@@ -3,32 +3,55 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0px;
-  background: red;
   font-weight: 300;
   color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
+  border-bottom: 0px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  // background: url('http://template-kit.themerex.net/spa-and-massage-salon/wp-content/uploads/sites/6/2020/03/woman-receiving-head-massage-in-spa-wellness-J9S8GXE-1.jpg');
   background: url('../../src/images/pexels.jpg');
   background-position: center;
   background-size: cover;
 
+  @include respond(tab-land) {
+    max-height: 800px;
+  }
+  @include respond(tab-port) {
+    min-height: 550px;
+  }
   @include respond(phone) {
     padding: 0rem $default-font-size;
+  }
+  @include respond(phone-xs) {
+    min-height: 500px;
+    font-size: 1.1rem;
+  }
+  & .react-reveal {
+    margin-top: 3rem;
   }
   .hero-subtitle {
     font-family: $font-haviland;
     font-size: 5rem;
     margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2rem;
+    }
   }
 
   .hero-title {
@@ -48,7 +71,7 @@
       line-height: 1.5;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
 
     &-name {
@@ -59,6 +82,19 @@
 
   .hero-title-name {
     font-weight: 400;
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 3.2rem;
+    }
   }
 
   .hero-cta {
@@ -68,9 +104,19 @@
     & a {
       font-size: 1em;
       padding: 20px;
-
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+        padding: 3px;
+      }
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
       @include respond(phone) {
-        font-size: 1em;
+        font-size: 1.5rem;
+        padding: 2px;
+      }
+      @include respond(phone-xs) {
+        font-size: 1.1rem;
       }
     }
   }
@@ -82,6 +128,20 @@
   z-index: 0;
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
   background-color: black;
   opacity: 0.5;
+  @include respond(tab-land) {
+    max-height: 800px;
+  }
+  @include respond(tab-port) {
+    min-height: 550px;
+  }
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+  @include respond(phone-xs) {
+    min-height: 500px;
+    font-size: 1.1rem;
+  }
 }

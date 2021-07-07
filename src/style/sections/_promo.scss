@@ -12,16 +12,29 @@
           font-size: 3rem;
           margin-bottom: 1rem;
         }
-        .section-title-small{
+        .section-title-small {
+          @include respond(tab-land) {
+            font-size: 2rem;
+          }
+          @include respond(tab-port) {
+            font-size: 1.5rem;
+          }
+          @include respond(phone) {
+            font-size: 1.8rem;
+          }
+          @include respond(phone-xs) {
+            font-size: 1.8rem;
+          }
           font-size: 4rem;
         }
-        p{
+        p {
           text-align: left;
         }
       }
     }
-    .cta-btn--hero{
+    .cta-btn--hero {
       font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
   }
 }

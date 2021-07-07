@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import LogoImg from '../Image/LogoImg';
 
 const Header = () => {
   const header = [
@@ -32,16 +33,8 @@ const Header = () => {
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
-      <Navbar.Brand href={logoHREF}>
-        {/* <img
-          alt="logo"
-          src={Logo}
-          width="40"
-          height="40"
-          className="d-inline-block align-top mr-4"
-        /> */}
-        {brandName}
-      </Navbar.Brand>
+      <LogoImg link={logoHREF} alt="Logo" filename="Asset2.png" />
+      <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

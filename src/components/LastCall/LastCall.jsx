@@ -9,9 +9,9 @@ const LastCall = () => {
       <h3 className="section-title-small">DON’T WASTE TIME! SCHEDULE A PROCEDURE NOW!​​</h3>
       <p>Everything you need to feel healthy and beautiful</p>
       <Fade bottom duration={1000} delay={300} distance="30px">
-        <span className="d-flex justify-content-center mt-5">
+        <span className="d-flex justify-content-center">
           <a
-            className="cta-btn cta-btn--contacts px-5 rounded"
+            className="cta-btn cta-btn--contacts px-4 rounded"
             href="https://effectdh.com/products"
             target="_blank"
             rel="noreferrer"

@@ -1,29 +1,43 @@
 #services {
   .services-row {
-    .service-title-small {
-      color: $white-color;
-      font-size: 3.7rem;
-      @include respond(tab-land) {
-        font-size: 2.4rem;
-      }
-      @include respond(tab-port) {
-        font-size: 2.6rem;
-      }
-      @include respond(phone) {
-        font-size: 2.6rem;
-        line-height: 1.5;
-      }
-      @include respond(phone-xs) {
-        font-size: 2rem;
-      }
-    }
     &__col {
       padding: 5;
-      .service-subtitle {
+      margin-top: 2rem;
+      .service-overtitle {
         font-family: $font-haviland;
         color: $white-color;
-        font-size: 4rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        @include respond(tab-land) {
+          font-size: 2.4rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2.6rem;
+        }
+        @include respond(phone) {
+          font-size: 2.6rem;
+          line-height: 1.5;
+        }
+        @include respond(phone-xs) {
+          font-size: 2rem;
+        }
+      }
+      .service-title-small {
+        color: $white-color;
+        font-size: 3.1rem;
+        @include respond(tab-land) {
+          font-size: 2.4rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2.6rem;
+        }
+        @include respond(phone) {
+          font-size: 2.6rem;
+          line-height: 1.5;
+        }
+        @include respond(phone-xs) {
+          font-size: 2rem;
+        }
       }
     }
   }

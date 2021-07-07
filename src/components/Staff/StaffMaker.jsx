@@ -14,7 +14,7 @@ const responsiveCarousel = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 595 },
-    items: 3,
+    items: 2,
     paritialVisibilityGutter: 50,
   },
   mobile: {

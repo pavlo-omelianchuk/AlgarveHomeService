@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 import { heroData, footerData } from '../mock/data';
 
-function PageWrapepr({ children }) {
+function PageWrapepr({ children, footerLinkTo }) {
   const [hero, setHero] = useState({});
   const [footer, setFooter] = useState({});
 
@@ -23,7 +23,7 @@ function PageWrapepr({ children }) {
     >
       <Header />
       {children}
-      <Footer />
+      <Footer linkTo={footerLinkTo} />
     </PortfolioProvider>
   );
 }

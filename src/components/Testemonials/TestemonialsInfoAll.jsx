@@ -8,13 +8,13 @@ const TestemonialsInfoAll = ({ overTitle, title, message, img, alt, name }) => (
   <Fade bottom duration={1000} distance="500px">
     <div>
       <div>
-        <h3 className="testemonials-over-title">{overTitle}</h3>
+        <h3 className="testemonials-overtitle">{overTitle}</h3>
         <h3 className="section-title-small">{title}</h3>
+        <img src={pinkComponent} alt="pink component" />
       </div>
-      <img src={pinkComponent} alt="pink component" />
       <br />
       <div>
-        <p>{message}</p>
+        <p className="testemonials-message">{message}</p>
         <div className="testemonials-person">
           <TestemonialImg alt={alt} filename={img} />
           <h6 className="testemonials-person-name">{name}</h6>

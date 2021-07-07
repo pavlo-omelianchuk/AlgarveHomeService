@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import BackgroundImage from 'gatsby-background-image';
-import TestemonialsMaker from './TestemonialsMaker';
+import TestemonialsMaker from '../Testemonials/TestemonialsMaker';
 
 const MultiBackground = ({ className }) => {
   const { stoneMassage } = useStaticQuery(
@@ -47,7 +47,7 @@ const StyledInnerWrapper = styled.div`
 `;
 
 const StyledMultiBackground = styled(MultiBackground)`
-  width: 98.9vw;
+  width: 100vw;
   min-height: 80vh;
   background-size: cover;
   background-color: transparent;

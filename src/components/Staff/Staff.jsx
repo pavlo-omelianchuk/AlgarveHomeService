@@ -12,7 +12,7 @@ const Staff = () => (
       <Row className="staff-row-title">
         <Col sm={12}>
           <Fade bottom duration={1000} distanse="200px">
-            <h3 className="staff-subtitle">Our Staff</h3>
+            <h3 className="staff-overtitle">Our Staff</h3>
           </Fade>
           <Fade bottom duration={1000} distanse="800px">
             <Title title="MEET OUR EXPERTS" />

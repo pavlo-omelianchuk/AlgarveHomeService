@@ -5,7 +5,6 @@ import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcomeBg';
 import PricesTabs from '../components/PricesPage-component/PricesTabs';
-import Formik from '../components/Form/Formik';
 import '../style/main.scss';
 
 const PricesPage = () => {
@@ -19,13 +18,12 @@ const PricesPage = () => {
         <html lang={lang} />
         <meta name="description" content={description} />
       </Helmet>
-      <PageWrapepr>
+      <PageWrapepr footerLinkTo="prices-overlay">
         <>
           <PricesWelcomeBg />
           <Container className="p-5">
             <section id="price-list">
               <PricesTabs />
-              <Formik />
             </section>
           </Container>
         </>

@@ -28,7 +28,7 @@ const Services = () => (
                 <div id="service__overlay" />
                 <div style={insideStyles}>
                   <Fade bottom duration={1000} distanse="500px">
-                    <h3 className="service-subtitle">Massage for rest & relaxation</h3>
+                    <h3 className="service-overtitle">Massage for rest & relaxation</h3>
                   </Fade>
                   <h2 className="service-title-small"> BEAUTY THERAPY</h2>
                 </div>
@@ -43,7 +43,7 @@ const Services = () => (
                 <div id="service__overlay" />
                 <div style={insideStyles}>
                   <Fade bottom duration={1000} distanse="500px">
-                    <h3 className="service-subtitle">Manual & excercise therapy</h3>
+                    <h3 className="service-overtitle">Manual & excercise therapy</h3>
                   </Fade>
                   <h2 className="service-title-small"> MASSAGE THERAPY</h2>
                 </div>
@@ -58,7 +58,7 @@ const Services = () => (
                 <div id="service__overlay" />
                 <div style={insideStyles}>
                   <Fade bottom duration={1000} distanse="500px">
-                    <h3 className="service-subtitle">Physical therapy</h3>
+                    <h3 className="service-overtitle">Physical therapy</h3>
                   </Fade>
                   <h2 className="service-title-small"> MASSAGE THERAPY</h2>
                 </div>

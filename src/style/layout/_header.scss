@@ -2,19 +2,39 @@
   background-color: rgba(255, 255, 255, 0.918);
   padding: 1rem;
 
+  .gatsby-image-wrapper {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
   .navbar-brand {
     display: flex;
-    align-items: center;
+    align-items: left;
     font-weight: 700;
     font-size: 1.5rem;
+    padding: 0.2rem 1rem;
     background: -webkit-linear-gradient($primary-color, $white-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    // text-decoration: underline overline double $primary-color;
     border-top: 2px solid $secondary-color;
     border-bottom: 2px solid $secondary-color;
     transition: 0.3s;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    // @include respond(tab-port) {
+    //   font-size: 1.5rem;
+    // }
+    // @include respond(phone) {
+    //   font-size: 1.2rem;
+    //   padding: 0.2rem 1rem;
+    // }
+    // @include respond(phone-xs) {
+    //   font-size: 0.95rem;
+    // }
     &:hover {
       transform: scale(0.98);
     }

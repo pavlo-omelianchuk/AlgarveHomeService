@@ -1,8 +1,9 @@
 #testemonials {
   max-width: 100vw;
   padding-bottom: 0;
-  &-fluid{
-    padding-left: 0;
+  padding: 0;
+  &-fluid {
+    padding: 0;
   }
   .testemonials-carousel-container {
     .react-carousel-item {
@@ -19,15 +20,49 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       align-content: center;
-      width: 50vw;
+      width: 70vw;
       height: 45vh;
-      .testemonials-over-title {
+
+      .testemonials-message {
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2rem;
+          max-height: 200px;
+          overflow-y: scroll;
+        }
+        @include respond(phone) {
+          font-size: 1.3rem;
+          max-height: 190px;
+          overflow-y: scroll;
+        }
+        @include respond(phone-xs) {
+          font-size: 1rem;
+          max-height: 150px;
+          overflow-y: scroll;
+        }
+      }
+
+      .testemonials-overtitle {
         font-family: $font-haviland;
         color: $white-color;
         font-size: 4rem;
         margin-bottom: 1rem;
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+        @include respond(tab-port) {
+          font-size: 1.5rem;
+        }
+        @include respond(phone) {
+          font-size: 1.8rem;
+        }
+        @include respond(phone-xs) {
+          font-size: 1.8rem;
+        }
       }
       .section-title-small {
         color: $white-color;
@@ -40,7 +75,18 @@
         transition-duration: 0.3s;
         transition-property: all;
         transition-timing-function: ease;
-
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+        @include respond(tab-port) {
+          font-size: 1.5rem;
+        }
+        @include respond(phone) {
+          font-size: 1.8rem;
+        }
+        @include respond(phone-xs) {
+          font-size: 1.8rem;
+        }
         &:hover {
           color: $primary-color;
         }
@@ -64,7 +110,7 @@
   top: 0;
   left: 0;
   z-index: 0;
-  width: 98.9vw;
+  width: 100vw;
   height: 80vh;
   min-height: 420px;
   background-color: black;

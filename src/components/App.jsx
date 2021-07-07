@@ -29,7 +29,7 @@ function App() {
         footer,
       }}
     >
-      <PageWrapepr>
+      <PageWrapepr footerLinkTo="hero">
         <>
           <Hero />
           <Presentation />
