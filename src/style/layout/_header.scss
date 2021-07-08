@@ -6,8 +6,23 @@
     width: 80px !important;
     height: 80px !important;
     margin: 0 20px;
+    @include respond(tab-land) {
+      width: 60px !important;
+      height: 60px !important;
+      margin: 0 10px;
+    }
+    @include respond(tab-port) {
+      margin: 0 5px;
+    }
+    @include respond(phone) {
+      width: 50px !important;
+      height: 50px !important;
+      margin: 0;
+    }
+    @include respond(phone-xs) {
+    }
   }
-
+  //Logo Text
   .navbar-brand {
     display: flex;
     align-items: left;
@@ -26,16 +41,16 @@
       font-size: 1.5rem;
       margin-left: 1rem;
     }
-    // @include respond(tab-port) {
-    //   font-size: 1.5rem;
-    // }
-    // @include respond(phone) {
-    //   font-size: 1.2rem;
-    //   padding: 0.2rem 1rem;
-    // }
-    // @include respond(phone-xs) {
-    //   font-size: 0.95rem;
-    // }
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
+    @include respond(phone) {
+      font-size: 1.2rem;
+      padding: 0.2rem;
+    }
+    @include respond(phone-xs) {
+      font-size: 0.9rem;
+    }
     &:hover {
       transform: scale(0.98);
     }
@@ -45,9 +60,6 @@
     margin-left: auto;
     display: flex;
     flex-wrap: wrap;
-
-    // align-content: flex-end;
-    // background-color: rgba(172, 0, 0, 0);
 
     .nav-link {
       display: inline;
