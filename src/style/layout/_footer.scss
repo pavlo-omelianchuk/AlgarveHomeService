@@ -1,19 +1,24 @@
 .footer {
   background-color: $dark-grey;
   color: $white-color;
-  padding: 4.8rem 0;
+  padding: 4rem 0 5rem;
 
   @include respond(phone) {
     border: 0px;
   }
 
+  #dev-by {
+    font-size: 1.3rem;
+  }
   &__text {
     color: darken(white, 50%);
     font-size: 1.3rem;
 
     a {
+      text-transform: initial;
+      letter-spacing: 2px;
       color: darken(white, 50%);
-      font-size: 1.3rem;
+      font-size: 3rem;
       transition: all 0.4s;
       display: inline-block;
       background-color: $dark-grey;
@@ -31,9 +36,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     .back-to-top i {
       color: $white-color;
-      margin: 1rem 0 $default-font-size;
+      margin: 0;
       transition: all 0.2s ease-in;
       cursor: pointer;
 
@@ -42,28 +48,48 @@
       }
     }
     .gatsby-image-wrapper {
-      transform: scale(150%);
+      transform: scale(100%);
     }
-    .social-links {
+
+    .footer-text {
+      font-size: 2rem;
+    }
+    // .social-links {
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: center;
+
+    //   a {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     color: $white-color;
+    //     font-size: 2rem;
+    //     width: 5rem;
+    //     height: 5rem;
+    //     margin: 0;
+    //     transition: all 0.2s ease-in;
+
+    //     &:hover {
+    //       transform: translateY(+5px);
+    //     }
+    //   }
+    // }
+  }
+
+  .footer-contacts-wrapper {
+    display: none;
+    @include respond(phone) {
+      position: fixed;
+      bottom: 2px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $white-color;
-        font-size: 2rem;
-        width: 5rem;
-        height: 5rem;
-        margin: 0;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          transform: translateY(+5px);
-        }
-      }
+      justify-content: space-evenly;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: darken(white, 50%);
+      background: #fff;
     }
   }
 
