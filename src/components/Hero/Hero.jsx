@@ -18,7 +18,7 @@ const Hero = () => (
             <h3 className="hero-overtitle">Massage & Beauty therapy</h3>
           </Fade>
           <Fade bottom duration={4000} distance="300px">
-            <h1 className="hero-title">Massage at home from</h1>
+            <h1 className="hero-title">MASSAGE AT HOME FROM</h1>
             <h2 className="hero-title hero-title-name text-color-main">{` Danylo Hips`}</h2>
           </Fade>
 

@@ -1,8 +1,21 @@
 #services {
+  padding: 0;
   .services-row {
     &__col {
-      padding: 5;
+      padding: 0;
       margin-top: 2rem;
+      padding: 5px;
+      @include respond(tab-land) {
+      }
+      @include respond(tab-port) {
+        padding: 2px;
+      }
+      @include respond(phone) {
+        margin-top: 0;
+        padding:initial;
+      }
+      @include respond(phone-xs) {
+      }
       .service-overtitle {
         font-family: $font-haviland;
         color: $white-color;
@@ -16,6 +29,7 @@
         }
         @include respond(phone) {
           font-size: 2.6rem;
+          margin-bottom: initial;
           line-height: 1.5;
         }
         @include respond(phone-xs) {
@@ -24,7 +38,7 @@
       }
       .service-title-small {
         color: $white-color;
-        font-size: 3.1rem;
+        font-size: 3.3rem;
         @include respond(tab-land) {
           font-size: 2.4rem;
         }

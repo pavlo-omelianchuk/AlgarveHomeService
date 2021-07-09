@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-parallax';
 import { Container, Col, Row } from 'react-bootstrap';
@@ -13,62 +13,113 @@ const insideStyles = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '80%',
+  width: '90%',
   zIndex: 10,
 };
 
-const Services = () => (
-  <section id="services">
-    <Container fluid>
-      <Row className="services-row">
-        <Col className="services-row__col" md={4} sm={12}>
-          <Fade duration={1000} distance="100px">
-            <Parallax bgImage={ServImg1} strength={-100}>
-              <div style={{ height: '70vh', maxHeight: '550px' }}>
-                <div id="service__overlay" />
-                <div style={insideStyles}>
-                  <Fade bottom duration={1000} distanse="500px">
-                    <h3 className="service-overtitle">Massage for rest & relaxation</h3>
-                  </Fade>
-                  <h2 className="service-title-small"> BEAUTY THERAPY</h2>
+const parallaxMainStyles = {
+  height: '80vh',
+  maxHeight: '550px',
+};
+const parallaxMobileStyles = {
+  height: '40vh',
+  maxHeight: '150px',
+};
+let parallaxStyle = parallaxMobileStyles;
+
+const Services = () => {
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      parallaxStyle =  parallaxMainStyles;
+    } else {
+      parallaxStyle = parallaxMobileStyles;
+    }
+  }, []);
+  return (
+    <section id="services">
+      <Container fluid>
+        <Row className="services-row">
+          <Col className="services-row__col" lg={3} md={12}>
+            <Fade duration={1000} distance="100px">
+              <Parallax className="parallax-img" bgImage={ServImg1} strength={-100}>
+                <div style={parallaxStyle}>
+                  <div id="service__overlay" />
+                  <div style={insideStyles}>
+                    <Fade bottom duration={1000} distanse="500px">
+                      <h3 className="service-overtitle">Massage for rest & relaxation</h3>
+                    </Fade>
+                    <h2 className="service-title-small">BEAUTY THERAPY</h2>
+                  </div>
                 </div>
-              </div>
-            </Parallax>
-          </Fade>
-        </Col>
-        <Col className="services-row__col" md={4} sm={12}>
+              </Parallax>
+            </Fade>
+          </Col>
+          <Col className="services-row__col" lg={3} md={12}>
           <Fade duration={1000} distance="100px">
             <Parallax bgImage={ServImg2} strength={-100}>
-              <div style={{ height: '70vh', maxHeight: '550px' }}>
+              <div style={parallaxStyle}>
                 <div id="service__overlay" />
                 <div style={insideStyles}>
                   <Fade bottom duration={1000} distanse="500px">
                     <h3 className="service-overtitle">Manual & excercise therapy</h3>
                   </Fade>
-                  <h2 className="service-title-small"> MASSAGE THERAPY</h2>
+                  <h2 className="service-title-small">MASSAGE THERAPY</h2>
                 </div>
               </div>
             </Parallax>
           </Fade>
         </Col>
-        <Col className="services-row__col" md={4} sm={12}>
+        <Col className="services-row__col desktop" lg={3} md={12}>
           <Fade duration={1000} distance="100px">
             <Parallax bgImage={ServImg3} strength={-100}>
-              <div style={{ height: '70vh', maxHeight: '550px' }}>
+              <div style={parallaxStyle}>
                 <div id="service__overlay" />
                 <div style={insideStyles}>
                   <Fade bottom duration={1000} distanse="500px">
                     <h3 className="service-overtitle">Physical therapy</h3>
                   </Fade>
-                  <h2 className="service-title-small"> MASSAGE THERAPY</h2>
+                    <h2 className="service-title-small">MICRO-
+                      PIGMENTATION</h2>
                 </div>
               </div>
             </Parallax>
           </Fade>
         </Col>
-      </Row>
-    </Container>
-  </section>
-);
+        <Col className="services-row__col mobile" lg={3} md={12}>
+          <Fade duration={1000} distance="100px">
+            <Parallax bgImage={ServImg3} strength={-100}>
+              <div style={parallaxStyle}>
+                <div id="service__overlay" />
+                <div style={insideStyles}>
+                  <Fade bottom duration={1000} distanse="500px">
+                    <h3 className="service-overtitle">Physical therapy</h3>
+                  </Fade>
+                    <h2 className="service-title-small">MICROPIGMENTATION</h2>
+                </div>
+              </div>
+            </Parallax>
+          </Fade>
+        </Col>
+        <Col className="services-row__col" lg={3} md={12}>
+          <Fade duration={1000} distance="100px">
+            <Parallax bgImage={ServImg3} strength={-100}>
+              <div style={parallaxStyle}>
+                <div id="service__overlay" />
+                <div style={insideStyles}>
+                  <Fade bottom duration={1000} distanse="500px">
+                    <h3 className="service-overtitle">Hair Style</h3>
+                  </Fade>
+                  <h2 className="service-title-small">HAIRDRESSER</h2>
+                </div>
+              </div>
+            </Parallax>
+          </Fade>
+        </Col>
+        
+        </Row>
+      </Container>
+    </section>
+  );
+};
 
 export default Services;

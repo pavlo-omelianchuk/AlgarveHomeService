@@ -7,3 +7,15 @@
 .load-hidden {
   visibility: hidden;
 }
+//desktop / mobile elements
+.desktop {
+  @include respond(phone) {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @include respond(phone) {
+    display: block;
+  }
+}

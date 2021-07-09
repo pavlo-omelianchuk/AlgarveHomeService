@@ -14,12 +14,12 @@ const responsiveCarousel = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 595 },
-    items: 2,
+    items: 4,
     paritialVisibilityGutter: 50,
   },
   mobile: {
     breakpoint: { max: 594, min: 0 },
-    items: 1,
+    items: 2,
     paritialVisibilityGutter: 30,
   },
 };
@@ -62,17 +62,17 @@ const StaffCarousel = () => {
     <Carousel
       swipeable
       draggable={false}
-      showDots={false}
+      showDots={true}
       responsive={responsiveCarousel}
       // ssr={true} // means to render carousel on server-side.
       infinite
-      autoPlay={false}
-      autoPlaySpeed={4000}
+      autoPlay={true}
+      autoPlaySpeed={2000}
       // keyBoardControl={true}
       // customTransition="all 5"
       // transitionDuration={5000}
       containerClass="carousel-container"
-      // removeArrowOnDeviceType={['tablet', 'mobile']}
+      removeArrowOnDeviceType={['tablet', 'mobile']}
       // deviceType={this.props.deviceType}
       dotListClass="custom-dot-list-style"
       itemClass="react-carousel-item"

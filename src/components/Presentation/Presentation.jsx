@@ -33,7 +33,7 @@ const Presentation = () => (
             </div>
           </Fade>
         </Col>
-        <Col className="presentation-row__col" sm={4}>
+        <Col className="presentation-row__col desktop" sm={4}>
           <Fade bottom duration={1000} delay={100} distance="200px">
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
@@ -55,6 +55,31 @@ const Presentation = () => (
             </div>
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImg2.jpg" alt="contacts" />
+            </div>
+          </Fade>
+        </Col>
+        <Col className="presentation-row__col mobile" sm={4}>
+          <Fade bottom duration={1000} delay={100} distance="200px">
+            <div className="presentation-wrapper__image">
+              <ProjectImg filename="presImg2.jpg" alt="contacts" />
+            </div>
+            <div className="presentation-wrapper__info-container">
+              <div className="presentation-wrapper__info">
+                <Fade cascade>
+                  <TitleSmall title="BOOK MASSAGE" />
+                </Fade>
+                <Fade bottom duration={1000} delay={1000} distance="30px">
+                  <p className="presentation-wrapper__info-text ">
+                    Book your massage online and view orthopedic massage therapy pricing at our
+                    midtown
+                  </p>
+                  <span className="d-flex justify-content-center ">
+                    <a className="cta-btn cta-btn--pres" href="/">
+                      book now
+                    </a>
+                  </span>
+                </Fade>
+              </div>
             </div>
           </Fade>
         </Col>
