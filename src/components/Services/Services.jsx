@@ -79,7 +79,8 @@ const Services = () => {
                     <Fade bottom duration={1000} distanse="500px">
                       <h3 className="service-overtitle">Eyebrows beauty</h3>
                     </Fade>
-                    <h2 className="service-title-small">MICROPIGMENTATION</h2>
+                    <h2 className="service-title-small">MICRO -
+                      PIGMENTATION</h2>
                   </div>
                 </div>
               </Parallax>
