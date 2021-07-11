@@ -37,6 +37,9 @@
     border-bottom: 2px solid $secondary-color;
     transition: 0.3s;
 
+    &:hover {
+      transform: scale(0.98);
+    }
     @include respond(tab-land) {
       font-size: 1.5rem;
       margin-left: 1rem;
@@ -51,9 +54,6 @@
     @include respond(phone-xs) {
       margin-left: 0;
       font-size: 0.8rem;
-    }
-    &:hover {
-      transform: scale(0.98);
     }
   }
 

@@ -1,8 +1,11 @@
-#price-list{
-  .nav-tabs{
+#price-list {
+  .nav-tabs {
     border-bottom: 1px solid $alfa-secondary-color;
-    &>.active{
-border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
+    @include respond(phone) {
+      border-bottom: inherit;
+      flex-direction: column;
+    }
+    @include respond(phone-xs) {
     }
   }
   .price-list-section-title {
@@ -14,11 +17,33 @@ border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
     letter-spacing: 2px;
     padding-right: 2rem;
     padding-left: 2rem;
-    &:hover{
+    order: 2;
+    // transition: 900;
+    &:hover {
       color: darken($primary-color, 10%);
     }
-    &.active{
+    &.active {
+      border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
       color: $primary-color !important;
+      @include respond(phone) {
+        border-color: initial;
+        // color: rgb(255, 255, 255) !important;
+        // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        //   rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        // background-color: darken($white-color, 10%);
+        // order: 1;
+        font-size: 2rem;
+      }
+    }
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+    @include respond(tab-port) {
+    }
+    @include respond(phone) {
+      text-align: left;
+    }
+    @include respond(phone-xs) {
     }
   }
   .pricelist-wrapper {
@@ -29,7 +54,7 @@ border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
     .price-list-item {
       display: flex;
       flex-direction: column;
-      
+
       .price-list-header {
         display: flex;
         -webkit-box-align: center;
@@ -38,6 +63,7 @@ border-color: $alfa-secondary-color $alfa-secondary-color $white-color;
         flex-direction: row;
         justify-content: space-between;
         font-size: 2rem;
+        //
         .price-list-name {
           max-width: 80%;
           font-weight: 800;
