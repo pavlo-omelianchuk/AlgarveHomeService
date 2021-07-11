@@ -39,7 +39,7 @@ const BackgroundSection = ({ className, filename, alt, bgContent }) => {
 };
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
-  height: 450px;
+  height: 55vh;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

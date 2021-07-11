@@ -44,16 +44,10 @@ const staffArray = [
     sub: 'Orthopaedic Doctor',
   },
   {
-    filename: 'Eli',
-    alt: 'Eli',
-    title: 'ELIZABETH Mike',
-    sub: 'Beautician',
-  },
-  {
-    filename: 'mary',
-    alt: 'Mary',
-    title: 'mary Whinks',
-    sub: 'Hairdresses',
+    filename: 'AnnaG',
+    alt: 'Anna',
+    title: 'Anna German',
+    sub: 'Massure',
   },
 ];
 
@@ -67,7 +61,7 @@ const StaffCarousel = () => {
       // ssr={true} // means to render carousel on server-side.
       infinite
       autoPlay={true}
-      autoPlaySpeed={2000}
+      autoPlaySpeed={4000}
       // keyBoardControl={true}
       // customTransition="all 5"
       // transitionDuration={5000}

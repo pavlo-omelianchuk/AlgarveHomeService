@@ -22,6 +22,14 @@ const Footer = ({ linkTo }) => {
               </p>
               <hr />
             </div>
+            <div>
+              <p className="footer__text">
+                {new Date().getFullYear()} - All Rights Reserved{' '}
+                <a id="dev-by" href="/" target="_blank" rel="noopener noreferrer">
+                  Danylo Hips ©
+                </a>
+              </p>
+            </div>
           </Col>
           <Col className="footer-flex" md={4}>
             <span className="back-to-top">
@@ -29,7 +37,7 @@ const Footer = ({ linkTo }) => {
                 <i className="fa fa-angle-up fa" aria-hidden="true" />
               </Link>
             </span>
-            <LogoImg link={'#' + linkTo} alt="Logo" filename="Asset2.png" />
+            <LogoImg link={'#' + linkTo} alt="Logo" filename="Asset 6.png" />
             {/* <div className="social-links">
               {networks &&
                 networks.map((network) => {

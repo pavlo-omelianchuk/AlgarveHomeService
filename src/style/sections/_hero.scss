@@ -1,44 +1,42 @@
-#hero {
-  min-height: 100vh;
+.hero-page-bg {
+  min-height: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 300;
   color: $white-color;
-  padding: 0rem 5.6rem;
-  margin-bottom: 0;
-  border-bottom: 0px;
+  padding: 0rem 5rem;
+  margin: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
-
-  background: url('../../src/images/pexels.jpg');
-  background-position: center;
-  background-size: cover;
+  // background: url('../../src/images/pexels.jpg');
+  // background-position: center;
+  // background-size: cover;
 
   @include respond(tab-land) {
-    max-height: 800px;
+    height: 60vh !important;
   }
   @include respond(tab-port) {
     min-height: 550px;
+    height: 50vh !important;
   }
   @include respond(phone) {
-    min-height: 50vh;
-    height: 50vh;
-    margin-top: 5rem;
-    padding: 0rem $default-font-size;
+    height: 40vh !important;
+    min-height: 350px;
+    padding: 0rem 0.2rem;
   }
   @include respond(phone-xs) {
-    min-height: 50vh;
-    height: 50vh;
-    margin-top: 5rem;
-    padding: 0rem $default-font-size;
+    height: 40vh !important;
   }
+  //pink image
   & .react-reveal {
-    margin-top: 3rem;
+    margin: 3rem 0 1.5rem;
   }
+  // overtitle
   .hero-overtitle {
     font-family: $font-haviland;
     font-size: 5rem;
@@ -52,11 +50,12 @@
     }
     @include respond(phone) {
       font-size: 2rem;
-      line-height: 0.1;
-      margin: 1.5rem 0 0;
+      line-height: 1;
+      margin: 1rem 0 -1rem;
     }
     @include respond(phone-xs) {
       font-size: 1.8rem;
+      margin: 0 0 -1rem;
     }
   }
 
@@ -76,33 +75,31 @@
       letter-spacing: 1px;
       font-size: 2.5rem;
       line-height: 1.5;
-      margin: 1.5rem 0;
     }
     @include respond(phone-xs) {
-      font-size: 2rem;
+      margin-bottom: -0.5rem;
+      font-size: 2.5rem;
     }
-
+    //name
     &-name {
       margin-bottom: 1em;
       font-size: 5em;
-    }
-  }
-
-  .hero-title-name {
-    font-weight: 400;
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
-    @include respond(tab-port) {
-      font-size: 3.6rem;
-    }
-    @include respond(phone) {
-      font-size: 3rem;
-      margin: 0;
-      line-height: 0.1;
-    }
-    @include respond(phone-xs) {
-      font-size: 2.5rem;
+      font-weight: 400;
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+      }
+      @include respond(phone) {
+        font-size: 2.8rem;
+        line-height: 0.1;
+        margin-bottom: 4rem;
+      }
+      @include respond(phone-xs) {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -129,28 +126,16 @@
     }
   }
 }
+
 #hero-overlay {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
   background-color: black;
   opacity: 0.5;
-  @include respond(tab-land) {
-    max-height: 800px;
-  }
-  @include respond(tab-port) {
-    min-height: 550px;
-  }
-  @include respond(phone) {
-    min-height: 50vh;
-    height: 50vh;
-    margin-top: 5rem;
-    padding: 0rem $default-font-size;
-  }
-  @include respond(phone-xs) {
-  }
 }
