@@ -14,8 +14,11 @@ const insideStyles = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '90%',
+  width: '100%',
   zIndex: 10,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
 };
 
 const parallaxMainStyles = {
@@ -31,7 +34,7 @@ let parallaxStyle = parallaxMobileStyles;
 const Services = () => {
   useEffect(() => {
     if (window.innerWidth > 769) {
-      parallaxStyle =  parallaxMainStyles;
+      parallaxStyle = parallaxMainStyles;
     } else {
       parallaxStyle = parallaxMobileStyles;
     }
@@ -79,8 +82,7 @@ const Services = () => {
                     <Fade bottom duration={1000} distanse="500px">
                       <h3 className="service-overtitle">Eyebrows beauty</h3>
                     </Fade>
-                    <h2 className="service-title-small">MICRO -
-                      PIGMENTATION</h2>
+                    <h2 className="service-title-small">MICRO- PIGMENTATION</h2>
                   </div>
                 </div>
               </Parallax>

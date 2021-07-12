@@ -12,9 +12,9 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   // background: url('../../src/images/pexels.jpg');
-  // background-position: center;
+  // background-position: center;241901235
   // background-size: cover;
 
   @include respond(tab-land) {
