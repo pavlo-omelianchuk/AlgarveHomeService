@@ -2,12 +2,12 @@ import React from 'react';
 
 const priceListMassage = [
   {
-    name: 'Therapeutic massage',
+    name: 'Therapeutic Massage',
     price60: 55,
     price80: 70,
   },
   {
-    name: 'Sports Massage',
+    name: 'Sports Deep Tissue Massage',
     price60: 55,
     price80: 70,
   },
@@ -17,9 +17,18 @@ const priceListMassage = [
     price80: 70,
   },
   {
-    name: ' Massage for couples',
+    name: 'Massage for Couples',
     price60: 100,
     price80: 125,
+  },
+  {
+    name: 'Reflexology Massage',
+    price60: 55,
+    price80: 70,
+  },
+  {
+    name: 'Anti-Cellulite Massage',
+    price60: 55,
   },
 ];
 
@@ -43,9 +52,9 @@ const PricesMassage = () => (
                 {`60 min. `}
                 {price60}
                 {` €`}
-                {` // 80 min. `}
+                {price80 && ` // 80 min. `}
                 {price80}
-                {` €`}
+                {price80 && ` €`}
               </p>
             </div>
           </li>
