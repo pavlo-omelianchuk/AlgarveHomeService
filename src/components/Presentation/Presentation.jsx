@@ -24,8 +24,11 @@ const Presentation = () => (
                     to reach out
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/">
-                      Contacts
+                    <a
+                      className="cta-btn cta-btn--pres"
+                      href="https://api.whatsapp.com/send?phone=+351 925 142 109"
+                    >
+                      <i className="fa fa-whatsapp" aria-hidden="true"></i> call now
                     </a>
                   </span>
                 </Fade>

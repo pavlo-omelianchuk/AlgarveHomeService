@@ -8,7 +8,7 @@ const Hero = () => (
   <>
     <div>
       <section id="hero" className="jumbotron">
-        <div id="hero-overlay" />
+        <div id="home" />
         <Container>
           <Fade big duration={4000}>
             <img src={pinkComponent} alt="pink component" />

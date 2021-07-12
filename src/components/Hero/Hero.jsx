@@ -7,9 +7,8 @@ const PricesWelcomeBg = () => {
   return (
     <Container fluid>
       <Row style={{ position: 'relative' }}>
-        
         <StyledBackground
-          className="hero-page-bg"
+          className="hero-bg"
           filename="pexels.jpg"
           alt="prices-bg"
           bgContent={<Hero />}

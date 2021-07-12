@@ -4,9 +4,9 @@ import LogoImg from '../Image/LogoImg';
 
 const Header = () => {
   const header = [
-    '/#hero',
+    '/',
     `Algarve Home Massage & Beauty`,
-    '/#hero',
+    '#home',
     'Home',
     '/#services',
     'Services',
@@ -33,7 +33,7 @@ const Header = () => {
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
-      <LogoImg link={logoHREF} alt="Logo" filename="Asset2.png" />
+      <LogoImg link={logoHREF} alt="Logo" filename="faviconD.png" />
       <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

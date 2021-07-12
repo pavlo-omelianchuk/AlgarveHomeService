@@ -16,7 +16,7 @@ const Footer = ({ linkTo }) => {
             <div>
               <p className="footer__text">
                 <a href="https://api.whatsapp.com/send?phone=+351 925 142 109">
-                  <i className="fa fa-whatsapp" ariaHidden="true"></i>
+                  <i className="fa fa-whatsapp" aria-hidden="true"></i>
                   +351 925 142 109
                 </a>
               </p>
@@ -38,29 +38,12 @@ const Footer = ({ linkTo }) => {
               </Link>
             </span>
             <LogoImg link={'#' + linkTo} alt="Logo" filename="Asset 6.png" />
-            {/* <div className="social-links">
-              {networks &&
-                networks.map((network) => {
-                  const { id, name, url } = network;
-                  return (
-                    <a
-                      key={id}
-                      href={url || '/'}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label={name}
-                    >
-                      <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
-                    </a>
-                  );
-                })}
-            </div> */}
           </Col>
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
                 <a href="mailto:danylo@hips.com">
-                  <i className="fa fa-envelope" ariaHidden="true"></i> danylo@hips.com
+                  <i className="fa fa-envelope" aria-hidden="true"></i> danylo@hips.com
                 </a>
               </p>
               <hr />
@@ -99,7 +82,7 @@ const Footer = ({ linkTo }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span class="fa fa-2x fa-map-marker"></span>
+              <span className="fa fa-2x fa-map-marker"></span>
             </a>
           </div>
         </Row>

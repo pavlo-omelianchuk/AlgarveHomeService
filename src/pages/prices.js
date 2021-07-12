@@ -18,7 +18,7 @@ const PricesPage = () => {
         <html lang={lang} />
         <meta name="description" content={description} />
       </Helmet>
-      <PageWrapepr footerLinkTo="prices-overlay">
+      <PageWrapepr footerLinkTo="best-offers">
         <>
           <PricesWelcomeBg />
           <Container className="p-5">

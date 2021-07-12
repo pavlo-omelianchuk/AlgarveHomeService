@@ -6,7 +6,7 @@ import StyledBackground from '../Image/PricesWelcomeBackgroundImage';
 const PricesWelcomeBg = () => {
   const WelcomePrices = () => (
     <>
-      <div id="prices-overlay" />
+      <div id="best-offers" />
       <Fade bottom duration={1000} delay={300} distance="30px">
         <h3 className="prices-over-title">Best Offers</h3>
         <h1 className="prices-welcome-bg-title ">Algarve Home Massage & Beauty</h1>
