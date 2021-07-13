@@ -18,8 +18,8 @@ const PricesWelcomeBg = () => {
       <Row>
         <StyledBackground
           className="prices-page-bg"
-          filename="prices-bg.jpg"
-          alt="prices-bg"
+          filename="bgPrices.jpg"
+          alt="bgPrices"
           bgContent={<WelcomePrices />}
         />
       </Row>

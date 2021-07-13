@@ -26,7 +26,7 @@ const LastCall = () => {
       <Row className="lastCall-row">
         <StyledBackground
           className="last-call-background"
-          filename="background-pink.jpg"
+          filename="bgLastCall.jpg"
           alt="background-pink"
           bgContent={<BgContent />}
         />

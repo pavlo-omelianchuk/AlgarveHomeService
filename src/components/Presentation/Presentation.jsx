@@ -11,7 +11,7 @@ const Presentation = () => (
         <Col className="presentation-row__col" sm={4}>
           <Fade left duration={1000} delay={100} distance="300px">
             <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg1.jpg" alt="contacts" />
+              <ProjectImg filename="presImgContact.jpg" alt="contacts" />
             </div>
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
@@ -57,14 +57,14 @@ const Presentation = () => (
               </div>
             </div>
             <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg2.jpg" alt="contacts" />
+              <ProjectImg filename="presImgMkAppointment.jpg" alt="contacts" />
             </div>
           </Fade>
         </Col>
         <Col className="presentation-row__col mobile" sm={4}>
           <Fade bottom duration={1000} delay={100} distance="200px">
             <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg2.jpg" alt="contacts" />
+              <ProjectImg filename="presImgMkAppointment.jpg" alt="contacts" />
             </div>
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
@@ -89,7 +89,7 @@ const Presentation = () => (
         <Col className="presentation-row__col" sm={4}>
           <Fade right duration={1000} delay={100} distance="300px">
             <div className="presentation-wrapper__image">
-              <ProjectImg filename="presImg3.jpg" alt="contacts" />
+              <ProjectImg filename="presImgOurSpecialists.jpg" alt="contacts" />
             </div>
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">

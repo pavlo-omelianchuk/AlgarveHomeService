@@ -37,7 +37,7 @@ const Footer = ({ linkTo }) => {
                 <i className="fa fa-angle-up fa" aria-hidden="true" />
               </Link>
             </span>
-            <LogoImg link={'#' + linkTo} alt="Logo" filename="Asset 6.png" />
+            <LogoImg link={'#' + linkTo} alt="Logo" filename="logoAMMBTFooter.png" />
           </Col>
           <Col className="footer-flex" md={4}>
             <div>

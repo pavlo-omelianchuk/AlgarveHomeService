@@ -48,7 +48,7 @@ const Promo = () => (
             }}
           >
             <div className="promo-wrapper__image">
-              <ProjectImg filename="Promo.jpg" alt="promo" />
+              <ProjectImg filename="promoImg.jpg" alt="promo" />
             </div>
           </Tilt>
         </Col>

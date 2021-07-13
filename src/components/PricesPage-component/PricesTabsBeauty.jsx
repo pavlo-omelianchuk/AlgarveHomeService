@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PricesMassage from './PricesMassage';
 import PricesBeauty from './PricesBeauty';
 import PricesMicropigmentation from './PricesMicropigmentation';
+import PricesHairdresser from './PricesHairdresser';
 import FormMassage from '../Form/FormMassage';
 import { Tabs, Tab } from 'react-bootstrap';
 
@@ -41,7 +42,7 @@ const PricesTabs = () => {
       <Tab tabClassName="price-list-section-title" eventKey="hairdresser" title="Hairdresser">
         {key === 'hairdresser' ? (
           <>
-            <PricesBeauty />
+            <PricesHairdresser />
             <FormMassage />
           </>
         ) : null}

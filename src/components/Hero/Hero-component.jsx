@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-reveal';
-// import { StaticQuery, graphql } from 'gatsby';
 import pinkComponent from '../../images/component2-pink.png';
 
 const Hero = () => (

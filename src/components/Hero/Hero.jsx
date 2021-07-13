@@ -9,7 +9,7 @@ const PricesWelcomeBg = () => {
       <Row style={{ position: 'relative' }}>
         <StyledBackground
           className="hero-bg"
-          filename="pexels.jpg"
+          filename="bgHero.jpg"
           alt="prices-bg"
           bgContent={<Hero />}
         />

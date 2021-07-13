@@ -10,7 +10,7 @@ const MultiBackground = ({ className }) => {
   const { stoneMassage } = useStaticQuery(
     graphql`
       query {
-        stoneMassage: file(relativePath: { eq: "bgtestemonials1.jpg" }) {
+        stoneMassage: file(relativePath: { eq: "bgTestemonials.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
@@ -25,7 +25,6 @@ const MultiBackground = ({ className }) => {
 
   return (
     <BackgroundImage
-      // Tag={`section`}
       id="bgtestemonials"
       className={className}
       fluid={backgroundFluidImageStack}
