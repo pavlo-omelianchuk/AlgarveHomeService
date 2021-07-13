@@ -12,8 +12,7 @@ const LastCall = () => {
         <span className="d-flex justify-content-center">
           <a
             className="cta-btn cta-btn--contacts px-4 rounded"
-            href="/prices"
-            target="_blank"
+            href="/prices-massage"
             rel="noreferrer"
           >
             make an appointment

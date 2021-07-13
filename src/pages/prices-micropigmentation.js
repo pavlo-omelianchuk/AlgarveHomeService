@@ -4,7 +4,7 @@ import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcomeBg';
-import PricesTabs from '../components/PricesPage-component/PricesTabs';
+import PricesTabs from '../components/PricesPage-component/PricesTabsMicropigmentation';
 import '../style/main.scss';
 
 const PricesPage = () => {

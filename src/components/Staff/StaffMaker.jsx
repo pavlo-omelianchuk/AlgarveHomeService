@@ -28,26 +28,32 @@ const staffArray = [
   {
     filename: 'Olena',
     alt: 'Olena',
-    title: 'Olena Fox',
-    sub: 'Beautician',
+    title: 'Olena',
+    sub: 'Micropigmentation Expert',
   },
   {
     filename: 'TaniaBr',
     alt: 'Tania',
-    title: 'Tania Bramhs​​​',
+    title: 'Tania​​​',
     sub: 'Beautician',
   },
   {
     filename: 'Katya',
     alt: 'Katya',
-    title: 'KATYA VODONAEVA​​',
+    title: 'Katya​​',
     sub: 'Orthopaedic Doctor',
   },
   {
     filename: 'AnnaG',
     alt: 'Anna',
-    title: 'Anna German',
+    title: 'Anna',
     sub: 'Massure',
+  },
+  {
+    filename: 'Lyuda',
+    alt: 'Lyuda',
+    title: 'Lyuda',
+    sub: 'Reflexology Therapist',
   },
 ];
 

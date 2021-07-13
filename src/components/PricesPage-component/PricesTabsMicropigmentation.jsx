@@ -5,8 +5,8 @@ import PricesMicropigmentation from './PricesMicropigmentation';
 import FormMassage from '../Form/FormMassage';
 import { Tabs, Tab } from 'react-bootstrap';
 
-export default () => {
-  const [key, setKey] = useState('massage');
+const PricesTabs = () => {
+  const [key, setKey] = useState('micropigmentation');
 
   return (
     <Tabs id="controlled-tab" activeKey={key} onSelect={(k) => setKey(k)}>
@@ -49,3 +49,5 @@ export default () => {
     </Tabs>
   );
 };
+
+export default PricesTabs;

@@ -47,8 +47,8 @@ const StyledInnerWrapper = styled.div`
 `;
 
 const StyledMultiBackground = styled(MultiBackground)`
-  width: 100vw;
-  min-height: 80vh;
+  width: 100%;
+  min-height: 60vh;
   background-size: cover;
   background-color: transparent;
   background-repeat: no-repeat;

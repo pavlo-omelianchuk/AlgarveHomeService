@@ -4,15 +4,15 @@ import LogoImg from '../Image/LogoImg';
 
 const Header = () => {
   const header = [
-    '/',
+    '/#home',
     `Algarve Home Massage & Beauty`,
-    '#home',
+    '/#home',
     'Home',
     '/#services',
     'Services',
     '/#testemonials',
     'Testemonials',
-    '/prices',
+    '/prices-massage',
     'Prices',
     '/#presentation',
     'About us',

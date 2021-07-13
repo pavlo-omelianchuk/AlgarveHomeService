@@ -13,7 +13,7 @@
       align-content: center;
       width: 80vw;
       min-height: 420px;
-      height: 80vh;
+      height: 60vh;
       z-index: 5;
     }
     .react-multi-carousel-item > .react-reveal > .react-reveal {
@@ -109,9 +109,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 0;
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
+  height: 100%;
   min-height: 420px;
   background-color: black;
   opacity: 0.4;
