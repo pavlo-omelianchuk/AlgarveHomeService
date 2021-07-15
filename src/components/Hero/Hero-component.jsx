@@ -23,7 +23,7 @@ const Hero = () => (
           <Zoom duration={1000} delay={2000}>
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
-                <a href="/prices">make an appointment</a>
+                <a href="/prices-massage">make an appointment</a>
               </span>
             </p>
           </Zoom>

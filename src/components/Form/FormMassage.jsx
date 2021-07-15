@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import PricesTableTitle from '../PricesPage-component/PricesTableTitle';
 import Date from './TableDatePicker';
 import emailjs from 'emailjs-com';
-import SendEmail from './sendEmail';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const TextInput = ({ label, ...props }) => {
@@ -79,6 +78,7 @@ const SignupForm = () => {
   ];
   return (
     <>
+      <div id='request-form'></div>
       <PricesTableTitle className="price-list-section-title" title="Send your request" />
       <p>All bookings require confirmation.</p>
       <Formik

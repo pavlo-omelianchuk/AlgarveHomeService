@@ -49,7 +49,7 @@ const Presentation = () => (
                     midtown
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/">
+                    <a className="cta-btn cta-btn--pres" href="/prices-massage/#request-form">
                       book now
                     </a>
                   </span>
@@ -77,7 +77,7 @@ const Presentation = () => (
                     midtown
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/">
+                    <a className="cta-btn cta-btn--pres" href="/prices-massage/#request-form">
                       book now
                     </a>
                   </span>

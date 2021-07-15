@@ -22,7 +22,7 @@ export default function TableDatePicker({ ...props }) {
       <label htmlFor="date">Select Preferred Date</label>
       <br />
       <DatePicker
-        selected={(field.value && new Date(field.value)) || null}
+        selected={(field.value && new Date(field.value)) || currentDate}
         // filterTime={filterPassedTime} //deactivates a passed time
         timeIntervals={60}
         minDate={currentDate}
@@ -35,7 +35,7 @@ export default function TableDatePicker({ ...props }) {
         // dateFormat="dd MMMM yyyy HH:mm"
         onChange={(val) => {
           setFieldValue(field.name, val + 1);
-          // console.log(field.value)
+          console.log(field.value)
         }}
       />
     </div>

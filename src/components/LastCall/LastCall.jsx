@@ -12,7 +12,7 @@ const LastCall = () => {
         <span className="d-flex justify-content-center">
           <a
             className="cta-btn cta-btn--contacts px-4 rounded"
-            href="/prices-massage"
+            href="/prices-massage/#request-form"
             rel="noreferrer"
           >
             make an appointment
