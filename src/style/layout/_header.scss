@@ -34,16 +34,20 @@
     font-weight: 700;
     font-size: 1.5rem;
     padding: 0.2rem 1rem;
-    background: -webkit-linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: -webkit-linear-gradient($primary-color, $secondary-color); // doesn`t work on Safari
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: $secondary-color;
     border-top: 2px solid $secondary-color;
     border-bottom: 2px solid $secondary-color;
     transition: 0.3s;
 
     &:hover {
       transform: scale(0.98);
+      color: $primary-color;
+      border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
     }
     @include respond(tab-land) {
       font-size: 1.5rem;

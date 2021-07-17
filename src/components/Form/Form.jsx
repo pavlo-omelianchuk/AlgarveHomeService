@@ -62,23 +62,17 @@ const TreatmentSelect = ({ label, ...props }) => {
   );
 };
 
-const SignupForm = () => {
+const SignupForm = ({
+  treatmentsMassage,
+  treatmentsMicropigmentation,
+  treatmentsBeauty,
+  treatmentsHairdresser,
+}) => {
   const phoneRegExp = /[1-9][0-9 \-\(\)\.]{7,}$/;
-  const treatments = [
-    'Therapeutic massage - 60 min',
-    'Therapeutic massage - 80 min',
-    'Sports Massage - 60 min',
-    'Sports Massage - 80 min',
-    'Relax Massage - 60 min',
-    'Relax Massage - 80 min',
-    'Massage for Couples - 60 min',
-    'Massage for Couples - 80 min',
-    'Anticellulite massage - 60 min',
-    'Anticellulite massage - 80 min',
-  ];
+  const treatments = treatmentsMassage || treatmentsMicropigmentation || treatmentsBeauty ||    treatmentsHairdresser;
   return (
     <>
-      <div id='request-form'></div>
+      <div id="request-form"></div>
       <PricesTableTitle className="price-list-section-title" title="Send your request" />
       <p>All bookings require confirmation.</p>
       <Formik
@@ -89,12 +83,14 @@ const SignupForm = () => {
           acceptedTerms: false,
           treatment: '',
           date: '',
-          message:'',
+          message: '',
         }}
+
         isSubmitting={true}
+
         validationSchema={Yup.object({
           email: Yup.string().email('Invalid email addresss`').required('Required'),
-          clientsName: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
+          clientsName: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
           phoneNumber: Yup.string()
             .matches(phoneRegExp, 'Phone number is not valid')
             .required('Required'),
@@ -109,10 +105,38 @@ const SignupForm = () => {
         })}
         onSubmit={(values, actions) => {
           setTimeout(() => {
-            actions.setSubmitting(false);
-            // alert(JSON.stringify(values, null, 2));
+            // values.date = values.date.toLocaleString();//convert to local Time
+            // console.log(values.date); //stringify resets localizaton and returns basic time(UTM)
+            // alert(JSON.stringify(values, null, 2)); //stringify resets localizaton and returns basic time(UTM)
             emailjs
-              .send('service_4k0oxcm', 'template_jjonxy4', values, 'user_L88bJdNFhrP3czgos9xjl')
+              .send(
+                'gmail',
+                'template_3ezn2x6',
+                {
+                  clientsName: values.clientsName,
+                  email: values.email,
+                  phoneNumber: values.phoneNumber,
+                  date: values.date.toLocaleString(),
+                  // acceptedTerms: values.acceptedTerms,
+                  treatment: values.treatment,
+                  message: values.message,
+                },
+                'user_GKoTeAyQd5Wl26g6VbXaP'
+              ) //danylo
+              // .send(
+              //   'service_4k0oxcm',
+              //   'template_jjonxy4',
+              //   {
+              //     clientsName: values.clientsName,
+              //     email: values.email,
+              //     phoneNumber: values.phoneNumber,
+              //     date: values.date.toLocaleString(),
+              //     // acceptedTerms: values.acceptedTerms,
+              //     treatment: values.treatment,
+              //     message: values.message,
+              //   },
+              //   'user_L88bJdNFhrP3czgos9xjl'
+              // ) //tvingo
               .then(
                 (result) => {
                   console.log(result.text);
@@ -135,20 +159,6 @@ const SignupForm = () => {
             });
           }, 1000);
         }}
-        // onSubmit={(values, actions) => {
-        //   actions.setSubmitting(false);
-        //   // alert(JSON.stringify(values, null, 2));
-        //   emailjs
-        //     .send('service_4k0oxcm', 'template_jjonxy4', values, 'user_L88bJdNFhrP3czgos9xjl')
-        //     .then(
-        //       (result) => {
-        //         console.log(result.text);
-        //       },
-        //       (error) => {
-        //         console.log(error.text);
-        //       }
-        //     );
-        // }}
       >
         <Form className="main-form">
           <TextInput label="Clients Name" name="clientsName" type="text" placeholder="Name" />
@@ -168,9 +178,11 @@ const SignupForm = () => {
           <TreatmentSelect label="Choose treatment" name="treatment">
             <option value="">---</option>
             {treatments.map((treatment) => {
+              const { name } = treatment;
               return (
-                <option key={treatment} value={treatment}>
-                  {treatment}
+                <option key={name} value={name}>
+                  {name}
+                  {}
                 </option>
               );
             })}

@@ -7,11 +7,11 @@ export default function TableDatePicker({ ...props }) {
   const { setFieldValue } = useFormikContext();
   const [field] = useField(props);
 
-  // const filterPassedTime = (time) => {
-  //   const currentDate = new Date();
-  //   const selectedDate = new Date(time);
-  //   return currentDate.getTime() < selectedDate.getTime();
-  // };
+  const filterPassedTime = (time) => {
+    const currentDate = new Date();
+    const selectedDate = new Date(time);
+    return currentDate.getTime() < selectedDate.getTime();
+  };
 
   const currentDate = new Date();
   const maxDate = new Date(currentDate);
@@ -19,23 +19,22 @@ export default function TableDatePicker({ ...props }) {
 
   return (
     <div>
-      <label htmlFor="date">Select Preferred Date</label>
+      <label htmlFor="date">Select Preferred Date and Time</label>
       <br />
       <DatePicker
         selected={(field.value && new Date(field.value)) || currentDate}
-        // filterTime={filterPassedTime} //deactivates a passed time
-        timeIntervals={60}
+        filterTime={filterPassedTime} //deactivates a passed time
+        timeIntervals={120}
         minDate={currentDate}
         maxDate={maxDate}
-        // showTimeSelect
+        showTimeSelect
         className="date"
         calendarClassName="calendar"
-        // timeFormat="HH:mm"
-        dateFormat="dd MMMM yyyy"
-        // dateFormat="dd MMMM yyyy HH:mm"
+        timeFormat="HH:mm"
+        // dateFormat="dd MMMM yyyy"
+        dateFormat="dd MMMM yyyy HH:mm"
         onChange={(val) => {
-          setFieldValue(field.name, val + 1);
-          console.log(field.value)
+          setFieldValue(field.name, val);
         }}
       />
     </div>

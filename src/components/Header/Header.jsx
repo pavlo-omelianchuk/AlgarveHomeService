@@ -14,7 +14,7 @@ const Header = () => {
     'Testemonials',
     '/prices-massage',
     'Prices',
-    '/#presentation',
+    '/#staff',
     'About us',
   ];
   const [
@@ -33,7 +33,7 @@ const Header = () => {
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
-      <LogoImg link={logoHREF} alt="Logo" filename="faviconD.png" />
+      <LogoImg link={logoHREF} alt="Logo" filename="logoAMMBTHeader.png" />
       <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

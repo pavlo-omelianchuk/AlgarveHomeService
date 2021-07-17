@@ -4,7 +4,7 @@ import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcomeBg';
-import PricesTabs from '../components/PricesPage-component/PricesTabsHairdresser';
+import PricesTabs from '../components/PricesPage-component/PricesTabs';
 import '../style/main.scss';
 
 const PricesPage = () => {
@@ -23,7 +23,7 @@ const PricesPage = () => {
           <PricesWelcomeBg />
           <Container className="p-5">
             <section id="price-list">
-              <PricesTabs />
+              <PricesTabs entrance="hairdresser" />
             </section>
           </Container>
         </>

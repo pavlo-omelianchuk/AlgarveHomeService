@@ -1,25 +1,9 @@
 import React from 'react';
 
-const priceListMicropigmentation = [
-  {
-    name: 'Eyebrows micropigmentation',
-    price60: 250,
-    price80: 90,
-  },
-  {
-    name: 'Eyebrows design',
-    price60: 20,
-  },
-  {
-    name: 'Eyebrows design + eyelash tint',
-    price60: 30,
-  },
-];
-
-const PricesMicropigmentation = () => (
+const PricesMassage = ({ priceListMassage }) => (
   <>
     <ul className="pricelist-wrapper">
-      {priceListMicropigmentation.map((position) => {
+      {priceListMassage.map((position) => {
         const { name, price60, price80 } = position;
         return (
           <li key={name}>
@@ -33,7 +17,10 @@ const PricesMicropigmentation = () => (
                 </span>
               </div>
               <p className="price-list-description">
-                {price80 && `+ correction after 1-3 months `}
+                {`60 min. `}
+                {price60}
+                {` €`}
+                {price80 && ` // 80 min. `}
                 {price80}
                 {price80 && ` €`}
               </p>
@@ -45,4 +32,4 @@ const PricesMicropigmentation = () => (
   </>
 );
 
-export default PricesMicropigmentation;
+export default PricesMassage;
