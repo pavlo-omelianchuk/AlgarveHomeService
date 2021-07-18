@@ -28,7 +28,7 @@ const Presentation = () => (
                       className="cta-btn cta-btn--pres"
                       href="https://api.whatsapp.com/send?phone=+351 925 142 109"
                     >
-                      <i className="fa fa-whatsapp" aria-hidden="true"></i> call now
+                      <i className="fa fa-whatsapp" aria-hidden="true" /> call now
                     </a>
                   </span>
                 </Fade>
@@ -49,7 +49,7 @@ const Presentation = () => (
                     midtown
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/prices-massage/#request-form">
+                    <a className="cta-btn cta-btn--pres" href="/prices-massage">
                       book now
                     </a>
                   </span>

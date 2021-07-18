@@ -25,12 +25,12 @@ export const headData = {
 };
 
 // HERO DATA
-export const heroData = {
-  title: '',
-  name: 'Dan Algarve',
-  subtitle: 'Relaxation, prevention & therapy',
-  cta: 'Contact',
-};
+// export const heroData = {
+//   title: '',
+//   name: 'Dan Algarve',
+//   subtitle: 'Relaxation, prevention & therapy',
+//   cta: 'Contact',
+// };
 
 // ABOUT DATA
 export const aboutData = {
