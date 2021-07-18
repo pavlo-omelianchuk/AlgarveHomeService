@@ -39,6 +39,16 @@ const PhoneNumberInput = ({ label, ...props }) => {
   );
 };
 
+const TreatmentSelect = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+  return (
+    <>
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <select {...field} {...props}></select>
+      {meta.touched && meta.error ? <div>{meta.error}</div> : null}
+    </>
+  );
+};
 const MyCheckbox = ({ children, ...props }) => {
   const [field, meta] = useField({ ...props, type: 'checkbox' });
   return (
@@ -48,17 +58,6 @@ const MyCheckbox = ({ children, ...props }) => {
         {children}
       </label>
       {meta.touched && meta.error ? <div className="error">{meta.error}</div> : null}
-    </>
-  );
-};
-
-const TreatmentSelect = ({ label, ...props }) => {
-  const [field, meta] = useField(props);
-  return (
-    <>
-      <label htmlFor={props.id || props.name}>{label}</label>
-      <select {...field} {...props}></select>
-      {meta.touched && meta.error ? <div>{meta.error}</div> : null}
     </>
   );
 };
@@ -75,38 +74,34 @@ const SignupForm = ({
   return (
     <>
       <div id="request-form"></div>
-      <PricesTableTitle className="price-list-section-title" title="Send your request" />
-      <p>All bookings require confirmation.</p>
+      <PricesTableTitle className="form-section-title" title="Send your request" />
+      <h6>*All bookings require confirmation.</h6>
       <Formik
         initialValues={{
           clientsName: '',
           email: '',
           phoneNumber: '',
-          acceptedTerms: false,
-          treatment: '',
+          localization: '',
           date: '',
+          treatment: '',
           message: '',
+          acceptedTerms: false,
         }}
         isSubmitting={true}
         validationSchema={Yup.object({
-          email: Yup.string().email('Invalid email addresss`').required('Required'),
           clientsName: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
+          email: Yup.string().email('Invalid email addresss`').required('Required'),
           phoneNumber: Yup.string()
             .matches(phoneRegExp, 'Phone number is not valid')
             .required('Required'),
+          localization: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
+          treatment: Yup.string().required('Required'),
           acceptedTerms: Yup.boolean()
             .required('Required')
             .oneOf([true], 'You must accept the terms and conditions.'),
-          treatment: Yup.string()
-            // // specify the set of valid values for job type
-            // // @see http://bit.ly/yup-mixed-oneOf
-            // .oneOf(['designer', 'development', 'product', 'other'], 'Invalid Job Type')
-            .required('Required'),
         })}
         onSubmit={(values, actions) => {
           setTimeout(() => {
-            // values.date = values.date.toLocaleString();//convert to local Time
-            // console.log(values.date); //stringify resets localizaton and returns basic time(UTM)
             // alert(JSON.stringify(values, null, 2)); //stringify resets localizaton and returns basic time(UTM)
             emailjs
               .send(
@@ -116,6 +111,7 @@ const SignupForm = ({
                   clientsName: values.clientsName,
                   email: values.email,
                   phoneNumber: values.phoneNumber,
+                  localization: values.localization,
                   date: values.date.toLocaleString(),
                   // acceptedTerms: values.acceptedTerms,
                   treatment: values.treatment,
@@ -151,10 +147,11 @@ const SignupForm = ({
                 clientsName: '',
                 email: '',
                 phoneNumber: '',
-                acceptedTerms: false,
-                treatment: '',
+                localization: '',
                 date: '',
+                treatment: '',
                 message: '',
+                acceptedTerms: false,
               },
             });
           }, 1000);
@@ -173,6 +170,12 @@ const SignupForm = ({
             name="phoneNumber"
             type="tel"
             placeholder="+351 916 916 916"
+          />
+          <PhoneNumberInput
+            label="Localization"
+            name="localization"
+            type="text"
+            placeholder="Enter your Localization/City"
           />
           <Date name="date" />
           <TreatmentSelect label="Choose treatment" name="treatment">
@@ -225,9 +228,13 @@ TreatmentSelect.propTypes = {
 };
 SignupForm.propTypes = {
   treatmentsMassage: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
-  treatmentsMicropigmentation: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsMicropigmentation: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  ),
   treatmentsBeauty: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
-  treatmentsHairdresser: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsHairdresser: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  ),
 };
 
 export default SignupForm;

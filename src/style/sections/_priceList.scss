@@ -1,4 +1,7 @@
 #price-list {
+  .form-section-title{
+    color: lighten($primary-color, 5%);
+  }
   .nav-tabs {
     border-bottom: 1px solid $alfa-secondary-color;
     @include respond(phone) {
@@ -45,7 +48,6 @@
     @include respond(phone) {
       font-size: 1.2rem;
       padding: 0.5rem 1.5rem;
-      text-align: left;
     }
     @include respond(phone-xs) {
     }

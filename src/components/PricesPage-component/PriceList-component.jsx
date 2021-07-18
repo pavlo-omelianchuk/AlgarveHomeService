@@ -239,49 +239,47 @@ const PricesTabs = (entrance) => {
   const [key, setKey] = useState(customTab({ entrance }));
 
   return (
-    <Tabs id="controlled-tab" activeKey={key} onSelect={(k) => setKey(k)}>
-      <Tab tabClassName="price-list-section-title" eventKey="massage" title="Massage">
-        {key === 'massage' ? (
-          <>
-            <PricesMassage priceListMassage={priceListMassage} />
-            <Form
-              treatmentsMassage={priceListMassage}
-              treatmentsMicropigmentation={priceListMicropigmentation}
-              treatmentsBeauty={pricelistBeauty}
-              treatmentsHairdresser={priceListHairdresser}
-            />
-          </>
-        ) : null}
-      </Tab>
-      <Tab
-        tabClassName="price-list-section-title"
-        eventKey="micropigmentation"
-        title="Micropigmentation"
-      >
-        {key === 'micropigmentation' ? (
-          <>
-            <PricesMicropigmentation priceListMicropigmentation={priceListMicropigmentation} />
-            <Form treatmentsMicropigmentation={priceListMicropigmentation} />
-          </>
-        ) : null}
-      </Tab>
-      <Tab tabClassName="price-list-section-title" eventKey="beauty" title="Beauty">
-        {key === 'beauty' ? (
-          <>
-            <PricesBeauty priceListBeauty={pricelistBeauty} />
-            <Form treatmentsBeauty={pricelistBeauty} />
-          </>
-        ) : null}
-      </Tab>
-      <Tab tabClassName="price-list-section-title" eventKey="hairdresser" title="Hairdresser">
-        {key === 'hairdresser' ? (
-          <>
-            <PricesHairdresser priceListHairdresser={priceListHairdresser} />
-            <Form treatmentsHairdresser={priceListHairdresser} />
-          </>
-        ) : null}
-      </Tab>
-    </Tabs>
+    <>
+      <h6 style={{textAlign:"left"}}>*Choose section and fill up form request</h6>
+      <Tabs id="controlled-tab" activeKey={key} onSelect={(k) => setKey(k)}>
+        <Tab tabClassName="price-list-section-title" eventKey="massage" title="Massage">
+          {key === 'massage' ? (
+            <>
+              <PricesMassage priceListMassage={priceListMassage} />
+              <Form treatmentsMassage={priceListMassage} />
+            </>
+          ) : null}
+        </Tab>
+        <Tab
+          tabClassName="price-list-section-title"
+          eventKey="micropigmentation"
+          title="Micropigmentation"
+        >
+          {key === 'micropigmentation' ? (
+            <>
+              <PricesMicropigmentation priceListMicropigmentation={priceListMicropigmentation} />
+              <Form treatmentsMicropigmentation={priceListMicropigmentation} />
+            </>
+          ) : null}
+        </Tab>
+        <Tab tabClassName="price-list-section-title" eventKey="beauty" title="Beauty">
+          {key === 'beauty' ? (
+            <>
+              <PricesBeauty priceListBeauty={pricelistBeauty} />
+              <Form treatmentsBeauty={pricelistBeauty} />
+            </>
+          ) : null}
+        </Tab>
+        <Tab tabClassName="price-list-section-title" eventKey="hairdresser" title="Hairdresser">
+          {key === 'hairdresser' ? (
+            <>
+              <PricesHairdresser priceListHairdresser={priceListHairdresser} />
+              <Form treatmentsHairdresser={priceListHairdresser} />
+            </>
+          ) : null}
+        </Tab>
+      </Tabs>
+    </>
   );
 };
 
