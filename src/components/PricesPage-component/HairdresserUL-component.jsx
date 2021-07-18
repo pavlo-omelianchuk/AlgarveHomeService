@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PricesMassage = ({priceListHairdresser}) => (
+const PricesHairdresser = ({priceListHairdresser}) => (
   <>
     <ul className="pricelist-wrapper">
       {priceListHairdresser.map((position) => {
-        const { name, price60, price80 } = position;
+        const { name, price60 } = position;
         return (
           <li key={name}>
             <div className="price-list-item">
@@ -17,12 +18,6 @@ const PricesMassage = ({priceListHairdresser}) => (
                 </span>
               </div>
               <p className="price-list-description">
-                {/* {price60 && `60 min. `}
-                {price60}
-                {price60 && ` €`}
-                {price80 && ` // 80 min. `}
-                {price80}
-                {price80 && ` €`} */}
               </p>
             </div>
           </li>
@@ -31,5 +26,9 @@ const PricesMassage = ({priceListHairdresser}) => (
     </ul>
   </>
 );
-
-export default PricesMassage;
+PricesHairdresser.propTypes = {
+  priceListHairdresser: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  ),
+};
+export default PricesHairdresser;

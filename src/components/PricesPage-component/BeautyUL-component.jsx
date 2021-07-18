@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PricesBeauty = ({ priceListBeauty }) => (
   <>
@@ -28,5 +29,7 @@ const PricesBeauty = ({ priceListBeauty }) => (
     </ul>
   </>
 );
-
+PricesBeauty.propTypes = {
+  priceListBeauty: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+};
 export default PricesBeauty;

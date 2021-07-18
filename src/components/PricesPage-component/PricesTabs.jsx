@@ -7,17 +7,27 @@ import Form from '../Form/Form';
 import { Tabs, Tab } from 'react-bootstrap';
 
 const customTab = (entrance) => {
-  console.log(entrance.entrance.entrance);
-
-  const selectedTab =
-    entrance.entrance.entrance === 'micropigmentation'
-      ? 'micropigmentation'
-      : entrance.entrance.entrance === 'beauty'
-      ? 'beauty'
-      : entrance.entrance.entrance === 'hairdresser'
-      ? 'hairdresser'
-      : 'massage';
-  return selectedTab;
+  //   const selectedTab =
+  //     entrance.entrance.entrance === 'micropigmentation'
+  //       ? 'micropigmentation'
+  //       : entrance.entrance.entrance === 'beauty'
+  //       ? 'beauty'
+  //       : entrance.entrance.entrance === 'hairdresser'
+  //       ? 'hairdresser'
+  //       : 'massage';
+  if (entrance.entrance.entrance === 'micropigmentation') {
+    const selectedTab = 'micropigmentation';
+    return selectedTab;
+  } else if (entrance.entrance.entrance === 'beauty') {
+    const selectedTab = 'beauty';
+    return selectedTab;
+  } else if (entrance.entrance.entrance === 'hairdresser') {
+    const selectedTab = 'hairdresser';
+    return selectedTab;
+  } else {
+    const selectedTab = 'massage';
+    return selectedTab;
+  }
 };
 
 const PricesTabs = (entrance) => {

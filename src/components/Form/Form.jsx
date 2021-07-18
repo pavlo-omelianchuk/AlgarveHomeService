@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import PricesTableTitle from '../PricesPage-component/PricesTableTitle';
@@ -42,7 +43,7 @@ const MyCheckbox = ({ children, ...props }) => {
   const [field, meta] = useField({ ...props, type: 'checkbox' });
   return (
     <>
-      <label className="checkbox">
+      <label htmlFor={props.id || props.name} className="checkbox">
         <input {...field} {...props} type="checkbox" />
         {children}
       </label>
@@ -69,7 +70,8 @@ const SignupForm = ({
   treatmentsHairdresser,
 }) => {
   const phoneRegExp = /[1-9][0-9 \-\(\)\.]{7,}$/;
-  const treatments = treatmentsMassage || treatmentsMicropigmentation || treatmentsBeauty ||    treatmentsHairdresser;
+  const treatments =
+    treatmentsMassage || treatmentsMicropigmentation || treatmentsBeauty || treatmentsHairdresser;
   return (
     <>
       <div id="request-form"></div>
@@ -85,9 +87,7 @@ const SignupForm = ({
           date: '',
           message: '',
         }}
-
         isSubmitting={true}
-
         validationSchema={Yup.object({
           email: Yup.string().email('Invalid email addresss`').required('Required'),
           clientsName: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
@@ -197,4 +197,37 @@ const SignupForm = ({
     </>
   );
 };
+
+TextInput.propTypes = {
+  label: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
+MessageInput.propTypes = {
+  label: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
+PhoneNumberInput.propTypes = {
+  label: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
+MyCheckbox.propTypes = {
+  children: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
+TreatmentSelect.propTypes = {
+  label: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+};
+SignupForm.propTypes = {
+  treatmentsMassage: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsMicropigmentation: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsBeauty: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsHairdresser: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+};
+
 export default SignupForm;

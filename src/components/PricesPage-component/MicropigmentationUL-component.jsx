@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PricesMicropigmentation = ({ priceListMicropigmentation }) => (
   <>
@@ -28,5 +29,9 @@ const PricesMicropigmentation = ({ priceListMicropigmentation }) => (
     </ul>
   </>
 );
-
+PricesMicropigmentation.propTypes = {
+  priceListMicropigmentation: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  ),
+};
 export default PricesMicropigmentation;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PricesMassage = ({ priceListMassage }) => (
   <>
@@ -31,5 +32,7 @@ const PricesMassage = ({ priceListMassage }) => (
     </ul>
   </>
 );
-
+PricesMassage.propTypes = {
+  priceListMassage: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+};
 export default PricesMassage;

@@ -18,7 +18,7 @@ export const headerData = {
 
 // HEAD DATA
 export const headData = {
-  title: 'Health massage Algarve', // e.g: 'Name | Developer'
+  title: 'Health Massage & Beauty Algarve', // e.g: 'Name | Developer'
   lang: 'pt', // e.g: en, es, fr, jp
   description:
     'Algarve Home Massage and Beauty Mobile massage service in Algarve area. You can relax in the comfort of your home while we take care of the travel and organization involved and work with great masseurs in the Algarve. For health purposes only.', // e.g: Welcome to my website
