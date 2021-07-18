@@ -1,10 +1,10 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
-import Title from '../Title/Title';
+import Title from '../Titles/Title-component';
 import pinkComponent from '../../images/component3-pink.png';
 
-import StaffMaker from './StaffMaker';
+import StaffMaker from './StaffCreator-component';
 
 const Staff = () => (
   <section id="staff">

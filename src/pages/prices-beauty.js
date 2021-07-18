@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
-import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcomeBg';
-import PricesTabs from '../components/PricesPage-component/PricesTabs';
+import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcome-section';
+import PricesTabs from '../components/PricesPage-component/PriceList-component';
 import '../style/main.scss';
 
 const PricesPage = () => {

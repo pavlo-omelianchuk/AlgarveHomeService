@@ -42,7 +42,7 @@ const Footer = ({ linkTo }) => {
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
-                <a href="mailto:danylo@hips.com">
+                <a href="mailto:info.ahsmb@gmail.com">
                   <i className="fa fa-envelope" aria-hidden="true"></i> danylo@hips.com
                 </a>
               </p>

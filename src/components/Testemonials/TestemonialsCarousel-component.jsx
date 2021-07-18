@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
-import TestemonialsInfoAll from './TestemonialsInfoAll';
+import TestemonialsInfoAll from './TestemonialCreator-component';
 
 import 'react-multi-carousel/lib/styles.css';
 

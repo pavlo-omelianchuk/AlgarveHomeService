@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
-import TitleSmall from '../TitleSmall/TitleSmall';
+import TitleSmall from '../Titles/TitleSmall-component';
 import ProjectImg from '../Image/ProjectImg';
 import 'react-multi-carousel/lib/styles.css';
 

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import BackgroundImage from 'gatsby-background-image';
-import TestemonialsMaker from '../Testemonials/TestemonialsMaker';
+import TestemonialsMaker from '../Testemonials/TestemonialsCarousel-component';
 
 const MultiBackground = ({ className }) => {
   const { stoneMassage } = useStaticQuery(

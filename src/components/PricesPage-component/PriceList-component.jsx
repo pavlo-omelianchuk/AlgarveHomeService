@@ -3,7 +3,7 @@ import PricesMassage from './MassageUL-component';
 import PricesBeauty from './BeautyUL-component';
 import PricesMicropigmentation from './MicropigmentationUL-component';
 import PricesHairdresser from './HairdresserUL-component';
-import Form from '../Form/Form';
+import Form from '../Form/Form-section';
 import { Tabs, Tab } from 'react-bootstrap';
 
 const customTab = (entrance) => {

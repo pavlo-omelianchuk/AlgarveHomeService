@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
-import TitleSmall from '../TitleSmall/TitleSmall';
+import TitleSmall from '../Titles/TitleSmall-component';
 import ProjectImg from '../Image/ProjectImg';
 
 const Presentation = () => (
