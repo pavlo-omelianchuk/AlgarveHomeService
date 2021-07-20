@@ -31,6 +31,15 @@ module.exports = {
         display: `standalone`,
         icon: 'src/images/logoAMMBTFavicon.png',
       },
+      // siteMetadata: {
+      //   title: 'SEO Health Massage & Beauty Algarve',
+      //   titleTemplate: '%s · The Real Hero',
+      //   description:
+      //     'Algarve Home Massage and Beauty. Mobile massage service in Algarve area. You can relax in the comfort of your home while we take care of the travel and organization involved and work with great masseurs in the Algarve. For health purposes only.',
+      //   url: 'https://www.algarvehomemassageandbeauty.com/',
+      //   image: '/images/logoAMMBTFavicon.png', // Path to your image you placed in the 'static' folder
+      //   twitterUsername: '@occlumency',
+      // },
     },
     // {
     //   resolve: `gatsby-source-strapi`,

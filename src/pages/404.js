@@ -18,6 +18,10 @@ const PageNotFound = () => {
         <title>Page not found</title>
         <html lang={lang} />
         <meta name="description" content="Page not found" />
+        <meta
+          name="google-site-verification"
+          content="kRCdcTiWmpq82a-iDvfn1UyIvCBMRCHc1-kLDAeNCYU"
+        />
       </Helmet>
       <section id="hero" className="jumbotron">
         <Container>

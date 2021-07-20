@@ -7,10 +7,6 @@ import Testemonials from './Testemonials/Testemonials-section';
 import Promo from './Promo/Promo-section';
 import LastCall from './LastCall/LastCall-section';
 
-import { PortfolioProvider } from '../context/context';
-
-import heroData, { footerData } from '../mock/data';
-
 import PageWrapepr from '../layout/pageWrapper';
 
 function App() {

@@ -18,7 +18,7 @@
   // background-size: cover;
 
   @include respond(tab-land) {
-    height: 60vh !important;
+    height: 70vh !important;
   }
   @include respond(tab-port) {
     min-height: 550px;

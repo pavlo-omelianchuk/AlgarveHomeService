@@ -17,6 +17,10 @@ const PricesPage = () => {
         <title>{title}</title>
         <html lang={lang} />
         <meta name="description" content={description} />
+        <meta
+          name="google-site-verification"
+          content="kRCdcTiWmpq82a-iDvfn1UyIvCBMRCHc1-kLDAeNCYU"
+        />
       </Helmet>
       <PageWrapepr footerLinkTo="best-offers">
         <>

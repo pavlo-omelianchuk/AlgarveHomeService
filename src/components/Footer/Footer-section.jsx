@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
 import LogoImg from '../Image/LogoImg';
 
 const Footer = ({ linkTo }) => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+
 
   return (
     <footer className="footer navbar-static-bottom">
@@ -24,7 +22,7 @@ const Footer = ({ linkTo }) => {
             </div>
             <div>
               <p className="footer__text">
-                {new Date().getFullYear()} - All Rights Reserved{' '}
+                2009 - {new Date().getFullYear()} - All Rights Reserved{' '}
                 <a id="dev-by" href="/" target="_blank" rel="noopener noreferrer">
                   Danylo Hips ©
                 </a>
@@ -43,7 +41,7 @@ const Footer = ({ linkTo }) => {
             <div>
               <p className="footer__text">
                 <a href="mailto:info.ahsmb@gmail.com">
-                  <i className="fa fa-envelope" aria-hidden="true"></i> danylo@hips.com
+                  <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
                 </a>
               </p>
               <hr />
@@ -74,7 +72,7 @@ const Footer = ({ linkTo }) => {
             {/* <!--<a href="" className="col-xs-3">
                         <span className="fa-instagram"></span>
                     </a>--> */}
-            <a href="mailto:danylo@hips.com">
+            <a href="mailto:info.ahsmb@gmail.com">
               <span className="fa fa-2x fa-at"></span>
             </a>
             <a
