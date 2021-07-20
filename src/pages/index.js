@@ -17,7 +17,7 @@ const IndexPage = () => {
         <meta name="description" content={description} />
         <meta
           name="google-site-verification"
-          content="kRCdcTiWmpq82a-iDvfn1UyIvCBMRCHc1-kLDAeNCYU"
+          content="9kBdSy0tZrplyDlGnpHdAyuPf8AAGzLSZnBTh9EWd7A"
         />
       </Helmet>
       <App />
