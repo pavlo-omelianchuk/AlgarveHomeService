@@ -27,31 +27,31 @@ const responsiveCarousel = {
 const staffArray = [
   {
     filename: 'staffLena',
-    alt: 'Lena',
+    alt: 'Micropigmentation Expert Lena',
     title: 'Lena Fox',
     sub: 'Micropigmentation Expert',
   },
   {
     filename: 'staffTania',
-    alt: 'Tania',
+    alt: 'Beautician Tania',
     title: 'Tania​​​ Brahms',
     sub: 'Beautician',
   },
   {
     filename: 'staffKatya',
-    alt: 'Katya',
+    alt: 'Massure Katya',
     title: 'Katya​​',
-    sub: 'Orthopaedic Doctor',
+    sub: 'Massure',
   },
   {
     filename: 'staffAnna',
-    alt: 'Anna',
+    alt: 'Massure Anna',
     title: 'Anna',
     sub: 'Massure',
   },
   {
     filename: 'staffLyuda',
-    alt: 'Lyuda',
+    alt: 'Reflexology Therapist Lyuda',
     title: 'Lyuda',
     sub: 'Reflexology Therapist',
   },

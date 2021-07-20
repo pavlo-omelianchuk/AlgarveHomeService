@@ -33,10 +33,10 @@ const ServicesImg = ({ filename, alt, overTitle, title, colClassName, linkTo }) 
       return (
         <Col className={colClassName} lg={3} md={12}>
           <Fade duration={500} distance="100px">
-            <Parallax className="parallax-img" bgImage={imageFluid.src} strength={-100}>
+            <Parallax bgImageAlt={alt} className="parallax-img" bgImage={imageFluid.src} strength={-100}>
               <div className="parallax">
                 <div id="service__overlay" />
-                <a style={{textTransform: 'initial'}} href={linkTo}>
+                <a style={{ textTransform: 'initial' }} href={linkTo}>
                   <div className="parallax__inside">
                     <Fade bottom duration={1000} distanse="500px">
                       <h3 className="service-overtitle">{overTitle}</h3>

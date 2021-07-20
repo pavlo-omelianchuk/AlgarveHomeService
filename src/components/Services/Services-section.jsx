@@ -5,6 +5,7 @@ import ServicesImg from '../Image/ServicesImgMaker';
 
 const servicesArray = [
   {
+    alt: 'Back massage',
     linkTo: '/prices-massage',
     colClassName: 'services-row__col',
     filename: 'bgServiceMassage',
@@ -12,6 +13,7 @@ const servicesArray = [
     title: 'MASSAGE THERAPY',
   },
   {
+    alt: 'beauty face mask',
     linkTo: '/prices-beauty',
     colClassName: 'services-row__col',
     filename: 'bgServiceBeauty',
@@ -19,6 +21,7 @@ const servicesArray = [
     title: 'BEAUTY THERAPY',
   },
   {
+    alt: 'Eyebrows after micropigmentation',
     linkTo: '/prices-micropigmentation',
     colClassName: 'services-row__col desktop',
     filename: 'bgServiceMicropigmentation',
@@ -26,6 +29,7 @@ const servicesArray = [
     title: 'MICRO- PIGMENTATION',
   },
   {
+    alt: 'Eyebrows after micropigmentation',
     linkTo: '/prices-micropigmentation',
     colClassName: 'services-row__col mobile',
     filename: 'bgServiceMicropigmentation',
@@ -33,6 +37,7 @@ const servicesArray = [
     title: 'MICROPIGMENTATION',
   },
   {
+    alt: 'Hair styling',
     linkTo: '/prices-hairdresser',
     colClassName: 'services-row__col',
     filename: 'bgServiceHairdresser',
@@ -52,6 +57,7 @@ const Services = () => {
                 key={nanoid()}
                 linkTo={service.linkTo}
                 colClassName={service.colClassName}
+                alt={service.alt}
                 filename={service.filename}
                 overTitle={service.overTitle}
                 title={service.title}

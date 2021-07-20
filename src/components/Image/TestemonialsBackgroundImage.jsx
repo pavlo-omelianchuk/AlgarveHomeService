@@ -27,6 +27,7 @@ const MultiBackground = ({ className }) => {
     <BackgroundImage
       id="bgtestemonials"
       className={className}
+      alt='hot stones massage'
       fluid={backgroundFluidImageStack}
     >
       <StyledInnerWrapper>
