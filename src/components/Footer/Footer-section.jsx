@@ -13,9 +13,9 @@ const Footer = ({ linkTo }) => {
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
-                <a href="https://api.whatsapp.com/send?phone=+351 925 142 109">
+                <a href="https://api.whatsapp.com/send?phone=+351 963 531 684">
                   <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                  +351 925 142 109
+                  +351 963 531 684
                 </a>
               </p>
               <hr />
@@ -51,7 +51,7 @@ const Footer = ({ linkTo }) => {
                 Developed by{' '}
                 <a
                   id="dev-by"
-                  href="https://palocriativo.netlify.app/"
+                  // href="https://palocriativo.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -63,10 +63,10 @@ const Footer = ({ linkTo }) => {
         </Row>
         <Row>
           <div className="footer-contacts-wrapper">
-            <a href="tel:+351925142109" className="col-xs-3">
+            <a href="tel:+351963531684" className="col-xs-3">
               <span className="fa fa-2x fa-mobile-phone"></span>
             </a>
-            <a href="https://wa.me/351925142109" data-action="share/whatsapp/share">
+            <a href="https://wa.me/351963531684" data-action="share/whatsapp/share">
               <span className="fa fa-2x fa-whatsapp"></span>
             </a>
             {/* <!--<a href="" className="col-xs-3">

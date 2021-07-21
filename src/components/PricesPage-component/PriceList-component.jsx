@@ -34,32 +34,37 @@ const PricesTabs = (entrance) => {
   //Price List of all Procedures
   const priceListMassage = [
     {
-      name: 'Therapeutic Massage',
+      name: 'Therapeutic Massage 60min',
       price60: '55',
       price80: '70',
     },
+    { name: 'Therapeutic Massage 80min' },
     {
-      name: 'Sports Deep Tissue Massage',
+      name: 'Sports Deep Tissue Massage 60min',
       price60: '55',
       price80: '70',
     },
+    { name: 'Sports Deep Tissue Massage 80min' },
     {
-      name: 'Relax Massage',
+      name: 'Relax Massage 60min',
       price60: '55',
       price80: '70',
     },
+    { name: 'Relax Massage 80min' },
     {
-      name: 'Massage for Couples',
+      name: 'Massage for Couples 60min',
       price60: '100',
       price80: '125',
     },
+    { name: 'Massage for Couples 80min' },
     {
-      name: 'Reflexology Massage',
+      name: 'Reflexology Massage 60min',
       price60: '55',
       price80: '70',
     },
+    { name: 'Reflexology Massage 80min' },
     {
-      name: 'Anti-Cellulite Massage',
+      name: 'Anti-Cellulite Massage 60min',
       price60: '55',
     },
   ];
@@ -240,7 +245,7 @@ const PricesTabs = (entrance) => {
 
   return (
     <>
-      <h6 style={{textAlign:"left"}}>*Choose section and fill up form request</h6>
+      <h6 style={{ textAlign: 'left' }}>*Choose section and fill up form request</h6>
       <Tabs id="controlled-tab" activeKey={key} onSelect={(k) => setKey(k)}>
         <Tab tabClassName="price-list-section-title" eventKey="massage" title="Massage">
           {key === 'massage' ? (

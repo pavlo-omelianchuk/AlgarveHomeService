@@ -2,8 +2,7 @@
   padding: 0 !important;
 }
 .main-form {
-
-  button[type="submit"] {
+  button[type='submit'] {
     display: inline-block;
     position: relative;
     padding: 1rem $default-font-size;
@@ -83,5 +82,53 @@ label {
   }
   @media (prefers-color-scheme: dark) {
     color: var(--red-300);
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.succes-PopUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: 2px solid $alfa-secondary-color;
+  border-radius: 5px;
+  transform: translateY(50%);
+  width: 270px;
+  height: 150px;
+  .cta-btn--popup.close {
+    border: 2px solid $secondary-color;
+    padding: 5px 10px;
+    width: 120px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border-radius: 5px;
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.1, 1.1);
+    }
   }
 }

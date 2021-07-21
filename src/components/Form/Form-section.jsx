@@ -7,6 +7,35 @@ import Date from './TableDatePicker-component';
 import emailjs from 'emailjs-com';
 import 'react-datepicker/dist/react-datepicker.css';
 
+const SuccesPopUp = () => {
+  return (
+    <>
+      <div id="succes-PopUp" class="modal">
+        <div class="succes-PopUp">
+          <p>Thank you for your Request! Our managers will contact you as soon as possible!</p>
+          <span
+            className="cta-btn cta-btn--popup close"
+          >
+            Great
+          </span>
+        </div>
+      </div>
+    </>
+  );
+};
+const TryAgainPopUp = () => {
+  return (
+    <>
+      <div id="error-popup'" class="modal">
+        <div class="succes-PopUp">
+          <p>Sorry Your request could not be send. Try again later.</p>
+          <span className="cta-btn cta-btn--popup close">Okay</span>
+        </div>
+      </div>
+    </>
+  );
+};
+
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
@@ -45,7 +74,7 @@ const TreatmentSelect = ({ label, ...props }) => {
     <>
       <label htmlFor={props.id || props.name}>{label}</label>
       <select {...field} {...props}></select>
-      {meta.touched && meta.error ? <div>{meta.error}</div> : null}
+      {meta.touched && meta.error ? <div className="error">{meta.error}</div> : null}
     </>
   );
 };
@@ -81,7 +110,7 @@ const SignupForm = ({
           clientsName: '',
           email: '',
           phoneNumber: '',
-          localization: '',
+          location: '',
           date: '',
           treatment: '',
           message: '',
@@ -94,7 +123,7 @@ const SignupForm = ({
           phoneNumber: Yup.string()
             .matches(phoneRegExp, 'Phone number is not valid')
             .required('Required'),
-          localization: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
+          location: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
           treatment: Yup.string().required('Required'),
           acceptedTerms: Yup.boolean()
             .required('Required')
@@ -102,23 +131,41 @@ const SignupForm = ({
         })}
         onSubmit={(values, actions) => {
           setTimeout(() => {
+            var btn = document.getElementById('submit');
+            var modal = document.getElementById('succes-PopUp');
+
+            btn.onclick = function () {
+              modal.style.display = 'block';
+            };
+
+            var span = document.getElementsByClassName('close')[0];
+            modal.style.display = 'block';
+
+            span.onclick = function () {
+              modal.style.display = 'none';
+            };
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = 'none';
+              }
+            };
             // alert(JSON.stringify(values, null, 2)); //stringify resets localizaton and returns basic time(UTM)
             emailjs
               .send(
-                'gmail',
-                'template_3ezn2x6',
+                'ahsmb-gmail',
+                'template_fhul34e',
                 {
                   clientsName: values.clientsName,
                   email: values.email,
                   phoneNumber: values.phoneNumber,
-                  localization: values.localization,
+                  location: values.location,
                   date: values.date.toLocaleString(),
                   // acceptedTerms: values.acceptedTerms,
                   treatment: values.treatment,
                   message: values.message,
                 },
-                'user_GKoTeAyQd5Wl26g6VbXaP'
-              ) //danylo
+                'user_sYM3nz1Wl6wCbCvu7XXBg'
+              ) //danylo new
               // .send(
               //   'service_4k0oxcm',
               //   'template_jjonxy4',
@@ -139,6 +186,19 @@ const SignupForm = ({
                 },
                 (error) => {
                   console.log(error.text);
+                  var modal = document.getElementById('error-popup');
+
+                  var span = document.getElementsByClassName('close')[0];
+                  modal.style.display = 'block';
+
+                  span.onclick = function () {
+                    modal.style.display = 'none';
+                  };
+                  window.onclick = function (event) {
+                    if (event.target == modal) {
+                      modal.style.display = 'none';
+                    }
+                  };
                 }
               );
             actions.setSubmitting(false);
@@ -147,7 +207,7 @@ const SignupForm = ({
                 clientsName: '',
                 email: '',
                 phoneNumber: '',
-                localization: '',
+                location: '',
                 date: '',
                 treatment: '',
                 message: '',
@@ -163,19 +223,19 @@ const SignupForm = ({
             label="Email Address"
             name="email"
             type="email"
-            placeholder="info@algarvehomemassageandbeauty.com"
+            placeholder="info.ahsmb@gmail.com"
           />
           <PhoneNumberInput
             label="Phone Number"
             name="phoneNumber"
             type="tel"
-            placeholder="+351 916 916 916"
+            placeholder="+351 963 531 684"
           />
           <PhoneNumberInput
-            label="Localization"
-            name="localization"
+            label="Location"
+            name="location"
             type="text"
-            placeholder="Enter your Localization/City"
+            placeholder="Enter your Location/Area"
           />
           <Date name="date" />
           <TreatmentSelect label="Choose treatment" name="treatment">
@@ -193,10 +253,13 @@ const SignupForm = ({
           <MessageInput label="Message Input" name="message" type="text" placeholder="Message" />
           <MyCheckbox name="acceptedTerms">I accept the terms and conditions</MyCheckbox>
 
-          <button type="submit">Submit</button>
-          <div id="output"></div>
+          <button id="submit" type="submit">
+            Submit
+          </button>
         </Form>
       </Formik>
+      <TryAgainPopUp />
+      <SuccesPopUp />
     </>
   );
 };
