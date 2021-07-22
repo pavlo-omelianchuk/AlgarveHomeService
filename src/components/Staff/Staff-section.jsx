@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
 import Title from '../Titles/Title-component';
-import pinkComponent from '../../images/component3-pink.png';
+import LogoImg from '../Image/LogoImg';
 
 import StaffMaker from './StaffCreator-component';
 
@@ -18,7 +18,7 @@ const Staff = () => (
             <Title title="MEET OUR EXPERTS" />
           </Fade>
           <Fade big duration={4000}>
-            <img src={pinkComponent} alt="pink component" />
+            <LogoImg alt="Logo" filename="component3-pink.png" />
           </Fade>
         </Col>
       </Row>

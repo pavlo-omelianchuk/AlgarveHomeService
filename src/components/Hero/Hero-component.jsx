@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-reveal';
-import pinkComponent from '../../images/component2-pink.png';
+import LogoImg from '../Image/LogoImg';
 
 const Hero = () => (
   <>
     <section id="hero" className="jumbotron">
       <Container>
         <Fade big duration={4000}>
-          <img src={pinkComponent} alt="pink component" />
+          <LogoImg alt="Logo" filename="component2-pink.png" />
         </Fade>
         <Fade bottom distance="30px">
           <h3 className="hero-overtitle">Massage & Beauty therapy</h3>

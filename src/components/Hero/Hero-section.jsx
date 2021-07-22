@@ -26,7 +26,7 @@ const HeroDesktop = () => {
 };
 const HeroMobile = () => {
   return (
-    <div className="mobile">
+    <div  className="mobile">
       <Container fluid>
         <Row style={{ position: 'relative' }}>
           <StyledBackground
@@ -43,10 +43,10 @@ const HeroMobile = () => {
 
 const HeroSection = () => {
   return (
-    <>
+    <div id="home">
       <HeroDesktop />
       <HeroMobile />
-    </>
+    </div>
   );
 };
 
