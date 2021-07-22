@@ -9,11 +9,16 @@ const HeroDesktop = () => {
     <div className="desktop">
       <Container fluid>
         <Row style={{ position: 'relative' }}>
-          <div id="home-desktop">
-            <VideoBckg>
-              <Hero />
-            </VideoBckg>
-          </div>
+          <StyledBackground
+            className="hero-bg"
+            filename="bgHeroPoster.jpg"
+            alt="Woman getting massage"
+            bgContent={
+              <VideoBckg>
+                <Hero />
+              </VideoBckg>
+            }
+          />
         </Row>
       </Container>
     </div>
