@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import BackgroundImage from 'gatsby-background-image';
 
-const BackgroundSection = ({ className, filename, alt, bgContent }) => {
+const BackgroundSection = ({id, className, filename, alt, bgContent }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -32,7 +32,7 @@ const BackgroundSection = ({ className, filename, alt, bgContent }) => {
   const backgroundImageFluid = image.node.childImageSharp.fluid;
 
   return (
-    <BackgroundImage Tag="div" className={className} fluid={backgroundImageFluid} alt={alt}>
+    <BackgroundImage Tag="div" id={id} className={className} fluid={backgroundImageFluid} alt={alt}>
       <div className="background-image-children">{bgContent}</div>
     </BackgroundImage>
   );

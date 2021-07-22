@@ -1,4 +1,5 @@
-.hero-bg {
+.hero-bg,
+#home-desktop {
   min-height: 100%;
   height: 100vh;
   display: flex;
@@ -13,6 +14,7 @@
   bottom: 0;
   right: 0;
   z-index: 0;
+  position: relative;
   // background: url('../../src/images/pexels.jpg');
   // background-position: center;241901235
   // background-size: cover;
@@ -126,16 +128,27 @@
     }
   }
 }
-// /hero-overlay
-#home {
-  z-index: 0;
-  position: absolute;
+// #home-desktop{
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+.video-container {
+  display: flex;
+  align-items: flex-end;
+  background-color: #000;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
+  right: 0;
+  background: url('../../src/images/bgHeroPoster.jpg');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  .hero-video {
+    z-index: 0;
+    overflow: hidden;
+  }
 }

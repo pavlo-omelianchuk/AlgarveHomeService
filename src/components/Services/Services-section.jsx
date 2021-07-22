@@ -26,7 +26,7 @@ const servicesArray = [
     colClassName: 'services-row__col desktop',
     filename: 'bgServiceMicropigmentation',
     overTitle: 'Eyebrows beauty',
-    title: 'MICRO- PIGMENTATION',
+    title: 'MICRO - PIGMENTATION',
   },
   {
     alt: 'Eyebrows after micropigmentation',
