@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@loadable/component": "^5.15.0",
     "@popperjs/core": "^2.9.2",
     "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^1.12.0",

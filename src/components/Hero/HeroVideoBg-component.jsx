@@ -1,10 +1,7 @@
 import React from 'react';
 import clip from '../../video/production ID_3998263.mp4';
-// import Poster from '../../video/bgHeroPoster.jpg';
 
-//poster={Poster}
-
-const VideoBckg = ({ children }) => {
+const VideoBg = ({ children }) => {
   return (
     <>
       <div className='video-container'>
@@ -18,5 +15,4 @@ const VideoBckg = ({ children }) => {
   );
 };
 
-export default VideoBckg;
-
+export default VideoBg;

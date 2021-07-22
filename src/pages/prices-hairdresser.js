@@ -4,8 +4,10 @@ import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcome-section';
-import PriceList from '../components/PricesPage-component/PriceList-component';
 import '../style/main.scss';
+import loadable from '@loadable/component';
+
+const PriceList = loadable(() => import('../components/PricesPage-component/PriceList-component'));
 
 const PricesPage = () => {
   const { title, lang, description } = headData;
