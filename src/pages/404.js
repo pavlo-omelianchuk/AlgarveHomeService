@@ -1,12 +1,14 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import StyledBackground from '../components/Image/HeroImg';
 import { headData } from '../mock/data';
+import StyledBackground from '../components/Image/HeroImg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
+
+
 
 const PageNotFound = () => {
   const { lang } = headData;

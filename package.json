@@ -1,7 +1,7 @@
 {
   "name": "mobile-beauty-algarve",
   "private": true,
-  "description": "Local services. Massage at home",
+  "description": "Algarve home service massage and beauty. Massage at home in Faro, in Albufeira, in Quarteira, in Armacao de Pera, in Portimao, in Lagos, in Budens, in Figueira, in Sagres.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -53,6 +53,7 @@
     "react-datepicker": "^4.1.1",
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-multi-carousel": "^2.6.3",

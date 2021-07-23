@@ -20,14 +20,11 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={1000} delay={1000} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    You are welcome to call but you can also book a massage online! Please feel free
-                    to reach out
+                    You can book a massage or beauty treatment online, or if you have any questions,
+                    feel free to call us.
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a
-                      className="cta-btn cta-btn--pres"
-                      href="https://api.whatsapp.com/send?phone=+351 925 142 109"
-                    >
+                    <a className="cta-btn cta-btn--pres" href="https://wa.me/351963531684">
                       <i className="fa fa-whatsapp" aria-hidden="true" /> call now
                     </a>
                   </span>
@@ -45,8 +42,10 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={1000} delay={1000} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Book your massage online and view orthopedic massage therapy pricing at our
-                    midtown
+                    Our Massage and Beauty Mobile services are available over all the Algarve. We
+                    will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
+                    Tavira and other nearby areas. We will make your home more relaxing with best
+                    masseurs. No travel fees added!
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="/prices-massage">
@@ -73,8 +72,10 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={1000} delay={1000} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Book your massage online and view orthopedic massage therapy pricing at our
-                    midtown
+                    Our Massage and Beauty Mobile services are available over all the Algarve. We
+                    will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
+                    Tavira and other nearby areas. We will make your home more relaxing with best
+                    masseurs. No travel fees added!
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="/prices-massage/#request-form">
@@ -98,8 +99,8 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={1000} delay={1000} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Each one of our staff members are licensed massage therapists who have gone
-                    above and beyond
+                    Each one of our staff members are licensed and experienced massage therapists or
+                    beauty professional, with many years of experience.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="#staff">

@@ -15,7 +15,7 @@ const Staff = () => (
             <h3 className="staff-overtitle">Our Staff</h3>
           </Fade>
           <Fade bottom duration={1000} distanse="800px">
-            <Title title="MEET OUR EXPERTS" />
+            <Title title="MEET OUR SPECIALISTS" />
           </Fade>
           <Fade big duration={4000}>
             <LogoImg alt="Logo" filename="component3-pink.png" />
