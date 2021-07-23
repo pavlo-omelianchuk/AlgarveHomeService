@@ -7,14 +7,6 @@ import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcome-se
 import PriceList from '../components/PricesPage-component/PriceList-component';
 import '../style/main.scss';
 
-import TagManager from 'react-gtm-module';
-
-const tagManagerArgs = {
-  gtmId: 'GTM-PTJPM4N',
-};
-
-TagManager.initialize(tagManagerArgs);
-
 const PricesPage = () => {
   const { title, lang, description } = headData;
 

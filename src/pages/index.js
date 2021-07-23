@@ -5,14 +5,6 @@ import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-import TagManager from 'react-gtm-module';
-
-const tagManagerArgs = {
-  gtmId: 'GTM-PTJPM4N',
-};
-
-TagManager.initialize(tagManagerArgs);
-
 const IndexPage = () => {
   const { title, lang, description } = headData;
 

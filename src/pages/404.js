@@ -8,8 +8,6 @@ import StyledBackground from '../components/Image/HeroImg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-
-
 const PageNotFound = () => {
   const { lang } = headData;
 
