@@ -9,7 +9,7 @@ const Presentation = () => (
     <Container>
       <Row className="presentation-row">
         <Col className="presentation-row__col" sm={4}>
-          <Fade left duration={1000} delay={100} distance="300px">
+          <Fade left duration={800} distance="300px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgContact.jpg" alt="Woman getting beauty procedure" />
             </div>
@@ -18,7 +18,7 @@ const Presentation = () => (
                 <Fade cascade>
                   <TitleSmall title="CONTACT US" />
                 </Fade>
-                <Fade bottom duration={1000} delay={1000} distance="30px">
+                <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
                     You can book a massage or beauty treatment online, or if you have any questions,
                     feel free to call us.
@@ -34,13 +34,13 @@ const Presentation = () => (
           </Fade>
         </Col>
         <Col className="presentation-row__col desktop" sm={4}>
-          <Fade bottom duration={1000} delay={100} distance="200px">
+          <Fade bottom duration={800} distance="200px">
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
                   <TitleSmall title="BOOK MASSAGE" />
                 </Fade>
-                <Fade bottom duration={1000} delay={1000} distance="30px">
+                <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
                     Our Massage and Beauty Mobile services are available over all the Algarve. We
                     will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
@@ -61,7 +61,7 @@ const Presentation = () => (
           </Fade>
         </Col>
         <Col className="presentation-row__col mobile" sm={4}>
-          <Fade bottom duration={1000} delay={100} distance="200px">
+          <Fade bottom duration={800} d distance="200px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgMkAppointment.jpg" alt="Woman getting massage" />
             </div>
@@ -70,7 +70,7 @@ const Presentation = () => (
                 <Fade cascade>
                   <TitleSmall title="BOOK MASSAGE" />
                 </Fade>
-                <Fade bottom duration={1000} delay={1000} distance="30px">
+                <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
                     Our Massage and Beauty Mobile services are available over all the Algarve. We
                     will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
@@ -88,7 +88,7 @@ const Presentation = () => (
           </Fade>
         </Col>
         <Col className="presentation-row__col" sm={4}>
-          <Fade right duration={1000} delay={100} distance="300px">
+          <Fade right duration={800} distance="300px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgOurSpecialists.jpg" alt="Woman getting neck massage" />
             </div>
@@ -97,7 +97,7 @@ const Presentation = () => (
                 <Fade cascade>
                   <TitleSmall title="OUR SPECIALISTS" />
                 </Fade>
-                <Fade bottom duration={1000} delay={1000} distance="30px">
+                <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
                     Each one of our staff members are licensed and experienced massage therapists or
                     beauty professional, with many years of experience.

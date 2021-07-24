@@ -6,7 +6,7 @@ import StyledMultiBackground from '../Image/TestemonialsBackgroundImage';
 const Testemonials = () => (
   <section id="testemonials">
     <Container id="testemonials-fluid" fluid>
-      <Fade big duration={4000}>
+      <Fade big duration={1500}>
         <StyledMultiBackground />
       </Fade>
     </Container>

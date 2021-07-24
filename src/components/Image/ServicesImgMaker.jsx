@@ -38,7 +38,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, colClassName, linkTo }) 
                 <div id="service__overlay" />
                 <a style={{ textTransform: 'initial' }} href={linkTo}>
                   <div className="parallax__inside">
-                    <Fade bottom duration={1000} distanse="500px">
+                    <Fade bottom duration={800} distanse="500px">
                       <h3 className="service-overtitle">{overTitle}</h3>
                     </Fade>
                     <h2 className="service-title-small">{title}</h2>

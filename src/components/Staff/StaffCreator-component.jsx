@@ -86,7 +86,7 @@ const StaffCarousel = () => {
               <ProjectImg filename={staff.filename} alt={staff.alt} />
             </div>
             <br />
-            <Fade bottom duration={1000} delay={100} distance="300px">
+            <Fade bottom duration={800} distance="300px">
               <TitleSmall title={staff.title} sub={staff.sub} />
             </Fade>
           </Fade>
