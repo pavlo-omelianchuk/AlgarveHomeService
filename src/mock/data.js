@@ -18,10 +18,10 @@ export const headerData = {
 
 // HEAD DATA
 export const headData = {
-  title: 'Health Massage & Beauty Algarve', // e.g: 'Name | Developer'
-  lang: 'pt', // e.g: en, es, fr, jp
+  title: 'Health Massage & Beauty Algarve',
+  lang: 'en',
   description:
-    'Algarve Home Service, Massage and Beauty. Mobile massage service over all the Algarve. Our Massage and Beauty services are available in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão, Tavira and surrounding areas. You can relax in the comfort of your home with great masseurs in the Algarve. Find and book your mobile massage therapist near you. For health purposes only.', // e.g: Welcome to my website
+    'Mobile Massage and Beauty services available in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão, Tavira and over all the Algarve. We will make your home more relaxing with best Masseurs and Beauticians.',
 };
 
 // HERO DATA

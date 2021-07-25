@@ -4,8 +4,6 @@ import { Link } from 'react-scroll';
 import LogoImg from '../Image/LogoImg';
 
 const Footer = ({ linkTo }) => {
-
-
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -51,7 +49,7 @@ const Footer = ({ linkTo }) => {
                 Developed by{' '}
                 <a
                   id="dev-by"
-                  // href="https://palocriativo.netlify.app/"
+                  href="https://www.linkedin.com/in/pavlo-justcodeit/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -20,8 +20,8 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    You can book a massage or beauty treatment online, or if you have any questions,
-                    feel free to call us.
+                    To have Massage or Beauty treatment at home any where in the Algarve you can make an appointment
+                    online or if you have any questions, feel free to call us.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="https://wa.me/351963531684">
@@ -42,10 +42,10 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Our Massage and Beauty Mobile services are available over all the Algarve. We
-                    will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
-                    Tavira and other nearby areas. We will make your home more relaxing with best
-                    masseurs. No travel fees added!
+                    Mobile Massage and Beauty services available in Sagres, Lagos, Portimão,
+                    Albufeira, Quarteira, Faro, Olhão, Tavira and over all the Algarve. We will make
+                    your home more relaxing with best Masseurs and Beauticians. No travel fees
+                    added!
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="/prices-massage">
