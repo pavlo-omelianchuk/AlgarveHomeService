@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import LogoImg from '../Image/LogoImg';
 
-const Footer = ({ linkTo }) => {
+const Footer = ({ linkTo, props }) => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -11,12 +11,16 @@ const Footer = ({ linkTo }) => {
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
+                Our contacts:
+                <br />
+                <a href="mailto:info.ahsmb@gmail.com">
+                  <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
+                </a>
                 <a href="https://api.whatsapp.com/send?phone=+351 963 531 684">
                   <i className="fa fa-whatsapp" aria-hidden="true"></i>
                   +351 963 531 684
                 </a>
               </p>
-              <hr />
             </div>
             <div>
               <p className="footer__text">
@@ -38,11 +42,27 @@ const Footer = ({ linkTo }) => {
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
-                <a href="mailto:info.ahsmb@gmail.com">
-                  <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
-                </a>
+                Share with Friends:
+                <br />
+                <br />
+                <span id="share-buttons">
+                  <a
+                    href="http://www.facebook.com/sharer.php?u=https://www.algarvehomemassageandbeauty.com/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.algarvehomemassageandbeauty.com/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" onClick={() => { window.print() }}>
+                    <i className="fa fa-2x fa-print" aria-hidden="true"></i>
+                  </a>
+                </span>
               </p>
-              <hr />
             </div>
             <div>
               <p className="footer__text">

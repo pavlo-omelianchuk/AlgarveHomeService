@@ -10,8 +10,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 const SuccesPopUp = () => {
   return (
     <>
-      <div id="succes-PopUp" class="modal">
-        <div class="succes-PopUp">
+      <div id="succes-PopUp" className="modal">
+        <div className="succes-PopUp">
           <p>Thank you for your Request! Our managers will contact you as soon as possible!</p>
           <span
             className="cta-btn cta-btn--popup close"
@@ -26,8 +26,8 @@ const SuccesPopUp = () => {
 const TryAgainPopUp = () => {
   return (
     <>
-      <div id="error-popup'" class="modal">
-        <div class="succes-PopUp">
+      <div id="error-popup'" className="modal">
+        <div className="succes-PopUp">
           <p>Sorry Your request could not be send. Try again later.</p>
           <span className="cta-btn cta-btn--popup close">Okay</span>
         </div>
@@ -138,7 +138,7 @@ const SignupForm = ({
               modal.style.display = 'block';
             };
 
-            var span = document.getElementsByClassName('close')[0];
+            var span = document.getElementsByclassName('close')[0];
             modal.style.display = 'block';
 
             span.onclick = function () {
@@ -188,7 +188,7 @@ const SignupForm = ({
                   console.log(error.text);
                   var modal = document.getElementById('error-popup');
 
-                  var span = document.getElementsByClassName('close')[0];
+                  var span = document.getElementsByclassName('close')[0];
                   modal.style.display = 'block';
 
                   span.onclick = function () {

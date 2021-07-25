@@ -33,8 +33,8 @@ const Header = () => {
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
-      <LogoImg link={logoHREF} alt="Logo" filename="logoAMMBTHeader.png" />
-      <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand>
+      <LogoImg link={logoHREF} alt="Logo" filename="logoAMMBTHeaderWithText.png" />
+      {/* <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
