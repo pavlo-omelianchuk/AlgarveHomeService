@@ -20,8 +20,8 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    To have Massage or Beauty treatment at home any where in the Algarve you can make an appointment
-                    online or if you have any questions, feel free to call us.
+                    To have Massage or Beauty treatment at home any where in the Algarve you can
+                    make an appointment online or if you have any questions, feel free to call us.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <a className="cta-btn cta-btn--pres" href="https://wa.me/351963531684">

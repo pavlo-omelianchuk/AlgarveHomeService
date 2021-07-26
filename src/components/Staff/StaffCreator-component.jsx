@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
 import TitleSmall from '../Titles/TitleSmall-component';
-import ProjectImg from '../Image/ProjectImg';
+import StaffImg from '../Image/StaffImg';
 import 'react-multi-carousel/lib/styles.css';
 
 const responsiveCarousel = {
@@ -57,44 +57,40 @@ const staffArray = [
   },
 ];
 
-const StaffCarousel = () => {
-  return (
-    <Carousel
-      swipeable
-      draggable={false}
-      showDots={true}
-      responsive={responsiveCarousel}
-      // ssr={true} // means to render carousel on server-side.
-      infinite
-      autoPlay={true}
-      autoPlaySpeed={4000}
-      // keyBoardControl={true}
-      // customTransition="all 5"
-      // transitionDuration={5000}
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={['tablet', 'mobile']}
-      // deviceType={this.props.deviceType}
-      dotListClass="custom-dot-list-style"
-      itemClass="react-carousel-item"
-      // renderButtonGroupOutside={true}
-      // centerMode={true}
-    >
-      {staffArray.map((staff) => {
-        return (
-          <Fade key={nanoid()}>
-            <div className="staff-wrapper__image">
-              <ProjectImg filename={staff.filename} alt={staff.alt} />
-            </div>
-            <br />
-            <Fade bottom duration={800} distance="300px">
-              <TitleSmall title={staff.title} sub={staff.sub} />
-            </Fade>
-          </Fade>
-        );
-      })}
-    </Carousel>
-  );
-};
+const StaffCarousel = () => (
+  <Carousel
+    swipeable
+    draggable={false}
+    showDots
+    responsive={responsiveCarousel}
+    // ssr={true} // means to render carousel on server-side.
+    infinite
+    autoPlay
+    autoPlaySpeed={4000}
+    // keyBoardControl={true}
+    // customTransition="all 5"
+    // transitionDuration={5000}
+    containerClass="carousel-container"
+    removeArrowOnDeviceType={['tablet', 'mobile']}
+    // deviceType={this.props.deviceType}
+    dotListClass="custom-dot-list-style"
+    itemClass="react-carousel-item"
+    // renderButtonGroupOutside={true}
+    // centerMode={true}
+  >
+    {staffArray.map((staff) => (
+      <Fade key={nanoid()}>
+        <div className="staff-wrapper__image">
+          <StaffImg filename={staff.filename} alt={staff.alt} />
+        </div>
+        <br />
+        <Fade bottom duration={800} distance="300px">
+          <TitleSmall title={staff.title} sub={staff.sub} />
+        </Fade>
+      </Fade>
+    ))}
+  </Carousel>
+);
 
 export default StaffCarousel;
 

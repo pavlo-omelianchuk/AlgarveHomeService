@@ -19,7 +19,6 @@ const Header = () => {
   ];
   const [
     logoHREF,
-    brandName,
     linkURL1,
     linkText1,
     linkURL2,
@@ -33,8 +32,7 @@ const Header = () => {
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
-      <LogoImg link={logoHREF} alt="Logo" filename="logoAMMBTHeaderWithText.png" />
-      {/* <Navbar.Brand href={logoHREF}>{brandName}</Navbar.Brand> */}
+      <LogoImg link={logoHREF} alt="Logo" filename="logoAMMBTHeaderWithTextNew.png" />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
