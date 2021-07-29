@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#f75d3f`,
         display: `standalone`,
-        icon: 'src/images/logoAMMBTFavicon.png',
+        icon: 'src/images/logoAMMBTFooter.png',
       },
     },
     {

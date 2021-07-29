@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-parallax';
 import { Col } from 'react-bootstrap';
 
-const ServicesImg = ({ filename, alt, overTitle, title, colClassName, linkTo }) => (
+const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName, linkTo }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -33,7 +33,12 @@ const ServicesImg = ({ filename, alt, overTitle, title, colClassName, linkTo }) 
       return (
         <Col className={colClassName} lg={3} md={12}>
           <Fade duration={500} distance="100px">
-            <Parallax bgImageAlt={alt} className="parallax-img" bgImage={imageFluid.src} strength={-100}>
+            <Parallax
+              bgImageAlt={alt}
+              className="parallax-img"
+              bgImage={imageFluid.src}
+              strength={-100}
+            >
               <div className="parallax">
                 <div id="service__overlay" />
                 <a style={{ textTransform: 'initial' }} href={linkTo}>
@@ -42,6 +47,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, colClassName, linkTo }) 
                       <h3 className="service-overtitle">{overTitle}</h3>
                     </Fade>
                     <h2 className="service-title-small">{title}</h2>
+                    <span className="service-under-title"> from {fromPrice}</span>
                   </div>
                 </a>
               </div>

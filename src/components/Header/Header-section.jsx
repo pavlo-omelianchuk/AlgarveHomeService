@@ -19,6 +19,7 @@ const Header = () => {
   ];
   const [
     logoHREF,
+    brandName,
     linkURL1,
     linkText1,
     linkURL2,

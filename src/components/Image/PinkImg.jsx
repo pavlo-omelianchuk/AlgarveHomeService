@@ -30,7 +30,7 @@ const PinkImg = ({ filename, alt }) => (
       const imageFixed = image.node.childImageSharp.fixed;
       return (
         <>
-          <Img alt={alt} fixed={imageFixed} />
+          <Img width="250px" height="20px" alt={alt} fixed={imageFixed} />
         </>
       );
     }}

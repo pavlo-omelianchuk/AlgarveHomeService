@@ -2,7 +2,7 @@
   .staff-row-title {
     .staff-overtitle {
       font-family: $font-haviland;
-      font-size: 5rem;
+      font-size: 4rem;
       margin-bottom: 2rem;
       color: $secondary-color;
       @include respond(tab-land) {
@@ -22,7 +22,7 @@
     .section-title {
       color: #323232;
       font-family: $font-ralewey;
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 400;
       text-transform: uppercase;
       line-height: 1.2em;

@@ -1,14 +1,14 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
-import TitleSmall from '../Titles/TitleSmall-component';
+import PresentationTitleSmall from './Presentation-TitleSmall-component';
 import ProjectImg from '../Image/ProjectImg';
 
 const Presentation = () => (
   <section id="presentation">
     <Container>
       <Row className="presentation-row">
-        <Col className="presentation-row__col" sm={4}>
+        <Col className="presentation-row__col" md={4}>
           <Fade left duration={800} distance="300px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgContact.jpg" alt="Woman getting beauty procedure" />
@@ -16,7 +16,7 @@ const Presentation = () => (
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="CONTACT US" />
+                  <PresentationTitleSmall title="CONTACT US" />
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
@@ -33,12 +33,12 @@ const Presentation = () => (
             </div>
           </Fade>
         </Col>
-        <Col className="presentation-row__col desktop" sm={4}>
+        <Col className="presentation-row__col desktop" md={4}>
           <Fade bottom duration={800} distance="200px">
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="BOOK MASSAGE" />
+                  <PresentationTitleSmall title="BOOK MASSAGE" />
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
@@ -60,7 +60,7 @@ const Presentation = () => (
             </div>
           </Fade>
         </Col>
-        <Col className="presentation-row__col mobile" sm={4}>
+        <Col className="presentation-row__col mobile" md={4}>
           <Fade bottom duration={800} d distance="200px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgMkAppointment.jpg" alt="Woman getting massage" />
@@ -68,7 +68,7 @@ const Presentation = () => (
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="BOOK MASSAGE" />
+                  <PresentationTitleSmall title="BOOK MASSAGE" />
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
@@ -87,7 +87,7 @@ const Presentation = () => (
             </div>
           </Fade>
         </Col>
-        <Col className="presentation-row__col" sm={4}>
+        <Col className="presentation-row__col" md={4}>
           <Fade right duration={800} distance="300px">
             <div className="presentation-wrapper__image">
               <ProjectImg filename="presImgOurSpecialists.jpg" alt="Woman getting neck massage" />
@@ -95,7 +95,7 @@ const Presentation = () => (
             <div className="presentation-wrapper__info-container">
               <div className="presentation-wrapper__info">
                 <Fade cascade>
-                  <TitleSmall title="OUR SPECIALISTS" />
+                  <PresentationTitleSmall title="OUR SPECIALISTS" />
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">

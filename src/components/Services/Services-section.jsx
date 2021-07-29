@@ -11,6 +11,7 @@ const servicesArray = [
     filename: 'bgServiceMassage',
     overTitle: 'Manual & excercise therapy',
     title: 'MASSAGE THERAPY',
+    fromPrice:"55 euro",
   },
   {
     alt: 'beauty face mask',
@@ -19,30 +20,33 @@ const servicesArray = [
     filename: 'bgServiceBeauty',
     overTitle: 'Massage for rest & relaxation',
     title: 'BEAUTY THERAPY',
+    fromPrice:"55 euro",
   },
   {
     alt: 'Eyebrows after micropigmentation',
     linkTo: '/prices-micropigmentation',
-    colClassName: 'services-row__col desktop',
+    colClassName: 'services-row__col',
     filename: 'bgServiceMicropigmentation',
     overTitle: 'Eyebrows beauty',
     title: 'MICRO PIGMENTATION',
+    fromPrice:"250 euro",
   },
-  {
-    alt: 'Eyebrows after micropigmentation',
-    linkTo: '/prices-micropigmentation',
-    colClassName: 'services-row__col mobile',
-    filename: 'bgServiceMicropigmentation',
-    overTitle: 'Eyebrows beauty',
-    title: 'MICROPIGMENTATION',
-  },
-  {
-    alt: 'Hair styling',
-    linkTo: '/prices-hairdresser',
-    colClassName: 'services-row__col',
-    filename: 'bgServiceHairdresser',
-    overTitle: 'Hair Style',
-    title: 'HAIRDRESSER',
+  // {
+    //   alt: 'Eyebrows after micropigmentation',
+    //   linkTo: '/prices-micropigmentation',
+    //   colClassName: 'services-row__col mobile',
+    //   filename: 'bgServiceMicropigmentation',
+    //   overTitle: 'Eyebrows beauty',
+    //   title: 'MICROPIGMENTATION',
+    // },
+    {
+      alt: 'Hair styling',
+      linkTo: '/prices-hairdresser',
+      colClassName: 'services-row__col',
+      filename: 'bgServiceHairdresser',
+      overTitle: 'Hair Style',
+      title: 'HAIRDRESSER',
+      fromPrice:"35 euro",
   },
 ];
 
@@ -61,6 +65,7 @@ const Services = () => {
                 filename={service.filename}
                 overTitle={service.overTitle}
                 title={service.title}
+                fromPrice={service.fromPrice}
               />
             );
           })}

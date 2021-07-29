@@ -13,6 +13,8 @@
           margin-bottom: 1rem;
         }
         .section-title-small {
+          font-family: $font-ralewey;
+          font-size: 4rem;
           @include respond(tab-land) {
             font-size: 2rem;
           }
