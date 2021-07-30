@@ -25,7 +25,7 @@ const heroServiceArray = [
   {
     title: 'Proffesional massage at HOME',
     titleSpecial: 'from Danylo Hips',
-    readMoreLink: '',
+    readMoreLink: '/blog',
     makeAnAppointmentLink: '/prices-massage/',
   },
   {
@@ -59,7 +59,7 @@ const HeroCarousell = () => (
     autoPlay
     autoPlaySpeed={4000}
     keyBoardControl={true}
-    customTransition="all 5"
+    customTransition="all ease-in-out"
     // transitionDuration={5000}
     containerClass="carousel-container"
     arrows={false}
@@ -76,13 +76,15 @@ const HeroCarousell = () => (
           <h2 className="hero-title hero-title-name text-color-main">{service.titleSpecial}</h2>
         </Fade>
         <div className="hero-buttons-wrapper">
-          <Zoom duration={1000} delay={500}>
-            <p className="hero-cta">
-              <span className="cta-btn cta-btn--hero">
-                <a href={service.readMoreLink}>Read more</a>
-              </span>
-            </p>
-          </Zoom>
+          {service.readMoreLink && (
+            <Zoom duration={1000} delay={500}>
+              <p className="hero-cta">
+                <span className="cta-btn cta-btn--hero">
+                  <a href={service.readMoreLink}>Read more</a>
+                </span>
+              </p>
+            </Zoom>
+          )}
           <Zoom duration={1000} delay={500}>
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">

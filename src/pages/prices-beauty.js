@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
-import PricesWelcomeBg from '../components/PricesPage-component/PricesWelcome-section';
-import PriceList from '../components/PricesPage-component/PriceList-component';
+import PageWelcomeBg from '../layout/PageWelcomeBg-section';
+import PriceList from '../components/PricesPage-components/PriceList-component';
 import '../style/main.scss';
 
 const PricesPage = () => {
@@ -24,7 +24,7 @@ const PricesPage = () => {
       </Helmet>
       <PageWrapepr footerLinkTo="best-offers">
         <>
-          <PricesWelcomeBg />
+          <PageWelcomeBg overTitle="Best Offers" title="Algarve Home Massage and Beauty" />
           <Container className="p-5">
             <section id="price-list">
               <PriceList entrance="beauty" />

@@ -1,11 +1,13 @@
+process.noDeprecation = true; // https://github.com/webpack/webpack/issues/6568
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,6 +25,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    'gatsby-plugin-catch-links',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
       },
@@ -36,7 +47,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#f75d3f`,
         display: `standalone`,
-        icon: 'src/images/logoAMMBTFooter.png',
+        icon: 'src/images/logoAMMBTFaviconBlackAndWhite.png',
       },
     },
     {

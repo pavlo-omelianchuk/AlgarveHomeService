@@ -10,6 +10,8 @@ const Header = () => {
     'Home',
     '/#services',
     'Services',
+    '/blog',
+    'Blog',
     '/#testemonials',
     'Testemonials',
     '/prices-massage',
@@ -30,6 +32,8 @@ const Header = () => {
     linkText4,
     linkURL5,
     linkText5,
+    linkURL6,
+    linkText6,
   ] = header;
   return (
     <Navbar expand="lg" fixed="top">
@@ -49,7 +53,10 @@ const Header = () => {
           <Nav.Link href={linkURL4} className="px-4">
             {linkText4}
           </Nav.Link>
-          <Nav.Link href={linkURL5}>{linkText5}</Nav.Link>
+          <Nav.Link href={linkURL5} className="px-4">
+            {linkText5}
+          </Nav.Link>
+          <Nav.Link href={linkURL6}>{linkText6}</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

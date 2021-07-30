@@ -12,7 +12,7 @@ const MultiBackground = ({ className }) => {
       query {
         stoneMassage: file(relativePath: { eq: "bgTestemonials.jpg" }) {
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 50) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
-import PricesTableTitle from '../PricesPage-component/PricesTableTitle-component';
+import PricesTableTitle from '../../layout/PageWelcomeBgTitle-component';
 import Date from './TableDatePicker-component';
 import emailjs from 'emailjs-com';
 import 'react-datepicker/dist/react-datepicker.css';

@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
 import TestemonialImg from '../Image/TestemonialImg';
-import pinkComponent from '../../images/component3-pink.png';
+import PinkImg from '../Image/PinkImg';
 
 const TestemonialsInfoAll = ({ overTitle, title, message, img, alt, name }) => (
   <Fade bottom duration={1000} distance="500px">
@@ -10,7 +10,7 @@ const TestemonialsInfoAll = ({ overTitle, title, message, img, alt, name }) => (
       <div>
         <h3 className="testemonials-overtitle">{overTitle}</h3>
         <h3 className="section-title-small">{title}</h3>
-        <img src={pinkComponent} alt="pink component" />
+        <PinkImg alt="Logo" filename="component3-pink.png" />
       </div>
       <br />
       <div>
