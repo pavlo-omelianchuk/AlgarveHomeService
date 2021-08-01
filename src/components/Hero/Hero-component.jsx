@@ -9,12 +9,11 @@ const Hero = () => (
       <div
         style={{ position: 'relative', maxWidth: '60vw', marginLeft: 'auto', marginRight: 'auto' }}
       >
-        <span className="absolute-algarve">Algarve</span>
         <Fade big duration={1500}>
           <PinkImg alt="Logo" filename="component2-pink.png" />
         </Fade>
         <Fade bottom distance="30px">
-          <h3 className="hero-overtitle">Massage & Beauty therapy</h3>
+          <h3 className="hero-overtitle">Algarve Home Service</h3>
         </Fade>
       </div>
       <HeroCarousel />

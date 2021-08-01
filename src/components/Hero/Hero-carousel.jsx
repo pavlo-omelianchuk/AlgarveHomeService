@@ -22,29 +22,29 @@ const responsiveHeroCarousel = {
 };
 const heroServiceArray = [
   {
-    title: 'Proffesional massage at HOME',
-    titleSpecial: 'from Danylo Hips',
+    title: ' MASSAGE & BEAUTY THERAPY',
+    titleSpecial: 'From Danylo Hips and Company',
     readMoreLink: '/blog',
     makeAnAppointmentLink: '/prices-massage/',
   },
-  {
-    title: 'Beauty procedures at HOME',
-    titleSpecial: 'from Tanya',
-    readMoreLink: '',
-    makeAnAppointmentLink: '/prices-beauty/',
-  },
-  {
-    title: 'Micropigmentation at HOME',
-    titleSpecial: 'from Lena',
-    readMoreLink: '',
-    makeAnAppointmentLink: '/prices-micropigmentation/',
-  },
-  {
-    title: 'Hairdresser at HOME',
-    titleSpecial: 'from Krissi',
-    readMoreLink: '',
-    makeAnAppointmentLink: '/prices-hairdresser/',
-  },
+  // {
+  //   title: 'Beauty procedures at HOME',
+  //   titleSpecial: 'from Tanya',
+  //   readMoreLink: '',
+  //   makeAnAppointmentLink: '/prices-beauty/',
+  // },
+  // {
+  //   title: 'Micropigmentation at HOME',
+  //   titleSpecial: 'from Lena',
+  //   readMoreLink: '',
+  //   makeAnAppointmentLink: '/prices-micropigmentation/',
+  // },
+  // {
+  //   title: 'Hairdresser at HOME',
+  //   titleSpecial: 'from Krissi',
+  //   readMoreLink: '',
+  //   makeAnAppointmentLink: '/prices-hairdresser/',
+  // },
 ];
 
 const HeroCarousell = () => (
@@ -54,9 +54,9 @@ const HeroCarousell = () => (
     showDots
     responsive={responsiveHeroCarousel}
     ssr={true}
-    infinite
-    autoPlay
-    autoPlaySpeed={4000}
+    // infinite
+    // autoPlay
+    // autoPlaySpeed={4000}
     // // keyBoardControl={true}
     // customTransition="all 1s"
     // transitionDuration={1000}

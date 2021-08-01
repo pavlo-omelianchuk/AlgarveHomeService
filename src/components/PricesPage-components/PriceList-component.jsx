@@ -82,106 +82,96 @@ const PricesTabs = (entrance) => {
   const priceListMicropigmentation = [
     {
       name: 'Eyebrows micropigmentation',
-      price60: 250,
+      price60: 270,
       price90: 90,
     },
     {
       name: 'Eyebrows design',
-      price60: 20,
+      price60: 40,
     },
     {
       name: 'Eyebrows design + eyelash tint',
-      price60: 30,
+      price60: 50,
     },
   ];
   const pricelistBeauty = [
     {
       name: 'Deep face cleansing',
-      price60: 40,
+      price60: 80,
       time: 90,
     },
     {
-      name: 'Back cleaning',
-      price60: 50,
-      time: 100,
+      name: 'Chemical peeling summer',
+      price60: '120',
     },
     {
-      name: 'Chemical peel',
-      price60: '50 - 120',
+      name: 'Chemical peeling winter',
+      price60: '75',
     },
     {
-      name: 'Back scrub',
-      price60: 25,
-      time: 30,
-    },
-    {
-      name: 'Facial massage',
-      price60: 20,
-      time: 40,
-    },
-    {
-      name: 'Lymphatic facial massage',
-      price60: 20,
-    },
-    {
-      name: 'Alginate mask',
-      price60: 35,
-      time: 50,
-    },
-    {
-      name: 'Microneedling + collagen',
-      price60: 50,
+      name: 'Facial treatment',
+      price60: 55,
       time: 60,
     },
     {
+      name: 'Lymphatic facial massage',
+      price60: 80,
+      time: 60,
+    },
+    {
+      name: 'Dermapen + Coctail (Ampoules)',
+      price60: 90,
+      time: 60,
+    },
+    {
+      name: 'Dermapen + Hyaluronic acid/ Colagen/ Mask',
+      price60: 150,
+      time: 90,
+    },
+    {
       name: 'Galvanophoresis, Ionophoresis – Hydration',
-      price60: 39,
-      time: 40,
+      price60: 75,
+      time: 50,
     },
     {
       name: 'Ultrasonic radar hifu',
-      price60: 40,
+      price60: 85,
       time: 60,
     },
     {
       name: 'Needles-free mesotherapy (ionophoresis)',
-      price60: 50,
-      time: '1:40',
+      price60: 75,
+      time: 70,
     },
     {
       name: 'Face microcurrent',
-      price60: 40,
+      price60: 65,
       time: 60,
     },
     {
       name: 'Pressotherapy',
-      price60: 20,
+      price60: 50,
       time: 30,
     },
     {
-      name: 'Darsonval for face',
-      price60: 9,
-      time: 15,
-    },
-    {
-      name: 'Darsonval for hair',
-      price60: 15,
-      time: 15,
+      name: 'Carboxytherapy',
+      price60: 65,
+      time: 50,
     },
     {
       name: 'Anticouperosis program',
-      price60: 35,
-      time: 45,
+      price60: 65,
+      time: 60,
     },
     {
       name: 'Rejuvenation program 40+ 50+',
-      price60: 39,
-      time: 45,
+      price60: 70,
+      time: 60,
     },
     {
       name: 'Magiray beauty peel puree',
-      price60: 50,
-      time: '1:40',
+      price60: 65,
+      time: 60,
     },
     {
       name: 'Waxing Outline eyes',
@@ -189,65 +179,37 @@ const PricesTabs = (entrance) => {
     },
     {
       name: 'Waxing Face',
-      price60: 10,
+      price60: 30,
     },
     {
-      name: 'Waxing Fluff',
-      price60: 4,
+      name: 'Waxing Upper Lip',
+      price60: 15,
     },
     {
-      name: 'Waxing Underarms',
-      price60: 5,
+      name: 'Under arms wax',
+      price60: 20,
     },
     {
-      name: 'Waxing Normal groin / belly',
-      price60: 10,
+      name: 'Full bikini wax',
+      price60: 40,
     },
     {
-      name: 'Waxing Total groin',
-      price60: 16,
+      name: 'Half leg Wax',
+      price60: 30,
     },
     {
-      name: 'Waxing Half leg',
-      price60: 9,
-    },
-    {
-      name: 'Waxing Full leg',
-      price60: 16,
-    },
-    {
-      name: 'Waxing Half arm',
-      price60: 8,
-    },
-    {
-      name: 'Waxing Full arm',
-      price60: 14,
+      name: 'Full leg Wax',
+      price60: 50,
     },
   ];
   const priceListHairdresser = [
     {
-      name: `Men's Haircut`,
-      price60: 'Under request',
+      name: `Male cut`,
+      price60: 30,
     },
     {
-      name: `Women's Haircut`,
-      price60: 'Under request',
-    },
-    {
-      name: 'Root Colouring',
-      price60: 'Under request',
-    },
-    {
-      name: 'Highlights',
-      price60: 'Under request',
-    },
-    {
-      name: 'Evening Updo',
-      price60: 'Under request',
-    },
-    {
-      name: 'Haircut For children',
-      price60: 'Under request',
+      name: `Female cut & brushing`,
+      price60: 40,
     },
   ];
 

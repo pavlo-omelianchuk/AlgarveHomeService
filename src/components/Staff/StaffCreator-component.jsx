@@ -34,20 +34,20 @@ const staffArray = [
   {
     filename: 'staffTania',
     alt: 'Beautician Tania',
-    title: 'Tania​​​ Brahms',
-    sub: 'Beautician',
+    title: 'Tania​​​',
+    sub: 'Beauty Therapist',
   },
   {
     filename: 'staffKatya',
-    alt: 'Massure Katya',
-    title: 'Katya​​',
-    sub: 'Massure',
+    alt: 'Hairdresser Olga',
+    title: 'Olga ',
+    sub: 'Hairdresser',
   },
   {
     filename: 'staffAnna',
-    alt: 'Massure Anna',
-    title: 'Anna',
-    sub: 'Massure',
+    alt: 'Massure Ines',
+    title: 'Ines',
+    sub: 'Masseuse Therapist',
   },
   {
     filename: 'staffLyuda',
@@ -55,6 +55,13 @@ const staffArray = [
     title: 'Lyuda',
     sub: 'Reflexology Therapist',
   },
+  {
+    filename: 'staffDanylo',
+    alt: 'Reflexology Therapist Danylo',
+    title: 'Danylo',
+    sub: 'Massure Therapist',
+  },
+  
 ];
 
 const StaffCarousel = () => (

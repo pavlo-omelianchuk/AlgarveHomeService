@@ -47,7 +47,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName,
                       <h3 className="service-overtitle">{overTitle}</h3>
                     </Fade>
                     <h2 className="service-title-small">{title}</h2>
-                    <span className="service-under-title"> from {fromPrice}</span>
+                    <span className="service-under-title">{fromPrice}</span>
                   </div>
                 </a>
               </div>
