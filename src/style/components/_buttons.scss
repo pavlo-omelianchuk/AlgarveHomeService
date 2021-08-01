@@ -45,14 +45,16 @@
   border-image-slice: 1;
   cursor: pointer;
   margin-bottom: 2rem;
-  width: 50%;
+  width: 250px;
   // Responsive Button hero style
   @include respond(tab-land) {
-    width: 90%;
+    max-width: 100%;
   }
   @include respond(tab-port) {
+    max-width: 90%;
   }
   @include respond(phone) {
+    max-width: 60%;
     background-image: none;
     border: 2px solid $secondary-color;
     -webkit-text-fill-color: $secondary-color;

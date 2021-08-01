@@ -6,19 +6,19 @@ import 'react-multi-carousel/lib/styles.css';
 
 const responsiveHeroCarousel = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 4000, min: 1024 },
     items: 1,
-    paritialVisibilityGutter: 60,
+    paritialVisibilityGutter: 0,
   },
   tablet: {
     breakpoint: { max: 1024, min: 595 },
     items: 1,
-    paritialVisibilityGutter: 50,
+    paritialVisibilityGutter: 0,
   },
   mobile: {
     breakpoint: { max: 594, min: 0 },
     items: 1,
-    paritialVisibilityGutter: 30,
+    paritialVisibilityGutter: 0,
   },
 };
 const heroServiceArray = [
@@ -51,23 +51,23 @@ const heroServiceArray = [
 const HeroCarousell = () => (
   <Carousel
     swipeable
-    draggable={false}
+    // draggable={false}
     showDots
     responsive={responsiveHeroCarousel}
-    ssr={true} // means to render carousel on server-side.
+    // ssr={true} // means to render carousel on server-side.
     infinite
-    autoPlay
+    // autoPlay
     autoPlaySpeed={4000}
-    keyBoardControl={true}
-    customTransition="all ease-in-out"
-    // transitionDuration={5000}
+    // // keyBoardControl={true}
+    // customTransition="all 1s"
+    // transitionDuration={1000}
     containerClass="carousel-container"
     arrows={false}
-    // deviceType={this.props.deviceType}
-    dotListClass="custom-dot-list-style"
+    // // deviceType={this.props.deviceType}
+    // dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
-    // renderButtonGroupOutside={true}
-    // centerMode={true}
+    // // renderButtonGroupOutside={true}
+    centerMode={false}
   >
     {heroServiceArray.map((service) => (
       <div key={nanoid()}>

@@ -1,15 +1,14 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
-import HeroCarousel from "./Hero-carousel";
+import HeroCarousel from './Hero-carousel';
 import PinkImg from '../Image/PinkImg';
-
-
 
 const Hero = () => (
   <>
     <section id="hero" className="jumbotron">
-      <Container>
+      <div
+        style={{ position: 'relative', maxWidth: '60vw', marginLeft: 'auto', marginRight: 'auto' }}
+      >
         <span className="absolute-algarve">Algarve</span>
         <Fade big duration={1500}>
           <PinkImg alt="Logo" filename="component2-pink.png" />
@@ -17,8 +16,8 @@ const Hero = () => (
         <Fade bottom distance="30px">
           <h3 className="hero-overtitle">Massage & Beauty therapy</h3>
         </Fade>
-        <HeroCarousel />
-      </Container>
+      </div>
+      <HeroCarousel />
     </section>
   </>
 );

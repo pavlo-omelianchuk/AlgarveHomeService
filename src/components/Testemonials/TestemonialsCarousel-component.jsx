@@ -8,9 +8,19 @@ import 'react-multi-carousel/lib/styles.css';
 
 const responsiveCarousel = {
   desktop: {
-    breakpoint: { max: 3000, min: 0 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 1,
-    paritialVisibilityGutter: 60,
+    paritialVisibilityGutter: 0,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 595 },
+    items: 1,
+    paritialVisibilityGutter: 0,
+  },
+  mobile: {
+    breakpoint: { max: 594, min: 0 },
+    items: 1,
+    paritialVisibilityGutter: 0,
   },
 };
 

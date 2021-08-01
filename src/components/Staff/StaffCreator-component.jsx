@@ -89,7 +89,6 @@ const StaffCarousel = () => (
         </Fade>
       </Fade>
     ))}
-    
   </Carousel>
 );
 

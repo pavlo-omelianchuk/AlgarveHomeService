@@ -1,5 +1,5 @@
 #staff {
-  .staff-row-title {
+
     .staff-overtitle {
       font-family: $font-haviland;
       font-size: 4rem;
@@ -42,9 +42,12 @@
         margin-bottom: 1rem;
       }
     }
-  }
+
+    .carousel-container{
+      max-width: 100%;
+    }
   .react-carousel-item {
-    padding: 20px;
+    padding: 30px;
     cursor: pointer;
 
     .staff-wrapper__image {
