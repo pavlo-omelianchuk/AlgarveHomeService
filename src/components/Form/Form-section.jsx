@@ -5,7 +5,6 @@ import * as Yup from 'yup';
 import PricesTableTitle from '../../layout/PageWelcomeBgTitle-component';
 import Date from './TableDatePicker-component';
 import emailjs from 'emailjs-com';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const SuccesPopUp = () => {
   return (
@@ -241,11 +240,14 @@ const SignupForm = ({
           <TreatmentSelect label="Choose treatment" name="treatment">
             <option value="">---</option>
             {treatments.map((treatment) => {
-              const { name } = treatment;
+              const { name, price60, price90 } = treatment;
               return (
                 <option key={name} value={name}>
                   {name}
-                  {}
+                  { ' - '}
+                  {price60 || price90}
+                  { ' '}
+                  { 'Euro'}
                 </option>
               );
             })}

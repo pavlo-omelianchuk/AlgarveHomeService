@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
 import StyledBackground from '../Image/HeroImg';
 import Hero from './Hero-component';
 import VideoBckg from './HeroVideoBg-component';

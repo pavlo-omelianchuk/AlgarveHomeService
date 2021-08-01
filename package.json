@@ -31,6 +31,7 @@
     "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-catch-links": "^3.10.0",
+    "gatsby-plugin-google-analytics": "^3.10.0",
     "gatsby-plugin-google-tagmanager": "^3.10.0",
     "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-manifest": "^3.8.0",

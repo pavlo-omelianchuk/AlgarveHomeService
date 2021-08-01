@@ -36,33 +36,43 @@ const PricesTabs = (entrance) => {
     {
       name: 'Therapeutic Massage 60min',
       price60: '55',
-      price80: '70',
     },
-    { name: 'Therapeutic Massage 90min' },
+    {
+      name: 'Therapeutic Massage 90min',
+      price90: '70',
+    },
     {
       name: 'Sports Deep Tissue Massage 60min',
       price60: '55',
-      price80: '70',
     },
-    { name: 'Sports Deep Tissue Massage 90min' },
+    {
+      name: 'Sports Deep Tissue Massage 90min',
+      price90: '70',
+    },
     {
       name: 'Relax Massage 60min',
       price60: '55',
-      price80: '70',
     },
-    { name: 'Relax Massage 90min' },
+    {
+      name: 'Relax Massage 90min',
+      price90: '70',
+    },
     {
       name: 'Massage for Couples 60min',
       price60: '100',
-      price80: '125',
     },
-    { name: 'Massage for Couples 90min' },
+    {
+      name: 'Massage for Couples 90min',
+      price90: '125',
+    },
     {
       name: 'Reflexology Massage 60min',
       price60: '55',
-      price80: '70',
     },
-    { name: 'Reflexology Massage 90min' },
+    {
+      name: 'Reflexology Massage 90min',
+      price90: '70',
+    },
     {
       name: 'Anti-Cellulite Massage 60min',
       price60: '55',
@@ -73,7 +83,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Eyebrows micropigmentation',
       price60: 250,
-      price80: 90,
+      price90: 90,
     },
     {
       name: 'Eyebrows design',
@@ -87,131 +97,131 @@ const PricesTabs = (entrance) => {
   const pricelistBeauty = [
     {
       name: 'Deep face cleansing',
-      price: 40,
+      price60: 40,
       time: 90,
     },
     {
       name: 'Back cleaning',
-      price: 50,
+      price60: 50,
       time: 100,
     },
     {
       name: 'Chemical peel',
-      price: '50 - 120',
+      price60: '50 - 120',
     },
     {
       name: 'Back scrub',
-      price: 25,
+      price60: 25,
       time: 30,
     },
     {
       name: 'Facial massage',
-      price: 20,
+      price60: 20,
       time: 40,
     },
     {
       name: 'Lymphatic facial massage',
-      price: 20,
+      price60: 20,
     },
     {
       name: 'Alginate mask',
-      price: 35,
+      price60: 35,
       time: 50,
     },
     {
       name: 'Microneedling + collagen',
-      price: 50,
+      price60: 50,
       time: 60,
     },
     {
       name: 'Galvanophoresis, Ionophoresis – Hydration',
-      price: 39,
+      price60: 39,
       time: 40,
     },
     {
       name: 'Ultrasonic radar hifu',
-      price: 40,
+      price60: 40,
       time: 60,
     },
     {
       name: 'Needles-free mesotherapy (ionophoresis)',
-      price: 50,
+      price60: 50,
       time: '1:40',
     },
     {
       name: 'Face microcurrent',
-      price: 40,
+      price60: 40,
       time: 60,
     },
     {
       name: 'Pressotherapy',
-      price: 20,
+      price60: 20,
       time: 30,
     },
     {
       name: 'Darsonval for face',
-      price: 9,
+      price60: 9,
       time: 15,
     },
     {
       name: 'Darsonval for hair',
-      price: 15,
+      price60: 15,
       time: 15,
     },
     {
       name: 'Anticouperosis program',
-      price: 35,
+      price60: 35,
       time: 45,
     },
     {
       name: 'Rejuvenation program 40+ 50+',
-      price: 39,
+      price60: 39,
       time: 45,
     },
     {
       name: 'Magiray beauty peel puree',
-      price: 50,
+      price60: 50,
       time: '1:40',
     },
     {
       name: 'Waxing Outline eyes',
-      price: 10,
+      price60: 10,
     },
     {
       name: 'Waxing Face',
-      price: 10,
+      price60: 10,
     },
     {
       name: 'Waxing Fluff',
-      price: 4,
+      price60: 4,
     },
     {
       name: 'Waxing Underarms',
-      price: 5,
+      price60: 5,
     },
     {
       name: 'Waxing Normal groin / belly',
-      price: 10,
+      price60: 10,
     },
     {
       name: 'Waxing Total groin',
-      price: 16,
+      price60: 16,
     },
     {
       name: 'Waxing Half leg',
-      price: 9,
+      price60: 9,
     },
     {
       name: 'Waxing Full leg',
-      price: 16,
+      price60: 16,
     },
     {
       name: 'Waxing Half arm',
-      price: 8,
+      price60: 8,
     },
     {
       name: 'Waxing Full arm',
-      price: 14,
+      price60: 14,
     },
   ];
   const priceListHairdresser = [
@@ -245,7 +255,7 @@ const PricesTabs = (entrance) => {
 
   return (
     <>
-      <h6 style={{ textAlign: 'left' }}>*Choose section and fill up form request</h6>
+      <h5 style={{ textAlign: 'left' }}>*Choose section and fill up form request</h5>
       <Tabs id="controlled-tab" activeKey={key} onSelect={(k) => setKey(k)}>
         <Tab tabClassName="price-list-section-title" eventKey="massage" title="Massage">
           {key === 'massage' ? (

@@ -2,11 +2,17 @@ import React from 'react';
 
 export default () => {
   return (
-    <div style={{ position: 'absolute', color:'transparent' }}>
-      <h1>
-        Proffesional massage at HOME over all the Algarve. In Lagos, Albufeira, Quarteira, Vale de
-        Lobo, Vilamoura, Portimao, Sagres
-      </h1>
+    <div style={{ position: 'absolute', color: 'transparent' }}>
+      <h1>Professional massage at HOME over all the Algarve.</h1>
+      <h2> In Lagos, Albufeira, Quarteira, Vale de Lobo, Vilamoura, Portimao, Sagres</h2>
+      <h3>We offer:</h3>
+      <h4>Health Massage</h4>
+      <h4>Therapeutic Massage</h4>
+      <h4>Sports Deep Tissue Massage</h4>
+      <h4>Relax Massage</h4>
+      <h4>Massage for Couples</h4>
+      <h4>Reflexology Massage</h4>
+      <h4>Anti-Cellulite Massage</h4>
       <p>
         Therapeutic Massage vs Deep Tissue. Therapeutic massage is a general term that describes any
         type of massage modality that helps relieve pain, reduce stress, and work on a specific

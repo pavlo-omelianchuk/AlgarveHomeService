@@ -23,14 +23,10 @@ const PricesPage = () => {
         />
       </Helmet>
       <PageWrapepr footerLinkTo="best-offers">
-        <>
-          <PageWelcomeBg overTitle="Best Offers" title="Algarve Home Massage and Beauty" />
-          <Container className="p-5">
-            <section id="price-list">
-              <PriceList entrance="beauty" />
-            </section>
-          </Container>
-        </>
+        <PageWelcomeBg overTitle="Best Offers" title="Algarve Home Massage and Beauty" />
+        <section id="price-list">
+          <PriceList entrance="beauty" />
+        </section>
       </PageWrapepr>
     </>
   );

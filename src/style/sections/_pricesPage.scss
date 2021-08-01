@@ -2,12 +2,11 @@
   .prices-page-bg {
     display: flex;
     justify-content: center;
-    @include respond(tab-land) {
-      height: 50vh;
+    height: 300px;
+    @include respond(phone) {
+      height: 200px;
     }
-    @include respond(tab-port) {
-      height: 40vh;
-    }
+
     .background-image-children {
       display: flex;
       flex-direction: column;
@@ -88,13 +87,11 @@
   left: 0;
   z-index: -10;
   width: 100%;
-  height: 55vh;
+  height: 300px;
   background-color: black;
   opacity: 0.5;
-  @include respond(tab-land) {
-    height: 50vh;
-  }
-  @include respond(tab-port) {
-    height: 40vh;
+  @include respond(phone) {
+    height: 200px;
   }
 }
+  

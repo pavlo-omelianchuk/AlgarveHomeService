@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Fade, Zoom } from 'react-reveal';
 import { nanoid } from 'nanoid';
-import 'react-multi-carousel/lib/styles.css';
 
 const responsiveHeroCarousel = {
   desktop: {
@@ -54,9 +53,9 @@ const HeroCarousell = () => (
     // draggable={false}
     showDots
     responsive={responsiveHeroCarousel}
-    // ssr={true} // means to render carousel on server-side.
+    ssr={true}
     infinite
-    // autoPlay
+    autoPlay
     autoPlaySpeed={4000}
     // // keyBoardControl={true}
     // customTransition="all 1s"
@@ -66,7 +65,7 @@ const HeroCarousell = () => (
     // // deviceType={this.props.deviceType}
     // dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
-    // // renderButtonGroupOutside={true}
+    renderButtonGroupOutside={true}
     centerMode={false}
   >
     {heroServiceArray.map((service) => (
