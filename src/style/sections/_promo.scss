@@ -39,5 +39,54 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
+    /* Hero Style */
+    .cta-btn--hero {
+      background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 10%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 10%);
+      border-image-slice: 1;
+      cursor: pointer;
+      width: 250px;
+      margin: 10px;
+
+      // Responsive Button hero style
+      @include respond(tab-land) {
+        max-width: 100%;
+      }
+      @include respond(tab-port) {
+        max-width: 90%;
+      }
+      @include respond(phone) {
+        max-width: 60%;
+        background-image: none;
+        border: 2px solid $secondary-color;
+        -webkit-text-fill-color: $secondary-color;
+      }
+
+      &::after {
+        background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        // Responsive Button hero style
+        @include respond(phone) {
+          background-image: none;
+        }
+      }
+
+      &:hover {
+        -webkit-text-fill-color: $white-color;
+        text-decoration: none;
+        // Responsive Button hover hero style
+        @include respond(phone) {
+          -webkit-text-fill-color: $secondary-color;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 }

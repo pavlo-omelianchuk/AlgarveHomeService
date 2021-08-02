@@ -45,21 +45,17 @@
   font-family: 'Mr De Haviland';
   src: url('../style/base/fonts/MrDeHaviland-Regular.woff2') format('woff2');
 }
-// @font-face {
-//   font-family: 'Raleway';
-//   src: url('../style/base/fonts/Raleway-Regular.woff2') format('woff2');
-// }
-// @font-face {
-//   font-family: 'Raleway';
-//   src: url('../style/base/fonts/Raleway-Medium.woff2') format('woff2');
-// }
-// @font-face {
-//   font-family: 'Raleway';
-//   src: url('../style/base/fonts/Raleway-Light.woff2') format('woff2');
-// }
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Medium.woff2') format('woff2');
+}
 @font-face {
   font-family: 'Raleway';
   src: url('../style/base/fonts/Raleway-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Montserrat';

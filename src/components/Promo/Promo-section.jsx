@@ -19,7 +19,7 @@ const Promo = () => (
                 smooth and firm skin in the &quot;problem areas of the body&quot;.
               </p>
               <Fade bottom duration={1000} delay={300} distance="30px">
-                <span className="d-flex justify-content-center mt-5">
+                <span className="d-flex mt-5">
                   <a
                     className="cta-btn cta-btn--hero px-5 rounded"
                     href="https://effectdh.com/products"

@@ -139,8 +139,6 @@
       @include respond(phone) {
         font-size: 1rem;
       }
-      @include respond(phone-xs) {
-      }
     }
     /* Hero Style */
     .cta-btn--hero {
@@ -195,17 +193,17 @@
 }
 .video-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: fit-content;
   width: 100%;
-  max-height: 100vh;
-
   left: 0;
-
+  bottom: 0;
   right: 0;
   position: absolute;
   .hero-video {
     z-index: 0;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   }
 }

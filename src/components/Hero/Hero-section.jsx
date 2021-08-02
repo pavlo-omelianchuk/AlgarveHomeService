@@ -6,10 +6,10 @@ import HeadingElement from './HeadingElement-component';
 
 const HeroDesktop = () => {
   return (
-    <div>
+    <div >
       <StyledBackground
         className="hero-bg"
-        filename="bgHeroWithOpacity.jpg"
+        filename="bgHeroPoster.jpg"
         alt="Woman getting massage"
         bgContent={
           <VideoBckg>
