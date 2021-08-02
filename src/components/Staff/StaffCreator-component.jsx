@@ -38,16 +38,16 @@ const staffArray = [
     sub: 'Beauty Therapist',
   },
   {
-    filename: 'staffKatya',
+    filename: 'staffOlga',
     alt: 'Hairdresser Olga',
     title: 'Olga ',
     sub: 'Hairdresser',
   },
   {
-    filename: 'staffAnna',
-    alt: 'Massure Ines',
+    filename: 'staffInes',
+    alt: 'Masseur  Ines',
     title: 'Ines',
-    sub: 'Masseuse Therapist',
+    sub: 'Massage Therapist',
   },
   {
     filename: 'staffLyuda',
@@ -57,11 +57,10 @@ const staffArray = [
   },
   {
     filename: 'staffDanylo',
-    alt: 'Reflexology Therapist Danylo',
+    alt: 'Massage Therapist Danylo',
     title: 'Danylo',
-    sub: 'Massure Therapist',
+    sub: 'Massage Therapist',
   },
-  
 ];
 
 const StaffCarousel = () => (
@@ -86,7 +85,12 @@ const StaffCarousel = () => (
     // centerMode={true}
   >
     {staffArray.map((staff) => (
-      <Fade key={nanoid()}>
+      <Fade
+        // style={{ paddingRight: '3rem', paddingLeft: '3rem' }}
+        duration={1000}
+        distance="500px"
+        key={nanoid()}
+      >
         <div className="staff-wrapper__image">
           <StaffImg filename={staff.filename} alt={staff.alt} />
         </div>

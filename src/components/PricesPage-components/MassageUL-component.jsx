@@ -5,7 +5,7 @@ const PricesMassage = ({ priceListMassage }) => (
   <>
     <ul className="pricelist-wrapper">
       {priceListMassage.map((position) => {
-        const { name, price60, price80 } = position;
+        const { name, price60, price90 } = position;
         if (price60) {
           return (
             <li key={name}>
@@ -22,9 +22,9 @@ const PricesMassage = ({ priceListMassage }) => (
                   {`60 min. `}
                   {price60}
                   {` €`}
-                  {price80 && ` // 80 min. `}
-                  {price80}
-                  {price80 && ` €`}
+                  {price90 && ` // 90 min. `}
+                  {price90}
+                  {price90 && ` €`}
                 </p>
               </div>
             </li>

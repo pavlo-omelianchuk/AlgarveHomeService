@@ -28,3 +28,40 @@
 @import './sections/bloglist';
 
 @import './vendor/css/font-awesome.min.css';
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('../style/base/fonts/Amiri-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Amiri';
+  src:url('../style/base/fonts/Amiri-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Marck Script';
+  src: url('../style/base/fonts/MarckScript-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Mr De Haviland';
+  src: url('../style/base/fonts/MrDeHaviland-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../style/base/fonts/Raleway-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../style/base/fonts/Montserrat-Medium.ttf');
+}

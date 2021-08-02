@@ -36,6 +36,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Therapeutic Massage 60min',
       price60: '55',
+      price90: '70',
     },
     {
       name: 'Therapeutic Massage 90min',
@@ -44,6 +45,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Sports Deep Tissue Massage 60min',
       price60: '55',
+      price90: '70',
     },
     {
       name: 'Sports Deep Tissue Massage 90min',
@@ -52,6 +54,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Relax Massage 60min',
       price60: '55',
+      price90: '70',
     },
     {
       name: 'Relax Massage 90min',
@@ -60,6 +63,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Massage for Couples 60min',
       price60: '100',
+      price90: '125',
     },
     {
       name: 'Massage for Couples 90min',
@@ -68,6 +72,7 @@ const PricesTabs = (entrance) => {
     {
       name: 'Reflexology Massage 60min',
       price60: '55',
+      price90: '70',
     },
     {
       name: 'Reflexology Massage 90min',

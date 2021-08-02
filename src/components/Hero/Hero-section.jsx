@@ -27,11 +27,7 @@ const HeroMobile = () => {
         className="hero-bg"
         filename="bgHeroWithOpacity.jpg"
         alt="Woman getting massage"
-        bgContent={
-          <div>
-            <Hero />
-          </div>
-        }
+        bgContent={<Hero />}
       />
     </div>
   );
