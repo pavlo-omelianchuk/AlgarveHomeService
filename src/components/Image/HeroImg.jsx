@@ -41,6 +41,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
   height: 100vh;
   min-height: 320px;
+  max-width: 100vw;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
