@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Tilt from 'react-tilt';
 import { Container, Col, Row } from 'react-bootstrap';
-import BlogListImg from '../components/Image/BlogListImg';
+import BlogListImg from '../Image/oldBlogListImg';
 
 const PostLink = ({ post }) => {
   return (

@@ -1,47 +1,16 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const LogoImg = ({ filename, alt, link }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        images: allFile {
-          edges {
-            node {
-              relativePath
-              name
-              childImageSharp {
-                fixed(width: 250) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
-
-      if (!image) return null;
-
-      const imageFixed = image.node.childImageSharp.fixed;
-      return (
-        <>
-          <a href={link}>
-            <Img alt={alt} fixed={imageFixed} />
-          </a>
-        </>
-      );
-    }}
-  />
-);
-
-LogoImg.propTypes = {
-  filename: PropTypes.string,
-  alt: PropTypes.string,
+const LogoImg = () => {
+  return (
+    <StaticImage
+      src="../../images/logoAMMBTHeaderWithTextNew.png"
+      alt="Logo"
+      // placeholder="blurred"
+      layout="fixed"
+      width={250}
+    />
+  );
 };
 
 export default LogoImg;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PostLink from '../post-link';
+import BlogListCreator from './BlogListCreator-component';
 
 
 
@@ -34,7 +34,7 @@ const Blog = ( ) => {
   const Posts = edges
     // .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map((edge) => (
-      <PostLink key={edge.node.id} post={edge.node} imgSrc={edge.node.frontmatter.featured} />
+      <BlogListCreator key={edge.node.id} post={edge.node} imgSrc={edge.node.frontmatter.featured} />
     ));
 
   return <div>

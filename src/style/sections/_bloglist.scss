@@ -9,6 +9,11 @@
     width: fit-content;
   }
   .blog-list-flex-wrapper__text {
+    padding-right: 5rem;
+    @include respond(tab-land) {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
   }
 }
 .blog-post {

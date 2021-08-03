@@ -1,19 +1,10 @@
 #staff {
-  .staff-row {
+  max-width: 1320px;
+  margin: 3rem auto;
 
-    // max-width: 1320px;
-    @include respond(tab-land) {
-      // max-width: 1140px;
-    }
-    @include respond(tab-port) {
-      // max-width: 960px;
-    }
-    @include respond(phone) {
-      // max-width: 720px;
-    }
-    @include respond(phone-xs) {
-      // max-width: 540px;
-    }
+  padding: 3rem 0;
+
+  .staff-row {
   }
 
   .staff-overtitle {

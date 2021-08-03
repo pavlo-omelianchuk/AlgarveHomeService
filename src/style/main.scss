@@ -4,12 +4,12 @@
 
 @import './base/base';
 @import './base/typography';
+@import './base/sections';
 
 @import './components/buttons';
 
-@import './layout/header';
-@import './layout/footer';
-@import './layout/sections';
+@import './sections/header';
+@import './sections/footer';
 
 @import './sections/hero';
 @import './sections/presentation';

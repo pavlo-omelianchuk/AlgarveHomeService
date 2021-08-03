@@ -46,7 +46,7 @@ const servicesArray = [
     filename: 'bgServiceHairdresser',
     overTitle: 'Hair Style',
     title: 'HAIRDRESSER',
-    fromPrice: 'Female cut & brushing 40 euro. Male cut 30 euro ',
+    fromPrice: `Female cut & brushing 40 euro. Male\u00A0cut\u00A030\u00A0euro `,
   },
 ];
 

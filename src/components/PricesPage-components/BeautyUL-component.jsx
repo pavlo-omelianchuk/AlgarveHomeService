@@ -5,7 +5,7 @@ const PricesBeauty = ({ priceListBeauty }) => (
   <>
     <ul className="pricelist-wrapper">
       {priceListBeauty.map((position) => {
-        const { name, price, time } = position;
+        const { name, price60, time } = position;
         return (
           <li key={name}>
             <div className="price-list-item">
@@ -13,8 +13,8 @@ const PricesBeauty = ({ priceListBeauty }) => (
                 <span className="price-list-name">{name}</span>
                 <span className="price-list-separator" />
                 <span className="price-list-price">
-                  {price}
-                  {price && ` €`}
+                  {price60}
+                  {price60 && ` €`}
                 </span>
               </div>
               <p className="price-list-description">

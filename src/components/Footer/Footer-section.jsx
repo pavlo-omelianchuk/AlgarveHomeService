@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import LogoImg from '../Image/LogoImg';
+import FooterImg from '../Image/FooterImg';
 
 const Footer = ({ linkTo, props }) => {
   return (
@@ -33,11 +33,13 @@ const Footer = ({ linkTo, props }) => {
           </Col>
           <Col className="footer-flex" md={4}>
             <span className="back-to-top">
-              <Link to={linkTo} smooth duration={1000}>
+              <Link to={linkTo}>
                 <i className="fa fa-angle-up fa" aria-hidden="true" />
               </Link>
             </span>
-            <LogoImg link={'#' + linkTo} alt="Logo" filename="logoAMMBTFooter.png" />
+            <Link to={linkTo}>
+            <FooterImg />
+            </Link>
           </Col>
           <Col className="footer-flex" md={4}>
             <div>
@@ -58,7 +60,12 @@ const Footer = ({ linkTo, props }) => {
                   >
                     <i className="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
                   </a>
-                  <a href="#" onClick={() => { window.print() }}>
+                  <a
+                    href="#"
+                    onClick={() => {
+                      window.print();
+                    }}
+                  >
                     <i className="fa fa-2x fa-print" aria-hidden="true"></i>
                   </a>
                 </span>

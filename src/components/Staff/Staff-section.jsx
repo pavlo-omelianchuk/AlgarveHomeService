@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { Row } from 'react-bootstrap';
 import Title from '../Titles/Title-component';
 import PinkImg from '../Image/PinkImg';
 
@@ -8,7 +7,7 @@ import StaffMaker from './StaffCreator-component';
 
 const Staff = () => (
   <section id="staff">
-    <div className="staff-row mx-auto">
+    <div className="mx-auto">
       <Fade bottom duration={500} distanse="200px">
         <h3 className="staff-overtitle">Our Staff</h3>
       </Fade>
