@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fade, Zoom } from 'react-reveal';
 import PinkImg from '../Image/PinkImg';
+import { Link } from 'gatsby';
 
 const Hero = () => (
   <div className="hero-wrapper">
@@ -20,10 +21,10 @@ const Hero = () => (
     <Zoom duration={1000} delay={200}>
       <p className="hero-cta">
         <span className="cta-btn cta-btn--hero">
-          <a href="/blog/">Read more</a>
+          <Link to="/blog/">our blog</Link>
         </span>
         <span className="cta-btn cta-btn--hero">
-          <a href="/prices-massage/">make an appointment</a>
+          <Link to="/prices-massage/">make an appointment</Link>
         </span>
       </p>
     </Zoom>

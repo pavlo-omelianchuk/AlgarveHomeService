@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-second-post"
+slug: "/blog/sports-massage"
 date: 2021-07-10
 title: SPORTS MASSAGE KEEPS YOU RUNNING, BIKING AND SWIMMING
 tags:
@@ -30,4 +30,4 @@ We consider massage for plantar fasciitis sports massage as well, primarily beca
 ## When to see your doctor
 While many of the normal aches and pains people experience with exercise are easily treated with rest, ice and massage, you may need to see a doctor if you have swelling, numbness or tingling feelings.
 
-Schedule your sports massage today.
+### Schedule your sports massage today.

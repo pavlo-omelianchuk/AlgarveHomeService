@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
 import PresentationTitleSmall from './Presentation-TitleSmall-component';
 import ProjectImg from '../Image/ProjectImg';
+import { Link } from 'gatsby';
 
 const Presentation = () => (
   <section id="presentation">
@@ -48,9 +49,9 @@ const Presentation = () => (
                     added!
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/prices-massage">
+                    <Link className="cta-btn cta-btn--pres" to="/prices-massage">
                       book now
-                    </a>
+                    </Link>
                   </span>
                 </Fade>
               </div>
@@ -78,9 +79,9 @@ const Presentation = () => (
                     masseurs. No travel fees added!
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="/prices-massage/#request-form">
+                    <Link className="cta-btn cta-btn--pres" to="/prices-massage/#request-form">
                       book now
-                    </a>
+                    </Link>
                   </span>
                 </Fade>
               </div>
@@ -103,9 +104,9 @@ const Presentation = () => (
                     beauty professional, with many years of experience.
                   </p>
                   <span className="d-flex justify-content-center ">
-                    <a className="cta-btn cta-btn--pres" href="#staff">
+                    <Link className="cta-btn cta-btn--pres" to="#staff">
                       view all
-                    </a>
+                    </Link>
                   </span>
                 </Fade>
               </div>

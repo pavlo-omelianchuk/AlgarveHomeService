@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-first-post"
+slug: "/blog/therapeutic-vs-deep-tissue-massage"
 date: "2021-01-07"
 title: "Therapeutic vs Deep Tissue Massage"
 tags:

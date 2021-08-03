@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-parallax';
 import { Col } from 'react-bootstrap';
+import { Link } from 'gatsby';
 
 const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName, linkTo }) => (
   <StaticQuery
@@ -41,7 +42,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName,
             >
               <div className="parallax">
                 <div id="service__overlay" />
-                <a style={{ textTransform: 'initial' }} href={linkTo}>
+                <Link style={{ textTransform: 'initial' }} to={linkTo}>
                   <div className="parallax__inside">
                     <Fade bottom duration={800} distanse="500px">
                       <h3 className="service-overtitle">{overTitle}</h3>
@@ -49,7 +50,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName,
                     <h2 className="service-title-small">{title}</h2>
                     <span className="service-under-title">{fromPrice}</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </Parallax>
           </Fade>

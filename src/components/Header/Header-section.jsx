@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
+import NavLink from '../NavBar-components/NavLink-component';
 import LogoImg from '../Image/LogoImg';
 
 const Header = () => {
@@ -40,25 +41,25 @@ const Header = () => {
       <NavbarBrand href={logoHREF}>
         <LogoImg />
       </NavbarBrand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto mr-5">
-          <Nav.Link href={linkURL1} className="px-4">
+          <NavLink to={linkURL1} className="px-4">
             {linkText1}
-          </Nav.Link>
-          <Nav.Link href={linkURL2} className="px-4">
+          </NavLink>
+          <NavLink to={linkURL2} className="px-4">
             {linkText2}
-          </Nav.Link>
-          <Nav.Link href={linkURL3} className="px-4">
+          </NavLink>
+          <NavLink to={linkURL3} className="px-4">
             {linkText3}
-          </Nav.Link>
-          <Nav.Link href={linkURL4} className="px-4">
+          </NavLink>
+          <NavLink to={linkURL4} className="px-4">
             {linkText4}
-          </Nav.Link>
-          <Nav.Link href={linkURL5} className="px-4">
+          </NavLink>
+          <NavLink to={linkURL5} className="px-4">
             {linkText5}
-          </Nav.Link>
-          <Nav.Link href={linkURL6}>{linkText6}</Nav.Link>
+          </NavLink>
+          <NavLink to={linkURL6}>{linkText6}</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
