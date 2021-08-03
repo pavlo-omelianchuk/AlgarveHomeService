@@ -22,7 +22,7 @@ const PricesPage = () => {
           content="9kBdSy0tZrplyDlGnpHdAyuPf8AAGzLSZnBTh9EWd7A"
         />
       </Helmet>
-      <PageWrapepr footerLinkTo="best-offers">
+      <PageWrapepr footerLinkTo="#best-offers">
           <PageWelcomeBg overTitle="Best Offers" title="Algarve Home Massage & Beauty" />
             <section id="price-list">
               <PriceList entrance="massage" />

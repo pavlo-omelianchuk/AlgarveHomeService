@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import { Link } from 'gatsby';
 import FooterImg from '../Image/FooterImg';
 
 const Footer = ({ linkTo, props }) => {
@@ -25,9 +25,9 @@ const Footer = ({ linkTo, props }) => {
             <div>
               <p className="footer__text">
                 2009 - {new Date().getFullYear()} - All Rights Reserved{' '}
-                <a id="dev-by" href="/" target="_blank" rel="noopener noreferrer">
+                <Link id="dev-by" to="/" target="_blank" rel="noopener noreferrer">
                   Danylo Hips ©
-                </a>
+                </Link>
               </p>
             </div>
           </Col>
@@ -38,7 +38,7 @@ const Footer = ({ linkTo, props }) => {
               </Link>
             </span>
             <Link to={linkTo}>
-            <FooterImg />
+              <FooterImg />
             </Link>
           </Col>
           <Col className="footer-flex" md={4}>
@@ -82,6 +82,11 @@ const Footer = ({ linkTo, props }) => {
                 >
                   Palo Criativo ®
                 </a>
+                <br />
+                <br />
+                <span id="privacy-footer">
+                  Our <Link to={'/privacy-policy'}>Privacy Policy </Link>
+                </span>
               </p>
             </div>
           </Col>

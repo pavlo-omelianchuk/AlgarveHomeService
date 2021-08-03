@@ -27,7 +27,7 @@ export default function BlogTemplate({
           content="9kBdSy0tZrplyDlGnpHdAyuPf8AAGzLSZnBTh9EWd7A"
         />
       </Helmet>
-      <PageWrapepr footerLinkTo="best-offers">
+      <PageWrapepr footerLinkTo="#best-offers">
         <>
           <PageWelcomeBg overTitle="Our Blog" title={`About Massage and Beauty`} />
           <Container className="p-5">

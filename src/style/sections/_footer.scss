@@ -67,8 +67,18 @@
       background: #fff;
     }
   }
-
 }
-#share-buttons>a {
-  padding:0 12px;
+#share-buttons > a {
+  padding: 0 12px;
+}
+
+#privacy-footer a {
+  z-index: 10;
+  font-size: 1em;
+  &:hover {
+    color: $primary-color;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
 }

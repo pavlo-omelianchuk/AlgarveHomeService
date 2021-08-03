@@ -4,17 +4,17 @@ import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PageWelcomeBg from '../layout/PageWelcomeBg-section';
-import PriceList from '../components/PricesPage-components/PriceList-component';
+import PrivacyPolicyComponent from '../components/PrivacyPolicy-components/PrivacyPolicy-component';
 import '../style/main.scss';
 
-const PricesPage = () => {
-  const { title, lang, description } = headData;
+const BlogPage = () => {
+  const { titleBlog, lang, description } = headData;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title}</title>
+        <title>{titleBlog}</title>
         <html lang={lang} />
         <meta name="description" content={description} />
         <meta
@@ -23,13 +23,17 @@ const PricesPage = () => {
         />
       </Helmet>
       <PageWrapepr footerLinkTo="#best-offers">
-        <PageWelcomeBg overTitle="Best Offers" title="Algarve Home Massage & Beauty" />
-        <section id="price-list">
-          <PriceList entrance="hairdresser" />
-        </section>
+        <>
+          <PageWelcomeBg overTitle="Our" title={`Privacy Policy`} />
+          <Container className="p-2">
+            <section id="privacy-policy">
+              <PrivacyPolicyComponent/>
+            </section>
+          </Container>
+        </>
       </PageWrapepr>
     </>
   );
 };
 
-export default PricesPage;
+export default BlogPage;

@@ -44,9 +44,9 @@ const Presentation = () => (
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
                     Mobile Massage and Beauty services available in Sagres, Lagos, Portimão,
-                    Albufeira, Quarteira, Faro, Olhão, Tavira and over all the Algarve. We will make
-                    your home more relaxing with best Masseurs and Beauticians. No travel fees
-                    added!
+                    Albufeira, Quarteira, Vale de Lobo, Vilamoura, Faro, Olhão, Tavira and over all
+                    the Algarve. We will make your home more relaxing with best Massage or Beauty
+                    Therapists.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <Link className="cta-btn cta-btn--pres" to="/prices-massage">
@@ -73,10 +73,10 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Our Massage and Beauty Mobile services are available over all the Algarve. We
-                    will come to you in Sagres, Lagos, Portimão, Albufeira, Quarteira, Faro, Olhão,
-                    Tavira and other nearby areas. We will make your home more relaxing with best
-                    masseurs. No travel fees added!
+                    Mobile Massage and Beauty services available in Sagres, Lagos, Portimão,
+                    Albufeira, Quarteira, Vale de Lobo, Vilamoura, Faro, Olhão, Tavira and over all
+                    the Algarve. We will make your home more relaxing with best Massage or Beauty
+                    Therapists.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <Link className="cta-btn cta-btn--pres" to="/prices-massage/#request-form">
@@ -100,8 +100,8 @@ const Presentation = () => (
                 </Fade>
                 <Fade bottom duration={500} delay={300} distance="30px">
                   <p className="presentation-wrapper__info-text ">
-                    Each one of our staff members are licensed and experienced massage therapists or
-                    beauty professional, with many years of experience.
+                    Each one of our staff members are licensed and experienced Massage or Beauty
+                    Therapists.
                   </p>
                   <span className="d-flex justify-content-center ">
                     <Link className="cta-btn cta-btn--pres" to="#staff">

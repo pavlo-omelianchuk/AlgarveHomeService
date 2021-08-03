@@ -3,8 +3,8 @@ import React from 'react';
 export default () => {
   return (
     <div style={{ position: 'absolute', color: 'transparent' }}>
-      <h1>Professional massage at HOME over all the Algarve.</h1>
-      <h2> In Lagos, Albufeira, Quarteira, Vale de Lobo, Vilamoura, Portimao, Sagres</h2>
+      <h1>Professional massage at Home over all the Algarve.</h1>
+      <h2> In Lagos, Albufeira, Quarteira, Vale de Lobo, Vilamoura, Armação de Pera, Portimao, Sagres</h2>
       <h3>We offer:</h3>
       <h4>Health Massage</h4>
       <h4>Therapeutic Massage</h4>
