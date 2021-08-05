@@ -83,8 +83,8 @@ export default () => {
                     <h5 className="about-us-profession">{staff.sub}</h5>
                   </div>
 
-                  <p className="about-us-massage">{staff.info}</p>
-                  <div>
+                  <p className="about-us-message">{staff.info}</p>
+                  <div style={{padding:"2.5rem"}}>
                     <h4>To book treatment with {staff.title} click the button.</h4>
                     <Link to="/prices-massage/">
                       <span className="cta-btn cta-btn--blog">Book now</span>

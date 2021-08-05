@@ -20,7 +20,7 @@ const LastCall = loadable(() => import('./LastCall/LastCall-section'));
 
 function App() {
   return (
-    <PageWrapepr footerLinkTo="home">
+    <PageWrapepr footerLinkTo="#home">
       <>
         <Hero />
         <Presentation />

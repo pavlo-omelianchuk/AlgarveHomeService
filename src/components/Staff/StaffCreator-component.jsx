@@ -47,7 +47,7 @@ const staffArray = [
   {
     filename: 'staffInes',
     alt: 'Masseur  Ines',
-    title: 'Ines',
+    title: 'Inês',
     sub: 'Massage Therapist',
   },
   {
