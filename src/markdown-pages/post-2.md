@@ -2,10 +2,10 @@
 slug: "/blog/sports-massage"
 date: 2021-07-10
 title: SPORTS MASSAGE KEEPS YOU RUNNING, BIKING AND SWIMMING
-tags:
-  - tech stack
-  - colophon
-  - about
+# tags:
+#   - tech stack
+#   - colophon
+#   - about
 featured: presImgMkAppointment.jpg
 excerpt: I usually run six marathons a year, but tight hamstrings threatened to end my marathon season early. My wife convinced me to get a sports massage, and it worked. I got massage for marathon training regularly during the season and I never missed a race. In fact, I had a few PRs! Freddy, Luz.
 ---

@@ -48,11 +48,9 @@ const Presentation = () => (
                     the Algarve. We will make your home more relaxing with best Massage or Beauty
                     Therapists.
                   </p>
-                  <span className="d-flex justify-content-center ">
-                    <Link className="cta-btn cta-btn--pres" to="/prices-massage">
-                      book now
-                    </Link>
-                  </span>
+                  <Link className="cta-btn cta-btn--pres" to="/prices-massage">
+                    <span className="d-flex justify-content-center ">book now</span>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -78,11 +76,9 @@ const Presentation = () => (
                     the Algarve. We will make your home more relaxing with best Massage or Beauty
                     Therapists.
                   </p>
-                  <span className="d-flex justify-content-center ">
-                    <Link className="cta-btn cta-btn--pres" to="/prices-massage/#request-form">
-                      book now
-                    </Link>
-                  </span>
+                  <Link className="cta-btn cta-btn--pres" to="/prices-massage/#request-form">
+                    <span className="d-flex justify-content-center ">book now</span>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -103,11 +99,9 @@ const Presentation = () => (
                     Each one of our staff members are licensed and experienced Massage or Beauty
                     Therapists.
                   </p>
-                  <span className="d-flex justify-content-center ">
-                    <Link className="cta-btn cta-btn--pres" to="#staff">
-                      view all
-                    </Link>
-                  </span>
+                  <Link className="cta-btn cta-btn--pres" to="/about-us">
+                    <span className="d-flex justify-content-center ">view all</span>
+                  </Link>
                 </Fade>
               </div>
             </div>

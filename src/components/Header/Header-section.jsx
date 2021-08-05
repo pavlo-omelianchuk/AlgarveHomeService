@@ -17,7 +17,7 @@ const Header = () => {
     'Testemonials',
     '/prices-massage',
     'Prices',
-    '/#staff',
+    '/about-us',
     'About us',
   ];
   const [

@@ -81,9 +81,9 @@ export default function BlogTemplate({
                 <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
               </div>
               <p className="blog-cta">
-                <span className="cta-btn cta-btn--blog">
-                  <Link to="/prices-massage/">make an appointment</Link>
-                </span>
+                <Link to="/prices-massage/">
+                  <span className="cta-btn cta-btn--blog">Book now</span>
+                </Link>
               </p>
             </section>
           </Container>

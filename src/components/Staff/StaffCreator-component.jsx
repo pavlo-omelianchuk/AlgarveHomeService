@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
 import TitleSmall from '../Titles/TitleSmall-component';
+import { Link } from 'gatsby';
 import StaffImg from '../Image/StaffImg';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -63,6 +64,10 @@ const staffArray = [
   },
 ];
 
+const link = (id) => {
+  return `/about-us/#${id}`;
+};
+
 const StaffCarousel = () => (
   <Carousel
     swipeable
@@ -82,22 +87,19 @@ const StaffCarousel = () => (
     dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
     // renderButtonGroupOutside={true}
-    // centerMode={true}
+    // centerMode={true} <a href="https://effectdh.com" target="_blank">
   >
     {staffArray.map((staff) => (
-      <Fade
-        // style={{ paddingRight: '3rem', paddingLeft: '3rem' }}
-        duration={1000}
-        distance="500px"
-        key={nanoid()}
-      >
-        <div className="staff-wrapper__image">
-          <StaffImg filename={staff.filename} alt={staff.alt} />
-        </div>
-        <br />
-        <Fade bottom duration={800} distance="300px">
-          <TitleSmall title={staff.title} sub={staff.sub} />
-        </Fade>
+      <Fade duration={1000} distance="500px" key={nanoid()}>
+        <Link to={link(staff.filename)}>
+          <div className="staff-wrapper__image">
+            <StaffImg filename={staff.filename} alt={staff.alt} />
+          </div>
+          <br />
+          <Fade bottom duration={800} distance="300px">
+            <TitleSmall title={staff.title} sub={staff.sub} />
+          </Fade>
+        </Link>
       </Fade>
     ))}
   </Carousel>

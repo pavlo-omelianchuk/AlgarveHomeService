@@ -10,7 +10,7 @@ const linkStyles = {
 }
 
 const NavLink = ({ children, to }) => (
-  <Link to={to} style={linkStyles}>
+  <Link className='nav-link' to={to} style={linkStyles}>
     {children}
   </Link>
 );

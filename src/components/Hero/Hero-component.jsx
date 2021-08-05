@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const Hero = () => (
   <div className="hero-wrapper">
-    <div className='hero-message-wrapper'>
+    <div className="hero-message-wrapper">
       <Fade duration={1500} distance="1000px" delay={1500}>
         <PinkImg alt="Logo" filename="component2-pink.png" />
       </Fade>
@@ -20,12 +20,12 @@ const Hero = () => (
     </div>
     <Zoom duration={1000} delay={200}>
       <p className="hero-cta">
-        <span className="cta-btn cta-btn--hero">
-          <Link to="/blog/">our blog</Link>
-        </span>
-        <span className="cta-btn cta-btn--hero">
-          <Link to="/prices-massage/">make an appointment</Link>
-        </span>
+        <Link to="/blog/">
+          <span className="cta-btn cta-btn--hero">our blog</span>
+        </Link>
+        <Link to="/prices-massage/">
+          <span className="cta-btn cta-btn--hero">Book now</span>
+        </Link>
       </p>
     </Zoom>
   </div>

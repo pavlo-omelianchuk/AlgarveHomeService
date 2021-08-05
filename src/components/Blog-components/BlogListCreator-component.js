@@ -1,32 +1,33 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Col, Row } from 'react-bootstrap';
-import BlogListImg from '../Image/oldBlogListImg';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const PostLink = ({ post }) => {
+const PostLink = ({ post, imgSrc }) => {
+  const image = getImage(imgSrc);
   return (
     <Container>
       <Row className="blog-list-flex-wrapper">
-        <Col md={6} sm={12}>
+        <Col className="blog-list-flex-wrapper__image my-auto" lg={5} md={12}>
           <Link to={post.frontmatter.slug}>
-            <div className="blog-list-flex-wrapper__image">
-              <BlogListImg filename={post.frontmatter.featured.name} alt="massage" />
+            <div>
+              <GatsbyImage image={image} alt={post.frontmatter.featured.name} />
             </div>
           </Link>
         </Col>
-        <Col className="blog-list-flex-wrapper__text mx-auto my-5" md={6} sm={12}>
+        <Col className="blog-list-flex-wrapper__text my-5" lg={7} md={12}>
           <Link to={post.frontmatter.slug}>
-            {post.frontmatter.title} ({post.frontmatter.date})
+            <h3>{post.frontmatter.title}</h3>({post.frontmatter.date})
           </Link>
           <hr />
           <p>{post.excerpt}</p>
           <p className="blog-list-cta">
-            <span className="cta-btn cta-btn--blog">
-              <Link to={post.frontmatter.slug}>read more</Link>
-            </span>
-            <span className="cta-btn cta-btn--blog">
-              <Link to="/prices-massage/">make an appointment</Link>
-            </span>
+            <Link to={post.frontmatter.slug}>
+              <span className="cta-btn cta-btn--blog">read more</span>
+            </Link>
+            <Link to="/prices-massage/">
+              <span className="cta-btn cta-btn--blog">Book now</span>
+            </Link>
           </p>
         </Col>
       </Row>

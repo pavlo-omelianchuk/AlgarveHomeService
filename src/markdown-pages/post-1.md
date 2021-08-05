@@ -3,7 +3,7 @@ slug: "/blog/therapeutic-vs-deep-tissue-massage"
 date: "2021-01-07"
 title: "Therapeutic vs Deep Tissue Massage"
 tags:
-  - therapeutic massage
+  - Therapeutic massage
   - Deep Tissue
   - Types of Therapeutic Massage
 featured: presImgOurSpecialists.jpg

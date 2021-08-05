@@ -1,0 +1,134 @@
+#about-us {
+  .section-title {
+    color: #323232;
+    font-family: $font-ralewey;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 5.8px;
+    margin-bottom: 2rem;
+    @include respond(tab-land) {
+      font-size: 3.2rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+    @include respond(phone-xs) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .carousel-container {
+    max-width: 100%;
+  }
+  .react-carousel-item {
+    padding: 10px;
+    cursor: pointer;
+
+    .staff-wrapper__image {
+      width: 150px;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      transition-delay: 0.3s;
+      transition: 0.3s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      opacity: 1;
+      top: 0px;
+
+      &:hover {
+        opacity: 0.5;
+        top: -1rem;
+      }
+    }
+    .section-title-small {
+      color: #323232;
+      font-family: $font-ralewey;
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 2rem;
+      transition-delay: 0s;
+      transition-duration: 0.3s;
+      transition-property: all;
+      transition-timing-function: ease;
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+      @include respond(phone) {
+        // font-size: 1.5rem;
+      }
+      @include respond(phone-xs) {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    h6 {
+      position: relative;
+      top: -2rem;
+      color: #949494;
+      font-family: 'Amiri', Sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-style: italic;
+      line-height: 1em;
+      letter-spacing: 0px;
+    }
+  }
+
+  .hr-styled {
+    display: none;
+  }
+}
+
+.about-us {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 3rem 0;
+
+  .about-us__col {
+    margin: 2rem;
+    min-height: 260px;
+    .about-us-wrapper__image {
+      margin-right: auto;
+      margin-left: auto;
+      width: 250px;
+      height: 250px;
+    }
+    .about-us-wrapper__info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      .about-us-staff-name {
+        margin: 1rem 0;
+      }
+      .about-us-massage {
+        text-align: justify;
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        & a {
+          text-transform: none;
+        }
+      }
+      & > a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

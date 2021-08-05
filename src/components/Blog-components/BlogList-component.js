@@ -4,7 +4,7 @@ import BlogListCreator from './BlogListCreator-component';
 
 
 
-const Blog = ( ) => {
+const Blog = () => {
   const pageQuery = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,9 @@ const Blog = ( ) => {
                 slug
                 featured {
                   name
+                  childImageSharp {
+                    gatsbyImageData(layout: FIXED)
+                  }
                 }
                 date(formatString: "MMMM DD, YYYY")
               }

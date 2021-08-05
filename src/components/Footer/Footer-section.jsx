@@ -99,9 +99,12 @@ const Footer = ({ linkTo, props }) => {
             <a href="https://wa.me/351963531684" data-action="share/whatsapp/share">
               <span className="fa fa-2x fa-whatsapp"></span>
             </a>
-            {/* <!--<a href="" className="col-xs-3">
-                        <span className="fa-instagram"></span>
-                    </a>--> */}
+            <a
+              href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
+              className="col-xs-3"
+            >
+              <span className="fa fa-2x fa-facebook"></span>
+            </a>
             <a href="mailto:info.ahsmb@gmail.com">
               <span className="fa fa-2x fa-at"></span>
             </a>
