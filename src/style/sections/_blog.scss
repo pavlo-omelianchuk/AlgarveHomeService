@@ -31,6 +31,10 @@
     justify-content: center;
     overflow: hidden;
     max-width: 390px;
+    max-height: 390px;
+    & img{
+      width: 390px;
+    }
   }
   .blog-list-flex-wrapper__text {
     display: flex;

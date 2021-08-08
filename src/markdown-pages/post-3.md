@@ -1,6 +1,6 @@
 ---
 slug: "/blog/massage-help-with-sciatica"
-date: 2021-08-10
+date: 2021-08-06
 title: Can Massage Help with Sciatica?
 # tags:
 #   - tech stack

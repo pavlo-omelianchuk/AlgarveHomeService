@@ -6,18 +6,9 @@ import HeadingElement from './HeadingElement-component';
 
 const HeroDesktop = () => {
   return (
-    <div >
-      <StyledBackground
-        className="hero-bg"
-        filename="bgHeroPoster.jpg"
-        alt="Woman getting massage"
-        bgContent={
-          <VideoBckg>
-            <Hero />
-          </VideoBckg>
-        }
-      />
-    </div>
+    <VideoBckg>
+      <Hero />
+    </VideoBckg>
   );
 };
 

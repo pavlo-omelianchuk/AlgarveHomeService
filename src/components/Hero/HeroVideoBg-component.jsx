@@ -1,17 +1,26 @@
 import React from 'react';
-import clip from '../../video/production ID_3998263.mp4';
+import clip from '../../video/productionID_new.mp4';
+import clipM from '../../video/productionID_newMobile.mp4';
+import poster from '../../images/bgHeroPoster.jpg';
+import posterM from '../../images/bgHeroPosterMobile.jpg';
 
 const VideoBg = ({ children }) => {
   return (
-    <>
-      <div className="video-container">
-        <video className="hero-video desktop" autoPlay loop muted>
-          <source src={clip} type="video/mp4" />
-          <source src={clip} type="video/ogg" />
-        </video>
-      </div>
+    <div className="video-container ">
+      <video className="hero-video mobile"
+        // poster={posterM}
+        autoPlay loop muted playsInline>
+        <source src={clipM} type="video/mp4" />
+        <source src={clipM} type="video/ogg" />
+      </video>
+      <video className="hero-video desktop"
+        // poster={poster}
+        autoPlay loop muted playsInline>
+        <source src={clip} type="video/mp4" />
+        <source src={clip} type="video/ogg" />
+      </video>
       {children}
-    </>
+    </div>
   );
 };
 

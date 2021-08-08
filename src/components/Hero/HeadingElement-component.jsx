@@ -4,9 +4,14 @@ export default () => {
   return (
     <div style={{ position: 'absolute', color: 'transparent' }}>
       <h1>Professional massage at Home over all the Algarve.</h1>
-      <h2> In Lagos, Albufeira, Quarteira, Vale de Lobo, Vilamoura, Armação de Pera, Portimao, Sagres</h2>
+      <h2>
+        {' '}
+        In Lagos, Albufeira, Quarteira, Vale de Lobo, Vilamoura, Armação de Pera, Portimao, Sagres
+      </h2>
       <h3>We offer:</h3>
       <h4>Health Massage</h4>
+      <h4>Golf Massage</h4>
+      <h4>Anti-Cellulite Massage</h4>
       <h4>Therapeutic Massage</h4>
       <h4>Sports Deep Tissue Massage</h4>
       <h4>Relax Massage</h4>
@@ -14,11 +19,13 @@ export default () => {
       <h4>Reflexology Massage</h4>
       <h4>Anti-Cellulite Massage</h4>
       <p>
-        Therapeutic Massage vs Deep Tissue. Therapeutic massage is a general term that describes any
-        type of massage modality that helps relieve pain, reduce stress, and work on a specific
-        problem—such as a frozen shoulder. People tend to assume therapeutic massage means deep
-        tissue massage, and that they will get a very strong massage. But this is not always the
-        case. Deep tissue massage is great at breaking down scar tissue and getting your blood
+        We provide Professional massage at Home over all the Algarve. Every time you are on holidays
+        in warm Algarve, Portugal. We will be happy to visit you with best Massage Therapists for
+        Beauticians. But for now, you can read about Therapeutic Massage vs Deep Tissue. Therapeutic massage is a general term that
+        describes any type of massage modality that helps relieve pain, reduce stress, and work on a
+        specific problem—such as a frozen shoulder. People tend to assume therapeutic massage means
+        deep tissue massage, and that they will get a very strong massage. But this is not always
+        the case. Deep tissue massage is great at breaking down scar tissue and getting your blood
         circulating, but it may not be what you need on a particular day. A good therapist will
         apply the specific techniques and the right amount of pressure to address your need, and
         sometimes that’s a lighter touch. Types of Therapeutic Massage There are several different
