@@ -80,6 +80,22 @@ export default function BlogTemplate({
                 </div>
                 <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
               </div>
+                {frontmatter.tags && <span className='tags-title'> Tags:</span>}
+              <div className="blog-post-tags-wrapper">
+                {frontmatter.tags &&
+                  frontmatter.tags.map((tag) => {
+                    const tagToLink = tag.replace(` `, '-');
+                    console.log(tagToLink);
+                    const linkTo = `/blog/#${tagToLink}`;
+                    return (
+                      <div className="blog-post-tag">
+                        <Link to={linkTo}>
+                          <span>#{tag} </span>
+                        </Link>
+                      </div>
+                    );
+                  })}
+              </div>
               <p className="blog-cta">
                 <Link to="/prices-massage/">
                   <span className="cta-btn cta-btn--blog">Book now</span>

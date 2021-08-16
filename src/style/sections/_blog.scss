@@ -32,7 +32,7 @@
     overflow: hidden;
     max-width: 390px;
     max-height: 390px;
-    & img{
+    & img {
       width: 390px;
     }
   }
@@ -79,6 +79,33 @@
     text-align: center;
     padding: 2rem 1rem;
     margin: 2rem 1rem;
+  }
+}
+.tags-title {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.blog-post-tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  .blog-post-tag {
+    font-size: 1em;
+    margin: 8px;
+
+    & a {
+      padding: 5px;
+      border: white 1px solid;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      transition: box-shadow 3s;
+    }
+    & a:hover {
+      color: $primary-color;
+    }
   }
 }
 .cta-btn--blog {

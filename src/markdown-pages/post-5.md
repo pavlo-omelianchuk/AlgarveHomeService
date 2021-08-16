@@ -1,6 +1,6 @@
 ---
 slug: '/blog/health-therapeutic-massage'
-date: 2021-08-08
+date: 2021-08-16
 title: Medical massage can be tailored to your health needs and help you recover faster.
 tags:
   - back pain
