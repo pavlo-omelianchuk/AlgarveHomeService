@@ -16,6 +16,7 @@ const Footer = ({ linkTo, props }) => {
                 <a href="mailto:info.ahsmb@gmail.com">
                   <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
                 </a>
+                <br />
                 <a href="https://api.whatsapp.com/send?phone=+351 963 531 684">
                   <i className="fa fa-whatsapp" aria-hidden="true"></i>
                   +351 963 531 684
@@ -23,11 +24,19 @@ const Footer = ({ linkTo, props }) => {
               </p>
             </div>
             <div>
+              <hr />
               <p className="footer__text">
-                2009 - {new Date().getFullYear()} - All Rights Reserved{' '}
-                <Link id="dev-by" to="/" target="_blank" rel="noopener noreferrer">
-                  Danylo Hips ©
-                </Link>
+                All Rights Reserved{' '}
+                <Link
+                  id="dev-by"
+                  to="/about-us/#staffDanylo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Danylo Hips
+                </Link>{' '}
+                <br />
+                Copyright © 2009 - {new Date().getFullYear()}
               </p>
             </div>
           </Col>
@@ -40,38 +49,33 @@ const Footer = ({ linkTo, props }) => {
             <Link to={linkTo}>
               <FooterImg />
             </Link>
+            <br />
+            <span id="privacy-footer">
+              Our {' - '} <Link to={'/privacy-policy'}> Privacy Policy </Link>
+              <br />
+              <br />
+            </span>
           </Col>
           <Col className="footer-flex" md={4}>
             <div>
               <p className="footer__text">
-                Share with Friends:
-                <br />
+                Follow us:
                 <br />
                 <span id="share-buttons">
                   <a
-                    href="http://www.facebook.com/sharer.php?u=https://www.algarvehomemassageandbeauty.com/"
+                    href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
                     target="_blank"
                   >
-                    <i className="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
                   </a>
-                  <a
-                    href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.algarvehomemassageandbeauty.com/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    href="#"
-                    onClick={() => {
-                      window.print();
-                    }}
-                  >
-                    <i className="fa fa-2x fa-print" aria-hidden="true"></i>
+                  <a href="https://www.instagram.com/home_service_massage_beauty/" target="_blank">
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </span>
               </p>
             </div>
             <div>
+              <hr />
               <p className="footer__text">
                 Developed by{' '}
                 <a
@@ -82,11 +86,6 @@ const Footer = ({ linkTo, props }) => {
                 >
                   Palo Criativo ®
                 </a>
-                <br />
-                <br />
-                <span id="privacy-footer">
-                  Our <Link to={'/privacy-policy'}>Privacy Policy </Link>
-                </span>
               </p>
             </div>
           </Col>

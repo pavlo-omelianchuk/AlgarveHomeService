@@ -12,13 +12,13 @@
   }
   &__text {
     color: darken(white, 50%);
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     a {
       text-transform: initial;
       letter-spacing: 2px;
-      color: darken(white, 50%);
-      font-size: 2rem;
+      color: $white-color;
+      font-size: 1.5rem;
       transition: all 0.4s;
       display: inline-block;
       background-color: $dark-grey;
@@ -75,6 +75,8 @@
 #privacy-footer a {
   z-index: 10;
   font-size: 1em;
+  color: $secondary-color;
+  margin-bottom: 15px;
   &:hover {
     color: $primary-color;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
