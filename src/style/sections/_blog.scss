@@ -42,8 +42,6 @@
     justify-content: space-between;
     padding-right: 5rem;
 
-    .blog-list-cta {
-    }
     @include respond(tab-land) {
       padding-right: 1rem;
       padding-left: 1rem;
