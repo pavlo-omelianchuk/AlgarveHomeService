@@ -49,8 +49,6 @@ These issues can include:
 - Post-surgical scar tissue (with doctor’s approval).
 - Frozen shoulder.
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
 ## What to expect at a massage therapy visit
 
 “There are no typical therapeutic massages routines,” Danylo says. “Your massage therapist will tailor the massage to your needs, depending on the areas of issue.”
