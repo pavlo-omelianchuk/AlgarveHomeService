@@ -14,8 +14,8 @@ const Hero = () => (
         <h3 className="hero-overtitle">Algarve Home Service</h3>
       </Fade>
       <Fade bottom duration={1500} distance="300px">
-        <h1 className="hero-title">MASSAGE & BEAUTY THERAPY</h1>
-        <h2 className="hero-title hero-title-name text-color-main">From Danylo Hips and Company</h2>
+        <h2 className="hero-title">MASSAGE & BEAUTY THERAPY</h2>
+        <h2 className="hero-title-name text-color-main">From Danylo Hips and Company</h2>
       </Fade>
     </div>
     <Zoom duration={1000} delay={200}>

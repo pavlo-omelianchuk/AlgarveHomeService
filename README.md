@@ -1,14 +1,3 @@
----
 
-You can now view mobile-beauty-algarve in the browser.
-⠀
-Local: http://localhost:8000/
-On Your Network: http://172.26.208.1:8000/
 
-// in fact look for it on ipconfig,
-// IPv4 Address. . . . . . . . . . . : 192.168.1.68
-⠀
-View GraphiQL, an in-browser IDE, to explore your site's data and schema
-⠀
-Local: http://localhost:8000/**_graphql
-On Your Network: http://172.26.208.1:8000/_**graphql
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db5f7355-d242-4bd0-a10f-0287ff8c7fda/deploy-status)](https://app.netlify.com/sites/algarvehomemassageandbeauty/deploys)
