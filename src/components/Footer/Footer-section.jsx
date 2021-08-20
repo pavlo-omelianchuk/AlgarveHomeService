@@ -13,11 +13,14 @@ const Footer = ({ linkTo, props }) => {
               <p className="footer__text">
                 Our contacts:
                 <br />
-                <a href="mailto:info.ahsmb@gmail.com">
+                <a rel="noopener noreferrer" href="mailto:info.ahsmb@gmail.com">
                   <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
                 </a>
                 <br />
-                <a href="https://api.whatsapp.com/send?phone=+351 963 531 684">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://api.whatsapp.com/send?phone=+351 963 531 684"
+                >
                   <i className="fa fa-whatsapp" aria-hidden="true"></i>
                   +351 963 531 684
                 </a>
@@ -65,10 +68,15 @@ const Footer = ({ linkTo, props }) => {
                   <a
                     href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fa fa-facebook-square" aria-hidden="true"></i>
                   </a>
-                  <a href="https://www.instagram.com/home_service_massage_beauty/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/home_service_massage_beauty/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </span>
@@ -92,19 +100,24 @@ const Footer = ({ linkTo, props }) => {
         </Row>
         <Row>
           <div className="footer-contacts-wrapper">
-            <a href="tel:+351963531684" className="col-xs-3">
+            <a href="tel:+351963531684" className="col-xs-3" rel="noopener noreferrer">
               <span className="fa fa-2x fa-mobile-phone"></span>
             </a>
-            <a href="https://wa.me/351963531684" data-action="share/whatsapp/share">
+            <a
+              href="https://wa.me/351963531684"
+              data-action="share/whatsapp/share"
+              rel="noopener noreferrer"
+            >
               <span className="fa fa-2x fa-whatsapp"></span>
             </a>
             <a
               href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
               className="col-xs-3"
+              rel="noopener noreferrer"
             >
               <span className="fa fa-2x fa-facebook"></span>
             </a>
-            <a href="mailto:info.ahsmb@gmail.com">
+            <a href="mailto:info.ahsmb@gmail.com" rel="noopener noreferrer">
               <span className="fa fa-2x fa-at"></span>
             </a>
             <a

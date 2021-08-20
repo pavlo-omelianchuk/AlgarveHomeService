@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { headData } from '../mock/data';
-import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PageWelcomeBg from '../layout/PageWelcomeBg-section';
 import PriceList from '../components/PricesPage-components/PriceList-component';

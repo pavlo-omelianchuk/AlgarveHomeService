@@ -2,6 +2,7 @@ process.noDeprecation = true; // https://github.com/webpack/webpack/issues/6568
 
 module.exports = {
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

@@ -5,7 +5,6 @@ import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PageWelcomeBg from '../layout/PageWelcomeBg-section';
 import Blog from '../components/Blog-components/BlogList-component';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 const BlogPage = () => {

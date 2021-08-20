@@ -86,8 +86,6 @@ const StaffCarousel = () => (
     // deviceType={this.props.deviceType}
     dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
-    // renderButtonGroupOutside={true}
-    // centerMode={true} <a href="https://effectdh.com" target="_blank">
   >
     {staffArray.map((staff) => (
       <Fade duration={1000} distance="500px" key={nanoid()}>

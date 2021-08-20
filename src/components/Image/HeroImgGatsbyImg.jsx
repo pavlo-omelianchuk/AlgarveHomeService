@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import BackgroundImage from 'gatsby-background-image';
 
@@ -41,15 +41,6 @@ const BackgroundSection = ({ id, className, filename, alt, bgContent }) => {
     </>
   );
 };
-// const StyledBackgroundSection = styled(BackgroundSection)`
-//   width: 100vw;
-//   height: 100vh;
-//   min-height: 320px;
-//   max-width: 100vw;
-//   background-position: top center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// `;
 
 BackgroundSection.propTypes = {
   className: PropTypes.string,

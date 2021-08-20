@@ -24,7 +24,7 @@ const Promo = () => (
                     className="cta-btn cta-btn--hero px-5 rounded"
                     href="https://effectdh.com/products"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     buy now
                   </a>
