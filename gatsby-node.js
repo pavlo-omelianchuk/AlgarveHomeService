@@ -1,14 +1,11 @@
-exports.onCreateWebpackConfig = (helper) => {
-  const { stage, actions, getConfig } = helper;
-  if (stage === 'develop') {
-    // if (stage === "build-javascript") {
-    const config = getConfig();
-    const miniCssExtractPlugin = config.plugins.find(
-      (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin'
-    );
-    if (miniCssExtractPlugin) {
-      miniCssExtractPlugin.options.ignoreOrder = true;
-    }
-    actions.replaceWebpackConfig(config);
-  }
-};
+const webpack = require(`webpack`)
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^mini-css-extract-plugin$/,
+      }),
+    ],
+  })
+}

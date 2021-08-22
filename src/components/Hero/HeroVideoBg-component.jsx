@@ -1,8 +1,6 @@
 import React from 'react';
 import clip from '../../video/productionID_new.mp4';
 import clipM from '../../video/productionID_newMobile.mp4';
-import poster from '../../images/bgHeroPoster.jpg';
-import posterM from '../../images/bgHeroPosterMobile.jpg';
 
 const VideoBg = ({ children }) => {
   return (
