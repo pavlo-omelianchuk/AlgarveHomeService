@@ -68,7 +68,10 @@ export default function BlogTemplate({
               <div className="blog-post-container">
                 <div className="blog-post">
                   <div className="gatsby-image-wrapper-wraper">
-                    <GatsbyImage image={image} alt={frontmatter.featured.name} />
+                    <GatsbyImage
+                      image={image}
+                      // alt={frontmatter.featured.name}
+                    />
                   </div>
                   <br />
                   <br />
@@ -120,7 +123,7 @@ export const pageQuery = graphql`
         featured {
           name
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            gatsbyImageData(layout: CONSTRAINED, formats: WEBP, height: 390)
           }
         }
         excerpt

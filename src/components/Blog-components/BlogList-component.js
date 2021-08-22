@@ -20,7 +20,7 @@ const Blog = () => {
                 featured {
                   name
                   childImageSharp {
-                    gatsbyImageData(layout: FIXED)
+                    gatsbyImageData(layout: CONSTRAINED, formats: WEBP)
                   }
                 }
                 date(formatString: "MMMM DD, YYYY")

@@ -1,9 +1,10 @@
 ---
 layout: blog
-title: "PHYSICALLY SPEAKING: RECOVERY MASSAGE"
+slug: '/blog/recovery-massage'
 date: 2021-08-22T12:19:12.994Z
-thumbnail: ../images/recovery-massage.jpg
-description: For the elite tennis player, showing up to every match alert,
+title: "PHYSICALLY SPEAKING: RECOVERY MASSAGE"
+featured: recovery-massage.jpg
+excerpt: For the elite tennis player, showing up to every match alert,
   refreshed and at the top of your game is essential for success. One key
   component to on-court success is the use of recovery massage.
 ---

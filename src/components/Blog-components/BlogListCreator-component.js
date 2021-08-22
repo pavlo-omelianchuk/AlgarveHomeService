@@ -11,7 +11,10 @@ const PostLink = ({ post, imgSrc }) => {
         <Col className="blog-list-flex-wrapper__image my-auto" lg={5} md={12}>
           <Link to={post.frontmatter.slug}>
             <div>
-              <GatsbyImage image={image} alt={post.frontmatter.featured.name} />
+              <GatsbyImage
+                image={image}
+                // alt={post.frontmatter.featured.name}
+              />
             </div>
           </Link>
         </Col>

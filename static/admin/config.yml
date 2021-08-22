@@ -1,31 +1,32 @@
 backend:
   name: github
-  repo: EcoMadeirinha/personal-blog-with-netlify-cms
+  repo: EcoMadeirinha/AlgarveHomeService
   branch: main
 
-media_folder: content/assets
-public_folder: ../assets
+media_folder: src/markdown-pages
+public_folder: ../markdown-pages
 
 collections:
-  - name: blog
+  - name: markdown-pages
     label: Blog
-    folder: content/blog
+    folder: src/markdown-pages
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: 'blog/{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-      - { name: description, label: Description }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Pages"
-    name: "pages"
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Featured Image', name: 'featured', widget: 'image' }
+      - { label: 'Description', name: 'excerpt'}
+      - { label: 'Tags', name: 'tags', widget: 'string'}
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+  - label: 'Pages'
+    name: 'pages'
     files:
-      - label: "About Page"
-        name: "about"
-        file: "content/pages/about.json"
+      - label: 'About Page'
+        name: 'about'
+        file: 'src/pages/about.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
@@ -35,11 +36,11 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: 'Description', name: 'description', widget: 'text' }
               - { label: Photo, name: photo, widget: image }
-      - label: "Locations Page"
-        name: "locations"
-        file: "content/pages/prices.json"
+      - label: 'Locations Page'
+        name: 'locations'
+        file: 'src/pages/prices.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
