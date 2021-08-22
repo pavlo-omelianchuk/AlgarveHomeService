@@ -7,14 +7,14 @@ media_folder: src/markdown-pages
 public_folder: ../markdown-pages
 
 collections:
-  - name: markdown-pages
+  - name: blog
     label: Blog
     folder: src/markdown-pages
     create: true
-    slug: 'blog/{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Always use: /blog/page-name. For ex: /blog/sports-massage' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Featured Image', name: 'featured', widget: 'image' }
