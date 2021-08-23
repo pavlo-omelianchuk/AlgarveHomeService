@@ -12,4 +12,4 @@ tags:
 ---
 manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,
 
-![alt img](../markdown-pages/therapeutic-massage-therapy.jpg "title img")
+![alt img](./markdown-pages/therapeutic-massage-therapy.jpg "title img")
