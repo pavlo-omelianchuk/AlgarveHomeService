@@ -1,0 +1,23 @@
+{
+  "block_One": {
+    "title": "CONTACT US",
+    "message": "To have Massage or Beauty treatment at home any where in the Algarve you can make an appointment online or if you have any questions, feel free to call us.",
+    "image": "../images/uploads/presImgContact.webp",
+    "image_Description": "Woman getting beauty procedure",
+    "button": "Call Now"
+  },
+  "block_Two": {
+    "title": "BOOK MASSAGE",
+    "message": "Mobile Massage and Beauty services available in Sagres, Lagos, Portimão,  Albufeira, Quarteira, Vale de Lobo, Vilamoura, Faro, Olhão, Tavira and over all the Algarve. We will make your home more relaxing with best Massage or Beauty Therapists.",
+    "image": "../images/uploads/presImgMkAppointment.webp",
+    "image_Description": "Woman getting massage",
+    "button": "Book Now"
+  },
+  "block_Three": {
+    "image_Description": "Woman getting massage",
+    "title": "OUR SPECIALISTS",
+    "message": "Each one of our staff members are licensed and experienced Massage or Beauty Therapists.",
+    "image": "../images/uploads/presImgOurSpecialists.webp",
+    "button": "View All"
+  }
+}
