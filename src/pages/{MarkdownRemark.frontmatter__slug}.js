@@ -70,7 +70,7 @@ export default function BlogTemplate({
                   <div className="gatsby-image-wrapper-wraper">
                     <GatsbyImage
                       image={image}
-                      // alt={frontmatter.featured.name}
+                      alt={frontmatter.featured.name}
                     />
                   </div>
                   <br />

@@ -14,19 +14,29 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
-      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Always use: /blog/page-name  No spaces between. For ex: /blog/sports-massage' }
+      - {
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+          hint: 'Always use: /blog/page-name  No spaces between. For ex: /blog/sports-massage',
+        }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featured', widget: 'image', hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ' }
-      - { label: 'Description', name: 'excerpt'}
-      - {label: "Tags", name: "tags", widget: "list", hint: 'Separate by comma'}
+      - {
+          label: 'Featured Image',
+          name: 'featured',
+          widget: 'image',
+          hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ',
+        }
+      - { label: 'Description', name: 'excerpt' }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
   - label: 'Pages'
     name: 'pages'
     files:
       - label: 'About Page'
         name: 'about'
-        file: 'src/pages/about.json'
+        file: 'src/mock/about.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
@@ -38,15 +48,25 @@ collections:
               - { label: Position, name: position, widget: string }
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: Photo, name: photo, widget: image }
-      - label: 'Locations Page'
-        name: 'locations'
-        file: 'src/pages/prices.json'
+      - label: 'Hero Section'
+        name: 'hero'
+        file: 'src/mock/hero.json'
         fields:
+          - { label: OverTitle, name: overTitle, widget: string }
           - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Address, name: address, widget: string }
+          - { label: AfterTitle, name: afterTitle, widget: string }
+          - { label: ButtonOne, name: buttonOne, widget: string }
+          - { label: ButtonTwo, name: buttonTwo, widget: string }
+      - label: 'Presentation Section'
+        name: 'presentation'
+        file: 'src/mock/presentation.json'
+        fields:
+          - { label: TitleOne, name: TitleOne, widget: string }
+          - { label: MessageOne, name: MessageOne, widget: string }
+          - { label: ImageOne, name: ImageOne, widget: image }
+          - { label: TitleTwo, name: TitleTwo, widget: string }
+          - { label: MessageTwo, name: MessageTwo, widget: string }
+          - { label: ImageTwo, name: ImageTwo, widget: image }
+          - { label: TitleThree, name: TitleThree, widget: string }
+          - { label: MessageThree, name: MessageThree, widget: string }
+          - { label: ImageThree, name: ImageThree, widget: image }
