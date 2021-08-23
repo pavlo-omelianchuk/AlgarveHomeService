@@ -3,8 +3,8 @@ backend:
   repo: EcoMadeirinha/AlgarveHomeService
   branch: main
 
-media_folder: src/markdown-pages
-public_folder: ./markdown-pages
+media_folder: src/images/uploads
+public_folder: ../images/uploads
 
 collections:
   - name: blog
@@ -14,10 +14,10 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
-      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Always use: /blog/page-name. For ex: /blog/sports-massage' }
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Always use: /blog/page-name  No spaces between. For ex: /blog/sports-massage' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featured', widget: 'image' }
+      - { label: 'Featured Image', name: 'featured', widget: 'image', hint: 'Only files *.WEBP , to convert your image go to the : https://squoosh.app/ ' }
       - { label: 'Description', name: 'excerpt'}
       - {label: "Tags", name: "tags", widget: "list", hint: 'Separate by comma'}
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }

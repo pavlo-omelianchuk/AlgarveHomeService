@@ -3,7 +3,7 @@ layout: blog
 slug: /blog/manual-test2
 date: 2021-08-22T22:51:29.230Z
 title: manual-test2
-featured: ../markdown-pages/screenshot-2021-06-10-095709.jpg
+featured: ../images/staffLena.webp
 excerpt: manual-test2
 tags:
   - tag1
@@ -12,4 +12,4 @@ tags:
 ---
 manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,manual-test2 ,
 
-![alt img](./markdown-pages/therapeutic-massage-therapy.jpg "title img")
+![](../markdown-pages/massage-for-couples.png)

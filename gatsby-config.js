@@ -1,12 +1,14 @@
 process.noDeprecation = true; // https://github.com/webpack/webpack/issues/6568
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     {
@@ -14,6 +16,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `imagesPostUploads`,
+        path: `${__dirname}/src/images/uploads`,
       },
     },
     {
@@ -30,7 +39,23 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-source-filesystem`,

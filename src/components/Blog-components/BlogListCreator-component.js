@@ -13,7 +13,7 @@ const PostLink = ({ post, imgSrc }) => {
             <div>
               <GatsbyImage
                 image={image}
-                // alt={post.frontmatter.featured.name}
+                alt={post.frontmatter.featured.name}
               />
             </div>
           </Link>

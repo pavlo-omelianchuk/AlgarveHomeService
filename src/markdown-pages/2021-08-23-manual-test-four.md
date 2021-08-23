@@ -1,6 +1,6 @@
 ---
 layout: blog
-slug: /blog/Manual-Test-Four
+slug: /blog/anual-est-our
 date: 2021-08-23T15:13:17.010Z
 title: Manual Test Four
 featured: ../images/uploads/217772184_1147429799000816_5404174163537549831_n.png
