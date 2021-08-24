@@ -22,12 +22,12 @@
     min-height: 100vh;
     position: absolute;
     @include respond(phone) {
-      top: -55%;
-      left: -85%;
+      // top: -55%;
+      // left: -85%;
     }
     @include respond(phone-xs) {
-      left: -65%;
-      top: -85%;
+      // left: -65%;
+      // top: -85%;
     }
   }
 
