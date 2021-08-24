@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade, Zoom } from 'react-reveal';
-import PinkImg from '../Image/PinkImg';
+import PinkImg from '../Image/HeroPinkImg';
 import { Link } from 'gatsby';
 import heroData from '../../mock/hero.json'
 
@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <div className="hero-wrapper">
       <div className="hero-message-wrapper">
-        <Fade duration={1500} distance="1000px" delay={1500}>
-          <PinkImg alt="Logo" filename="component2-pink.png" />
+        <Fade duration={1500} distance="1000px" delay={500}>
+          <PinkImg />
         </Fade>
 
         <Fade bottom distance="30px">

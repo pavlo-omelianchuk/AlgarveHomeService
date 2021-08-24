@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Title from '../Titles/Title-component';
 
-import PinkImg from '../Image/PinkImg';
+import PinkImg from '../Image/StaffPinkImg';
 
 import StaffMaker from './StaffCreator-component';
 

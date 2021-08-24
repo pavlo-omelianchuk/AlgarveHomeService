@@ -1,41 +1,43 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 
-const TestemonialImg = ({ filename, alt }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        images: allFile {
+const AboutImg = ({ filename, alt }) => {
+  const pageQuery = useStaticQuery(
+    graphql`
+      {
+        allFile {
           edges {
             node {
-              relativePath
-              name
               childImageSharp {
-                fixed(width: 50) {
-                  ...GatsbyImageSharpFixed
-                }
+                gatsbyImageData(
+                  placeholder: DOMINANT_COLOR
+                  formats: WEBP
+                  layout: CONSTRAINED
+                  width: 50
+                )
               }
+              relativePath
             }
           }
         }
       }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+    `
+  );
+  const edges = pageQuery.allFile.edges;
 
-      if (!image) return null;
+  const image = edges.find((n) => n.node.relativePath.includes(filename));
 
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="rounded-circle shadow-lg" alt={alt} fixed={imageFixed} />;
-    }}
-  />
-);
+  if (!image) return null;
 
-TestemonialImg.propTypes = {
+  const imageToGo = getImage(image.node);
+  return <GatsbyImage className="rounded-circle shadow-lg" alt={alt} image={imageToGo} />;
+};
+
+AboutImg.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default TestemonialImg;
+export default AboutImg;

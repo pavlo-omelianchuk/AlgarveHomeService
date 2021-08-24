@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 
 const AboutImg = ({ filename, alt }) => {
   const pageQuery = useStaticQuery(
@@ -30,7 +30,7 @@ const AboutImg = ({ filename, alt }) => {
 
   if (!image) return null;
 
-  const imageToGo = image.node.childImageSharp.gatsbyImageData;
+  const imageToGo = getImage(image.node);
   return <GatsbyImage className="rounded shadow-lg" alt={alt} image={imageToGo} />;
 };
 

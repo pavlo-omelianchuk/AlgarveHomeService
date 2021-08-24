@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
-import TestemonialsInfoAll from './TestemonialCreator-component';
+import TestemonialsMaker from './TestemonialMaker-component';
 
 import 'react-multi-carousel/lib/styles.css';
 
@@ -77,34 +77,37 @@ const testemonialsArray = [
 
 const TestemonialsCarousel = () => {
   return (
-    <Carousel
-      swipeable
-      draggable={false}
-      showDots={false}
-      responsive={responsiveCarousel}
-      infinite
-      autoPlay={false}
-      autoPlaySpeed={4000}
-      containerClass="testemonials-carousel-container"
-      dotListClass="custom-dot-list-style"
-      itemClass="react-carousel-item"
-      renderButtonGroupOutside
-    >
-      {testemonialsArray.map((testemonial) => {
-        return (
-          <Fade key={nanoid()}>
-            <TestemonialsInfoAll
-              overTitle={testemonial.overTitle}
-              title={testemonial.title}
-              message={testemonial.message}
-              img={testemonial.img}
-              name={testemonial.name}
-              alt={testemonial.alt}
-            />
-          </Fade>
-        );
-      })}
-    </Carousel>
+    <>
+      <div className="testemonials-background-overlay" />
+      <Carousel
+        swipeable
+        draggable={false}
+        showDots={false}
+        responsive={responsiveCarousel}
+        infinite
+        autoPlay={false}
+        autoPlaySpeed={4000}
+        containerClass="testemonials-carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="react-carousel-item"
+        renderButtonGroupOutside
+      >
+        {testemonialsArray.map((testemonial) => {
+          return (
+            <Fade key={nanoid()}>
+              <TestemonialsMaker
+                overTitle={testemonial.overTitle}
+                title={testemonial.title}
+                message={testemonial.message}
+                img={testemonial.img}
+                name={testemonial.name}
+                alt={testemonial.alt}
+              />
+            </Fade>
+          );
+        })}
+      </Carousel>
+    </>
   );
 };
 

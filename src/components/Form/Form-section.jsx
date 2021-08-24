@@ -96,7 +96,7 @@ const SignupForm = ({
   treatmentsBeauty,
   treatmentsHairdresser,
 }) => {
-  const phoneRegExp = /[1-9][0-9 \-\(\)\.]{7,}$/;
+  const phoneRegEx = /[1-9][0-9 \-\(\)\.]{7,}$/;
   const treatments =
     treatmentsMassage || treatmentsMicropigmentation || treatmentsBeauty || treatmentsHairdresser;
   return (
@@ -120,7 +120,7 @@ const SignupForm = ({
           clientsName: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
           email: Yup.string().email('Invalid email addresss`').required('Required'),
           phoneNumber: Yup.string()
-            .matches(phoneRegExp, 'Phone number is not valid')
+            .matches(phoneRegEx, 'Phone number is not valid')
             .required('Required'),
           location: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
           treatment: Yup.string().required('Required'),

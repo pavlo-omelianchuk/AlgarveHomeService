@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
 import TitleSmall from '../Titles/TitleSmall-component';
 import { Link } from 'gatsby';
-import StaffImg from '../Image/StaffImg';
+import StaffImg from '../Image/AboutImg';
 import 'react-multi-carousel/lib/styles.css';
 
 const responsiveCarousel = {

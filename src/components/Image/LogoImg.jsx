@@ -1,15 +1,10 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
+const imageSrc = '../../images/logoAMMBTHeaderWithTextNew.png';
 const LogoImg = () => {
   return (
-    <StaticImage
-      src="../../images/logoAMMBTHeaderWithTextNew.png"
-      alt="Logo"
-      // placeholder="blurred"
-      layout="fixed"
-      width={250}
-    />
+    <StaticImage src={imageSrc} alt="Logo" placeholder="none" layout="constrained" width={250} />
   );
 };
 

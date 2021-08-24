@@ -3,9 +3,12 @@
   padding-bottom: 0;
   padding: 0;
   &-fluid {
+    position: relative;
     padding: 0;
   }
   .testemonials-carousel-container {
+    z-index: 6;
+    color: $white-color;
     .react-carousel-item {
       display: flex;
       align-items: center;
@@ -105,7 +108,7 @@
     }
   }
 }
-#testemonials-background-overlay {
+.testemonials-background-overlay {
   position: absolute;
   top: 0;
   left: 0;

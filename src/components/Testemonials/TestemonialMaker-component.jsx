@@ -2,9 +2,9 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
 import TestemonialImg from '../Image/TestemonialImg';
-import PinkImg from '../Image/PinkImg';
+import PinkImg from '../Image/StaffPinkImg';
 
-const TestemonialsInfoAll = ({ overTitle, title, message, img, alt, name }) => (
+const TestemonialsMaker = ({ overTitle, title, message, img, alt, name }) => (
   <Fade bottom duration={1000} distance="500px">
     <div>
       <div>
@@ -24,7 +24,7 @@ const TestemonialsInfoAll = ({ overTitle, title, message, img, alt, name }) => (
   </Fade>
 );
 
-TestemonialsInfoAll.propTypes = {
+TestemonialsMaker.propTypes = {
   overTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
@@ -33,4 +33,4 @@ TestemonialsInfoAll.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-export default TestemonialsInfoAll;
+export default TestemonialsMaker;

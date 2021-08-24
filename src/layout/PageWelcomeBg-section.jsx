@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import PageWelcomeBgTitle from './PageWelcomeBgTitle-component'
-import StyledBackground from '../components/Image/PricesWelcomeBackgroundImage';
+import StyledBackground from '../components/Image/LastCallBackgroundImage';
 
 const PageWelcomeBg = ({overTitle, title}) => {
   return (

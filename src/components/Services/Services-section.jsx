@@ -5,48 +5,36 @@ import ServicesImg from '../Image/ServicesImgMaker';
 
 const servicesArray = [
   {
-    alt: 'Back massage',
-    linkTo: '/prices-massage',
-    colClassName: 'services-row__col',
-    filename: 'bgServiceMassage',
     overTitle: 'Manual & excercise therapy',
     title: 'MASSAGE THERAPY',
+    alt: 'Back massage',
+    filename: 'bgServiceMassage',
+    linkTo: '/prices-massage',
     fromPrice: '60 min / 55 euro',
   },
   {
-    alt: 'beauty face mask',
-    linkTo: '/prices-beauty',
-    colClassName: 'services-row__col',
-    filename: 'bgServiceBeauty',
     overTitle: 'Massage for rest & relaxation',
     title: 'BEAUTY THERAPY',
+    filename: 'bgServiceBeauty.webp',
+    alt: 'beauty face mask',
     fromPrice: 'Facial treatment 55 euro / 60 min',
+    linkTo: '/prices-beauty',
   },
   {
-    alt: 'Eyebrows after micropigmentation',
-    linkTo: '/prices-micropigmentation',
-    colClassName: 'services-row__col',
-    filename: 'bgServiceMicropigmentation',
     overTitle: 'Eyebrows beauty',
     title: 'MICRO PIGMENTATION',
+    filename: 'bgServiceMicropigmentation',
+    alt: 'Eyebrows after micropigmentation',
     fromPrice: '270 euro',
+    linkTo: '/prices-micropigmentation',
   },
-  // {
-  //   alt: 'Eyebrows after micropigmentation',
-  //   linkTo: '/prices-micropigmentation',
-  //   colClassName: 'services-row__col mobile',
-  //   filename: 'bgServiceMicropigmentation',
-  //   overTitle: 'Eyebrows beauty',
-  //   title: 'MICROPIGMENTATION',
-  // },
   {
-    alt: 'Hair styling',
-    linkTo: '/prices-hairdresser',
-    colClassName: 'services-row__col',
-    filename: 'bgServiceHairdresser',
     overTitle: 'Hair Style',
     title: 'HAIRDRESSER',
+    filename: 'bgServiceHairdresser',
+    alt: 'Hair styling',
     fromPrice: `Female cut & brushing 40 euro. Male\u00A0cut\u00A030\u00A0euro`,
+    linkTo: '/prices-hairdresser',
   },
 ];
 
@@ -60,7 +48,7 @@ const Services = () => {
               <ServicesImg
                 key={nanoid()}
                 linkTo={service.linkTo}
-                colClassName={service.colClassName}
+                colClassName='services-row__col'
                 alt={service.alt}
                 filename={service.filename}
                 overTitle={service.overTitle}

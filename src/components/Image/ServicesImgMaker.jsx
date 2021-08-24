@@ -1,64 +1,61 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { convertToBgImage } from 'gbimage-bridge';
+import BackgroundImage from 'gatsby-background-image';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
-import { Parallax } from 'react-parallax';
 import { Col } from 'react-bootstrap';
 import { Link } from 'gatsby';
 
-const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName, linkTo }) => (
-  <StaticQuery
-    query={graphql`
+const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName, linkTo }) => {
+  const placeholderImage = useStaticQuery(
+    graphql`
       query {
-        images: allFile {
+        allFile {
           edges {
             node {
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 764) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED, formats: AUTO)
               }
             }
           }
         }
       }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+    `
+  );
+  const edges = placeholderImage.allFile.edges;
 
-      if (!image) return null;
+  const image = edges.find((n) => n.node.relativePath.includes(filename));
 
-      const imageFluid = image.node.childImageSharp.fluid;
-      return (
-        <Col className={colClassName} lg={3} md={12}>
-          <Fade duration={500} distance="100px">
-            <Parallax
-              bgImageAlt={alt}
-              className="parallax-img"
-              bgImage={imageFluid.src}
-              strength={-100}
-            >
-              <div className="parallax">
-                <div id="service__overlay" />
-                <Link style={{ textTransform: 'initial' }} to={linkTo}>
-                  <div className="parallax__inside">
-                    <Fade bottom duration={800} distanse="500px">
-                      <h3 className="service-overtitle">{overTitle}</h3>
-                    </Fade>
-                    <h2 className="service-title-small">{title}</h2>
-                    <span className="service-under-title">{fromPrice}</span>
-                  </div>
-                </Link>
+  if (!image) return null;
+
+  const imageToGo = getImage(image.node);
+  const bgImage = convertToBgImage(imageToGo);
+  console.log(imageToGo);
+  return (
+    <Col className={colClassName} lg={3} md={12}>
+      <Fade duration={500} distance="100px">
+        <BackgroundImage Tag="div" alt={alt} fluid={bgImage.fluid}>
+          <div className="parallax">
+            <div id="service__overlay" />
+            <Link style={{ textTransform: 'initial' }} to={linkTo}>
+              <div className="parallax__inside">
+                <Fade bottom duration={800} distanse="500px">
+                  <h3 className="service-overtitle">{overTitle}</h3>
+                </Fade>
+                <h2 className="service-title-small">{title}</h2>
+                <span className="service-under-title">{fromPrice}</span>
               </div>
-            </Parallax>
-          </Fade>
-        </Col>
-      );
-    }}
-  />
-);
+            </Link>
+          </div>
+        </BackgroundImage>
+      </Fade>
+    </Col>
+  );
+};
 
 ServicesImg.propTypes = {
   filename: PropTypes.string,

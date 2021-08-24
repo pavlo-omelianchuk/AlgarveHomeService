@@ -48,6 +48,7 @@
     "gatsby-source-graphql": "^3.8.0",
     "gatsby-transformer-remark": "^4.7.0",
     "gatsby-transformer-sharp": "^3.10.0",
+    "gbimage-bridge": "^0.1.4",
     "graphql": "^15.5.1",
     "html-webpack-skip-assets-plugin": "^1.0.2",
     "intersection-observer": "^0.12.0",

@@ -61,12 +61,74 @@ collections:
         name: 'presentation'
         file: 'src/mock/presentation.json'
         fields:
-          - { label: TitleOne, name: TitleOne, widget: string }
-          - { label: MessageOne, name: MessageOne, widget: string }
-          - { label: ImageOne, name: ImageOne, widget: image }
-          - { label: TitleTwo, name: TitleTwo, widget: string }
-          - { label: MessageTwo, name: MessageTwo, widget: string }
-          - { label: ImageTwo, name: ImageTwo, widget: image }
-          - { label: TitleThree, name: TitleThree, widget: string }
-          - { label: MessageThree, name: MessageThree, widget: string }
-          - { label: ImageThree, name: ImageThree, widget: image }
+          - lable: block_One
+            name: 'block_One'
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Message, name: message, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: image_Description, widget: string }
+              - { label: Button, name: button, widget: string }
+          - lable: block_Two
+            name: 'block_Two'
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Message, name: message, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: image_Description, widget: string }
+              - { label: Button, name: button, widget: string }
+          - lable: block_Three
+            name: 'block_Three'
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Message, name: message, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: image_Description, widget: string }
+              - { label: Button, name: button, widget: string }
+      - label: 'Service Section'
+        name: 'service'
+        file: 'src/mock/service.json'
+        fields:
+          - lable: block_One
+            name: 'block_One'
+            widget: object
+            fields:
+              - { label: Over_Title, name: over_Title, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: alt, widget: string }
+              - { label: Price_From, name: price_From, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
+          - lable: block_Two
+            name: 'block_Two'
+            widget: object
+            fields:
+              - { label: Over_Title, name: over_Title, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: alt, widget: string }
+              - { label: Price_From, name: price_From, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
+          - lable: block_Three
+            name: 'block_Three'
+            widget: object
+            fields:
+              - { label: Over_Title, name: over_Title, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: alt, widget: string }
+              - { label: Price_From, name: price_From, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
+          - lable: block_Four
+            name: 'block_Four'
+            widget: object
+            fields:
+              - { label: Over_Title, name: over_Title, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Image_Description, name: alt, widget: string }
+              - { label: Price_From, name: price_From, widget: string }
+              - { label: Link_to, name: link_to, widget: string }

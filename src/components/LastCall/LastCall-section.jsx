@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 
 const LastCall = () => {
   const BgContent = () => (
-    <>
+    <div className="background-image-children">
       <h3 className="section-title-small">DON’T WASTE TIME! SCHEDULE A PROCEDURE NOW!​​</h3>
       <p>Everything you need to feel healthy and beautiful</p>
       <Fade bottom duration={1000} delay={300} distance="30px">
@@ -18,15 +18,15 @@ const LastCall = () => {
           <span className="d-flex justify-content-center">Book now</span>
         </Link>
       </Fade>
-    </>
+    </div>
   );
   return (
     <Container fluid>
-      <Row className="lastCall-row">
+      <Row>
         <StyledBackground
           className="last-call-background"
-          filename="bgLastCall.jpg"
           alt="background-pink"
+          filename="bgLastCall.jpg"
           bgContent={<BgContent />}
         />
       </Row>
