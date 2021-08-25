@@ -1,0 +1,14 @@
+{
+  "alt": "Hot stones massage",
+  "background_Image": "../images/uploads/bgtestemonials.webp",
+  "testemonials": [
+    {
+      "overTitle": "Testemonials",
+      "title": "WHAT PEOPLE SAY ABOUT US",
+      "message": "I would like to express my thanks to masseur Olga. Massage was wonderful, I was able to completely relax and unwind. Olga works exactly with those areas which required the most attention. I can say with confidence that this is the best massage in Algarve! I only know a few specialists a high class like Olga. Would highly recommend to order a home treatment.",
+      "photo": "../images/uploads/testemonialssandradelta.jpg",
+      "name": "SANDRA DELTA, beauty session.",
+      "alt": "Clients picture"
+    }
+  ]
+}
