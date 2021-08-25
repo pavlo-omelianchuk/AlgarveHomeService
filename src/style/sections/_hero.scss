@@ -19,6 +19,7 @@
   overflow: hidden;
   background: #5c443b;
   .hero-video {
+    min-width: 100vw;
     min-height: 100vh;
     position: absolute;
     @include respond(phone) {

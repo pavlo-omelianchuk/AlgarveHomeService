@@ -1,6 +1,6 @@
 import React from 'react';
-import clip from '../../video/productionID_new.mp4';
-import clipM from '../../video/production-id-3998267_6cYyUoFr_0JHC.mp4';
+import clip from '../../video/HeroVideoforDesktop.mp4';
+import clipM from '../../video/HeroVideoforMob.mp4';
 
 const VideoBg = ({ children }) => {
   return (
