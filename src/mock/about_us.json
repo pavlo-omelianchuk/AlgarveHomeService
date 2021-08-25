@@ -1,0 +1,48 @@
+{
+  "intro": "We know inviting someone into your home office hotel is a big deal.\n\nAll our mobile Massage Therapists are carefully vetted by us so we choose the right mobile massage therapist for you.\n\nYou will find our  mobile Massage Therapists  are on time, professional and experienced, delivering only the best service.",
+  "team": [
+    {
+      "name": "Danylo",
+      "position": "Company Manager & Physiotherapist",
+      "description": "Danylo is a physiotherapist with more than 10 years of experience as a massage  therapist.  He came to Sagres 10 years ago and has since been working as professional  therapist and Spa supervisor.  Recently, he created \"EffectDH\" massage tools which you can efor anti  - cellulite massages or sciatic nerve issues.",
+      "photo": "../images/uploads/staffdanylo.webp",
+      "alt": "Company Manager & Physiotherapist Danylo"
+    },
+    {
+      "name": "Lena Fox",
+      "position": "Micropigmentation Expert",
+      "alt": "Micropigmentation Expert Lena",
+      "photo": "../images/uploads/stafflena.webp",
+      "description": "Micropigmentation Expert"
+    },
+    {
+      "name": "Tania​​​",
+      "position": "Beauty Therapist",
+      "alt": "Beauty Therapist Tania",
+      "photo": "../images/uploads/stafftania.webp",
+      "description": "Beauty Therapist"
+    },
+    {
+      "name": "Olga",
+      "position": "Hairdresser",
+      "alt": "Hairdresser Olga",
+      "photo": "../images/uploads/staffolga.webp",
+      "description": "Hairdresser"
+    },
+    {
+      "name": "Ines",
+      "alt": "Massage Therapist Ines",
+      "position": "Massage Therapist",
+      "photo": "../images/uploads/staffines.webp",
+      "description": "Massage Therapist"
+    },
+    {
+      "name": "Lyuda",
+      "alt": "Reflexology Therapist Lyuda",
+      "position": "Reflexology Therapist",
+      "photo": "../images/uploads/stafflyuda.webp",
+      "description": "Reflexology Therapist"
+    }
+  ],
+  "title": "MEET OUR SPECIALISTS"
+}
