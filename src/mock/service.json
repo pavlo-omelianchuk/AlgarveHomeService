@@ -1,0 +1,34 @@
+{
+  "block_One": {
+    "over_Title": "Manual & exercise therapy",
+    "title": "MASSAGE THERAPY",
+    "alt": "Back massage",
+    "image": "../images/uploads/bgServiceMassage.webp",
+    "price_From": "60 min / 55 euro",
+    "link_to": "/prices-massage"
+  },
+  "block_Two": {
+    "over_Title": "Massage for rest & relaxation",
+    "title": "BEAUTY THERAPY",
+    "image": "../images/uploads/bgServiceBeauty.webp",
+    "alt": "beauty face mask",
+    "price_From": "Facial treatment 55 euro / 60 min",
+    "link_to": "/prices-beauty"
+  },
+  "block_Three": {
+    "over_Title": "Eyebrows beauty",
+    "title": "MICRO PIGMENTATION",
+    "image": "../images/uploads/bgServiceMicropigmentation.webp",
+    "alt": "Eyebrows after micropigmentation",
+    "price_From": "270 euro",
+    "link_to": "/prices-micropigmentation"
+  },
+  "block_Four": {
+    "over_Title": "Hair Style",
+    "title": "HAIRDRESSER",
+    "alt": "Hair styling",
+    "image": "../images/uploads/bgServiceHairdresser.webp",
+    "price_From": "Female cut & brushing 40 euro. Male\\u00A0cut\\u00A030\\u00A0euro",
+    "link_to": "/prices-hairdresser"
+  }
+}
