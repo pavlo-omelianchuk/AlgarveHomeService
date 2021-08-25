@@ -2,43 +2,14 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import { Container, Row } from 'react-bootstrap';
 import ServicesImg from '../Image/ServicesImgMaker';
+import servicesData from '../../mock/service.json';
 
-const servicesArray = [
-  {
-    overTitle: 'Manual & excercise therapy',
-    title: 'MASSAGE THERAPY',
-    alt: 'Back massage',
-    filename: 'bgServiceMassage',
-    linkTo: '/prices-massage',
-    fromPrice: '60 min / 55 euro',
-  },
-  {
-    overTitle: 'Massage for rest & relaxation',
-    title: 'BEAUTY THERAPY',
-    filename: 'bgServiceBeauty.webp',
-    alt: 'beauty face mask',
-    fromPrice: 'Facial treatment 55 euro / 60 min',
-    linkTo: '/prices-beauty',
-  },
-  {
-    overTitle: 'Eyebrows beauty',
-    title: 'MICRO PIGMENTATION',
-    filename: 'bgServiceMicropigmentation',
-    alt: 'Eyebrows after micropigmentation',
-    fromPrice: '270 euro',
-    linkTo: '/prices-micropigmentation',
-  },
-  {
-    overTitle: 'Hair Style',
-    title: 'HAIRDRESSER',
-    filename: 'bgServiceHairdresser',
-    alt: 'Hair styling',
-    fromPrice: `Female cut & brushing 40 euro. Male\u00A0cut\u00A030\u00A0euro`,
-    linkTo: '/prices-hairdresser',
-  },
-];
+const { block_One, block_Two, block_Three, block_Four } = servicesData;
+
+const servicesArray = [block_One, block_Two, block_Three, block_Four];
 
 const Services = () => {
+  const imgRegEx = /([/])\w+\.\w+/g;
   return (
     <section id="services">
       <Container fluid>
@@ -47,13 +18,13 @@ const Services = () => {
             return (
               <ServicesImg
                 key={nanoid()}
-                linkTo={service.linkTo}
-                colClassName='services-row__col'
-                alt={service.alt}
-                filename={service.filename}
-                overTitle={service.overTitle}
+                overTitle={service.over_Title}
                 title={service.title}
-                fromPrice={service.fromPrice}
+                alt={service.alt}
+                filename={service.image.match(imgRegEx)}
+                colClassName="services-row__col"
+                fromPrice={service.price_From}
+                linkTo={service.link_to}
               />
             );
           })}

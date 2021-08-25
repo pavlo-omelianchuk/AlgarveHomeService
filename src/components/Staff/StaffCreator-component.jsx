@@ -3,9 +3,13 @@ import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
 import TitleSmall from '../Titles/TitleSmall-component';
-import { Link } from 'gatsby';
 import StaffImg from '../Image/AboutImg';
 import 'react-multi-carousel/lib/styles.css';
+import aboutUsData from '../../mock/about_us.json';
+
+import { Link } from 'gatsby';
+
+const { team } = aboutUsData;
 
 const responsiveCarousel = {
   desktop: {
@@ -25,49 +29,11 @@ const responsiveCarousel = {
   },
 };
 
-const staffArray = [
-  {
-    filename: 'staffLena',
-    alt: 'Micropigmentation Expert Lena',
-    title: 'Lena Fox',
-    sub: 'Micropigmentation Expert',
-  },
-  {
-    filename: 'staffTania',
-    alt: 'Beautician Tania',
-    title: 'Tania​​​',
-    sub: 'Beauty Therapist',
-  },
-  {
-    filename: 'staffOlga',
-    alt: 'Hairdresser Olga',
-    title: 'Olga ',
-    sub: 'Hairdresser',
-  },
-  {
-    filename: 'staffInes',
-    alt: 'Masseur  Ines',
-    title: 'Inês',
-    sub: 'Massage Therapist',
-  },
-  {
-    filename: 'staffLyuda',
-    alt: 'Reflexology Therapist Lyuda',
-    title: 'Lyuda',
-    sub: 'Reflexology Therapist',
-  },
-  {
-    filename: 'staffDanylo',
-    alt: 'Massage Therapist Danylo',
-    title: 'Danylo',
-    sub: 'Massage Therapist',
-  },
-];
-
 const link = (id) => {
   return `/about-us/#${id}`;
 };
 
+const imgRegEx = /(\w+\.\w+)/g;
 const StaffCarousel = () => (
   <Carousel
     swipeable
@@ -87,15 +53,15 @@ const StaffCarousel = () => (
     dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
   >
-    {staffArray.map((staff) => (
+    {team.map((staff) => (
       <Fade duration={1000} distance="500px" key={nanoid()}>
-        <Link to={link(staff.filename)}>
+        <Link to={link(staff.photo.match(imgRegEx))}>
           <div className="staff-wrapper__image">
-            <StaffImg filename={staff.filename} alt={staff.alt} />
+            <StaffImg filename={staff.photo.match(imgRegEx)} alt={staff.alt} />
           </div>
           <br />
           <Fade bottom duration={800} distance="300px">
-            <TitleSmall title={staff.title} sub={staff.sub} />
+            <TitleSmall title={staff.name} sub={staff.position} />
           </Fade>
         </Link>
       </Fade>

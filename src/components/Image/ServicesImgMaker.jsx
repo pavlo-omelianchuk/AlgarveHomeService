@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { getImage } from 'gatsby-plugin-image';
 import { convertToBgImage } from 'gbimage-bridge';
 import BackgroundImage from 'gatsby-background-image';
 import PropTypes from 'prop-types';
@@ -34,7 +34,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName,
 
   const imageToGo = getImage(image.node);
   const bgImage = convertToBgImage(imageToGo);
-  console.log(imageToGo);
+
   return (
     <Col className={colClassName} lg={3} md={12}>
       <Fade duration={500} distance="100px">

@@ -11,7 +11,7 @@ const Testemonials = () => (
         <StyledBackground
           className="testemonials-background"
           alt="background-pink"
-          filename="bgTestemonials.jpg"
+          filename="bgTestemonials"
           bgContent={<TestemonialsCarousel />}
         />
       </Fade>

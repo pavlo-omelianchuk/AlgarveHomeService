@@ -34,20 +34,6 @@ collections:
   - label: 'Pages'
     name: 'pages'
     files:
-      - label: 'About Page'
-        name: 'about'
-        file: 'src/mock/about.json'
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
-              - { label: 'Description', name: 'description', widget: 'text' }
-              - { label: Photo, name: photo, widget: image }
       - label: 'Hero Section'
         name: 'hero'
         file: 'src/mock/hero.json'
@@ -132,3 +118,34 @@ collections:
               - { label: Image_Description, name: alt, widget: string }
               - { label: Price_From, name: price_From, widget: string }
               - { label: Link_to, name: link_to, widget: string }
+      - label: 'About Us'
+        name: 'about'
+        file: 'src/mock/about_us.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Image_Description, name: alt, widget: string }
+      - label: 'Testemonials'
+        name: 'testemonials'
+        file: 'src/mock/testemonials.json'
+        fields:
+          - { label: Background_Image, name: background_Image, widget: image }
+          - { label: Background_Image_Description, name: alt, widget: string }
+          - label: Testemonials
+            name: testemonials
+            widget: list
+            fields:
+              - { label: OverTitle, name: overTitle, widget: string, default: 'Testemonials' }
+              - { label: Title, name: title, widget: string, default: 'WHAT PEOPLE SAY ABOUT US' }
+              - { label: 'Message', name: 'message', widget: 'text' }
+              - { label: Photo, name: photo, widget: image }
+              - { label: Image_Description, name: alt, widget: string, default: 'Clients picture' }
+              - { label: Name, name: name, widget: string }

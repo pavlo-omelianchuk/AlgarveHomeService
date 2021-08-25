@@ -22,14 +22,6 @@
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
-    @include respond(phone) {
-      // top: -55%;
-      // left: -85%;
-    }
-    @include respond(phone-xs) {
-      // left: -65%;
-      // top: -85%;
-    }
   }
 
   .hero-wrapper {
@@ -40,10 +32,6 @@
     height: 80vh;
     min-height: 320px;
     width: 90vw;
-    @include respond(tab-land) {
-    }
-    @include respond(tab-port) {
-    }
 
     @include respond(phone-xs) {
       width: 100vw;
@@ -110,7 +98,6 @@
     @include respond(phone-xs) {
       font-size: 2.5rem;
     }
-    //name
     &-name {
       font-size: 3.5em;
       font-weight: 400;
@@ -135,10 +122,6 @@
     justify-content: space-evenly;
     flex-direction: row;
     font-size: 1.3rem;
-    @include respond(tab-land) {
-    }
-    @include respond(tab-port) {
-    }
     @include respond(phone) {
       flex-direction: column;
       align-items: center;
