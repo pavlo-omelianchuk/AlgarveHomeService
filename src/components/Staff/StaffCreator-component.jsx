@@ -34,6 +34,7 @@ const link = (id) => {
 };
 
 const imgRegEx = /(\w+\.\w+)/g;
+
 const StaffCarousel = () => (
   <Carousel
     swipeable
@@ -44,12 +45,8 @@ const StaffCarousel = () => (
     infinite
     autoPlay
     autoPlaySpeed={4000}
-    // keyBoardControl={true}
-    // customTransition="all 5"
-    // transitionDuration={5000}
     containerClass="carousel-container"
     removeArrowOnDeviceType={['tablet', 'mobile']}
-    // deviceType={this.props.deviceType}
     dotListClass="custom-dot-list-style"
     itemClass="react-carousel-item"
   >

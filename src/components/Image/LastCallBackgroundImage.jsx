@@ -51,7 +51,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
 
 BackgroundSection.propTypes = {
   className: PropTypes.string,
-  filename: PropTypes.string,
+  filename: PropTypes.array,
   alt: PropTypes.string,
   bgContent: PropTypes.element,
 };

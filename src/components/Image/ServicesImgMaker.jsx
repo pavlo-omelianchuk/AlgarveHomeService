@@ -58,7 +58,7 @@ const ServicesImg = ({ filename, alt, overTitle, title, fromPrice, colClassName,
 };
 
 ServicesImg.propTypes = {
-  filename: PropTypes.string,
+  filename: PropTypes.array,
   alt: PropTypes.string,
 };
 

@@ -28,7 +28,7 @@ TestemonialsMaker.propTypes = {
   overTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  img: PropTypes.array.isRequired,
   alt: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
