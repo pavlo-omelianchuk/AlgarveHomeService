@@ -1,10 +1,12 @@
 #services {
   padding: 0;
+  z-index: -1;
   .services-row {
     &__col {
       padding: 0;
       margin-top: 2rem;
       padding: 5px;
+      overflow: hidden;
 
       @include respond(tab-land) {
       }
@@ -14,8 +16,6 @@
       @include respond(phone) {
         margin-top: 0;
         padding: initial;
-      }
-      @include respond(phone-xs) {
       }
       .service-overtitle {
         font-family: $font-haviland;
