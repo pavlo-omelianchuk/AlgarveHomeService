@@ -9,7 +9,7 @@ const PageWelcomeBg = ({overTitle, title}) => {
       <Row>
         <StyledBackground
           className="prices-page-bg"
-          filename="bgPrices.jpg"
+          filename="bgPrices.webp"
           alt="Hands making massage"
           bgContent={<PageWelcomeBgTitle overTitle={overTitle} title={title} />}
         />

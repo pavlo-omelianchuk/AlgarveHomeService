@@ -7,14 +7,6 @@ import Form from '../Form/Form-section';
 import { Tabs, Tab } from 'react-bootstrap';
 
 const customTab = (entrance) => {
-  //   const selectedTab =
-  //     entrance.entrance.entrance === 'micropigmentation'
-  //       ? 'micropigmentation'
-  //       : entrance.entrance.entrance === 'beauty'
-  //       ? 'beauty'
-  //       : entrance.entrance.entrance === 'hairdresser'
-  //       ? 'hairdresser'
-  //       : 'massage';
   if (entrance.entrance.entrance === 'micropigmentation') {
     const selectedTab = 'micropigmentation';
     return selectedTab;
@@ -34,186 +26,202 @@ const PricesTabs = (entrance) => {
   //Price List of all Procedures
   const priceListMassage = [
     {
-      name: 'Therapeutic Massage 60min',
+      title: 'Therapeutic Massage 60min',
+      time60: '60 min.',
       price60: '55',
+      time90: '// 90 min.',
       price90: '70',
     },
     {
-      name: 'Therapeutic Massage 90min',
+      title: 'Therapeutic Massage 90min',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Sports Deep Tissue Massage 60min',
+      title: 'Sports Deep Tissue Massage 60min',
       price60: '55',
+      time60: '60 min.',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Sports Deep Tissue Massage 90min',
+      title: 'Sports Deep Tissue Massage 90min',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Relax Massage 60min',
+      title: 'Relax Massage 60min',
       price60: '55',
+      time60: '60 min.',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Relax Massage 90min',
+      title: 'Relax Massage 90min',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Massage for Couples 60min',
+      title: 'Massage for Couples 60min',
       price60: '100',
+      time60: '60 min.',
       price90: '125',
+      time90: '// 90 min.',
     },
     {
-      name: 'Massage for Couples 90min',
+      title: 'Massage for Couples 90min',
       price90: '125',
+      time90: '// 90 min.',
     },
     {
-      name: 'Reflexology Massage 60min',
+      title: 'Reflexology Massage 60min',
       price60: '55',
+      time60: '60 min.',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Reflexology Massage 90min',
+      title: 'Reflexology Massage 90min',
       price90: '70',
+      time90: '// 90 min.',
     },
     {
-      name: 'Anti-Cellulite Massage 60min',
+      title: 'Anti-Cellulite Massage 60min',
       price60: '55',
+      time60: '60 min.',
     },
   ];
 
   const priceListMicropigmentation = [
     {
-      name: 'Eyebrows micropigmentation',
+      title: 'Eyebrows micropigmentation',
       price60: 270,
       price90: 90,
     },
     {
-      name: 'Eyebrows design',
+      title: 'Eyebrows design',
       price60: 40,
     },
     {
-      name: 'Eyebrows design + eyelash tint',
+      title: 'Eyebrows design + eyelash tint',
       price60: 50,
     },
   ];
   const pricelistBeauty = [
     {
-      name: 'Deep face cleansing',
-      price60: 80,
+      title: 'Deep face cleansing',
       time: 90,
+      price60: 80,
     },
     {
-      name: 'Chemical peeling summer',
+      title: 'Chemical peeling summer',
       price60: '120',
     },
     {
-      name: 'Chemical peeling winter',
+      title: 'Chemical peeling winter',
       price60: '75',
     },
     {
-      name: 'Facial treatment',
+      title: 'Facial treatment',
+      time: 60,
       price60: 55,
-      time: 60,
     },
     {
-      name: 'Lymphatic facial massage',
+      title: 'Lymphatic facial massage',
+      time: 60,
       price60: 80,
-      time: 60,
     },
     {
-      name: 'Dermapen + Coctail (Ampoules)',
+      title: 'Dermapen + Coctail (Ampoules)',
+      time: 60,
       price60: 90,
-      time: 60,
     },
     {
-      name: 'Dermapen + Hyaluronic acid/ Colagen/ Mask',
-      price60: 150,
+      title: 'Dermapen + Hyaluronic acid/ Colagen/ Mask',
       time: 90,
+      price60: 150,
     },
     {
-      name: 'Galvanophoresis, Ionophoresis – Hydration',
-      price60: 75,
+      title: 'Galvanophoresis, Ionophoresis – Hydration',
       time: 50,
+      price60: 75,
     },
     {
-      name: 'Ultrasonic radar hifu',
+      title: 'Ultrasonic radar hifu',
+      time: 60,
       price60: 85,
-      time: 60,
     },
     {
-      name: 'Needles-free mesotherapy (ionophoresis)',
-      price60: 75,
+      title: 'Needles-free mesotherapy (ionophoresis)',
       time: 70,
+      price60: 75,
     },
     {
-      name: 'Face microcurrent',
-      price60: 65,
+      title: 'Face microcurrent',
       time: 60,
+      price60: 65,
     },
     {
-      name: 'Pressotherapy',
-      price60: 50,
+      title: 'Pressotherapy',
       time: 30,
+      price60: 50,
     },
     {
-      name: 'Carboxytherapy',
-      price60: 65,
+      title: 'Carboxytherapy',
       time: 50,
-    },
-    {
-      name: 'Anticouperosis program',
       price60: 65,
-      time: 60,
     },
     {
-      name: 'Rejuvenation program 40+ 50+',
+      title: 'Anticouperosis program',
+      time: 60,
+      price60: 65,
+    },
+    {
+      title: 'Rejuvenation program 40+ 50+',
+      time: 60,
       price60: 70,
-      time: 60,
     },
     {
-      name: 'Magiray beauty peel puree',
+      title: 'Magiray beauty peel puree',
+      time: 60,
       price60: 65,
-      time: 60,
     },
     {
-      name: 'Waxing Outline eyes',
+      title: 'Waxing Outline eyes',
       price60: 10,
     },
     {
-      name: 'Waxing Face',
+      title: 'Waxing Face',
       price60: 30,
     },
     {
-      name: 'Waxing Upper Lip',
+      title: 'Waxing Upper Lip',
       price60: 15,
     },
     {
-      name: 'Under arms wax',
+      title: 'Under arms wax',
       price60: 20,
     },
     {
-      name: 'Full bikini wax',
+      title: 'Full bikini wax',
       price60: 40,
     },
     {
-      name: 'Half leg Wax',
+      title: 'Half leg Wax',
       price60: 30,
     },
     {
-      name: 'Full leg Wax',
+      title: 'Full leg Wax',
       price60: 50,
     },
   ];
   const priceListHairdresser = [
     {
-      name: `Male cut`,
+      title: `Male cut`,
       price60: 30,
     },
     {
-      name: `Female cut & brushing`,
+      title: `Female cut & brushing`,
       price60: 40,
     },
   ];

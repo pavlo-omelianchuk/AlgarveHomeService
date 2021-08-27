@@ -3,6 +3,9 @@ import Fade from 'react-reveal/Fade';
 import { Container, Col, Row } from 'react-bootstrap';
 import Tilt from 'react-tilt';
 import ProjectImg from '../Image/ProjectImg';
+import effectData from '../../mock/effect.json';
+
+const imgRegEx = /([/])\w+\.\w+/g;
 
 const Promo = () => (
   <section id="promo">
@@ -11,22 +14,18 @@ const Promo = () => (
         <Col className="promo-row__col mx-auto my-auto" md={6} sm={12}>
           <Fade left duration={1000} delay={100} distance="300px">
             <div className="promo-wrapper__info-container">
-              <h3 className="promo-over-title">Best Sellers</h3>
-              <h3 className="section-title-small">PRODUCTS WE USE​​</h3>
-              <p>
-                Through targeted massage of the desired parts of the body, your skin is regenerated
-                and better supplied with oxygen, and blood circulation is stimulated. The result is
-                smooth and firm skin in the &quot;problem areas of the body&quot;.
-              </p>
+              <h3 className="promo-over-title">{effectData.over_Title}</h3>
+              <h3 className="section-title-small">{effectData.title}</h3>
+              <p>{effectData.description}</p>
               <Fade bottom duration={1000} delay={300} distance="30px">
                 <span className="d-flex mt-5">
                   <a
                     className="cta-btn cta-btn--hero px-5 rounded"
-                    href="https://effectdh.com"
+                    href={effectData.link_to}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    more details
+                    {effectData.button}
                   </a>
                 </span>
               </Fade>
@@ -48,7 +47,7 @@ const Promo = () => (
             }}
           >
             <div className="promo-wrapper__image">
-              <ProjectImg filename="promoImg.jpg" alt="promo" />
+              <ProjectImg filename={effectData.image.match(imgRegEx)[0]} alt={effectData.alt} />
             </div>
           </Tilt>
         </Col>

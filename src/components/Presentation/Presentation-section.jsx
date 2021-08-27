@@ -6,8 +6,8 @@ import ProjectImg from '../Image/ProjectImg';
 import presentationData from '../../mock/presentation.json';
 import { Link } from 'gatsby';
 
+const imgRegEx = /([/])\w+\.\w+/g;
 const Presentation = () => {
-  const imgRegEx = /([/])\w+\.\w+/g;
 
   return (
     <section id="presentation">

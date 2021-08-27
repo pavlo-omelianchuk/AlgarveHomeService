@@ -11,8 +11,8 @@ collections:
     label: Blog
     folder: src/markdown-pages
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - {
           label: 'Slug',
@@ -31,8 +31,8 @@ collections:
       - { label: 'Description', name: 'excerpt' }
       - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Separate by comma' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-  - label: 'Pages'
-    name: 'pages'
+  - label: 'InitialPage'
+    name: 'InitialPage_sections'
     files:
       - label: 'Hero Section'
         name: 'hero'
@@ -42,7 +42,9 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: AfterTitle, name: afterTitle, widget: string }
           - { label: ButtonOne, name: buttonOne, widget: string }
+          - { label: Link_to_ButtonOne, name: link_to_ButtonOne, widget: string }
           - { label: ButtonTwo, name: buttonTwo, widget: string }
+          - { label: Link_to_ButtonTwo, name: link_to_ButtonTwo, widget: string }
       - label: 'Presentation Section'
         name: 'presentation'
         file: 'src/mock/presentation.json'
@@ -56,6 +58,7 @@ collections:
               - { label: Image, name: image, widget: image }
               - { label: Image_Description, name: image_Description, widget: string }
               - { label: Button, name: button, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
           - lable: block_Two
             name: 'block_Two'
             widget: object
@@ -65,6 +68,7 @@ collections:
               - { label: Image, name: image, widget: image }
               - { label: Image_Description, name: image_Description, widget: string }
               - { label: Button, name: button, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
           - lable: block_Three
             name: 'block_Three'
             widget: object
@@ -74,6 +78,7 @@ collections:
               - { label: Image, name: image, widget: image }
               - { label: Image_Description, name: image_Description, widget: string }
               - { label: Button, name: button, widget: string }
+              - { label: Link_to, name: link_to, widget: string }
       - label: 'Service Section'
         name: 'service'
         file: 'src/mock/service.json'
@@ -149,3 +154,79 @@ collections:
               - { label: Photo, name: photo, widget: image }
               - { label: Image_Description, name: alt, widget: string, default: 'Clients picture' }
               - { label: Name, name: name, widget: string }
+      - label: 'EffectDH'
+        name: 'effect'
+        file: 'src/mock/effect.json'
+        fields:
+          - { label: Over_Title, name: over_Title, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: Button, name: button, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Image_Description, name: alt, widget: string }
+          - { label: Link_to, name: link_to, widget: string }
+      - label: 'Last Call'
+        name: 'lastCall'
+        file: 'src/mock/lastCall.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Sub_Title', name: 'sub_Title', widget: 'text' }
+          - { label: Button, name: button, widget: string }
+          - { label: Link_to, name: link_to, widget: string }
+          - { label: Background_Image, name: background_Image, widget: image }
+          - { label: Background_Image_Description, name: alt, widget: string }
+      - label: 'FooterInfo'
+        name: 'footer'
+        file: 'src/mock/footer.json'
+        fields:
+          - { label: email, name: email, widget: string }
+          - { label: 'phone_Number', name: 'phone_Number', widget: 'text' }
+          - { label: Logo, name: logo, widget: image }
+          - { label: Logo_Description, name: alt, widget: string }
+  - label: 'PricesPage'
+    name: 'Prices_sections'
+    files:
+      - label: 'Prices_Welcome_Page'
+        name: 'prices_Welcome_Page'
+        file: 'src/mock/prices_Page.json'
+        fields:
+          - { label: OverTitle, name: overTitle, widget: string, required: false }
+          - { label: Title, name: title, widget: string, default: 'Algarve Home Massage & Beauty' }
+          - { label: Background_Image, name: background_Image, widget: image }
+          - { label: Background_Image_Description, name: alt, widget: string }
+          - { label: Asterisc_Message, name: asterisc_Message, widget: string, required: false }
+          - label: 'Price_List_massage'
+            name: 'Price_List_massage'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Time60m', name: 'time60', widget: 'string', default: '60 min.' }
+              - { label: 'Price60m', name: 'price60', widget: 'string' }
+              - {
+                  label: 'Time90m',
+                  name: 'time90',
+                  widget: 'string',
+                  required: false,
+                  default: '// 90 min.',
+                }
+              - { label: 'Price90m', name: 'price90', widget: 'string', required: false }
+          - label: 'Price_List_Micropigmentation'
+            name: 'Price_List_Micropigmentation'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Initial Price', name: 'price60', widget: 'string' }
+              - { label: 'Correction', name: 'price90', widget: 'string', required: false }
+          - label: 'Price_List_Beauty'
+            name: 'Price_List_Beauty'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Time', name: 'time', widget: 'string', required: false }
+              - { label: 'Price', name: 'price60', widget: 'string' }
+          - label: 'Price_List_Hairdresser '
+            name: 'Price_List_Hairdresser'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Price', name: 'price60', widget: 'string' }
