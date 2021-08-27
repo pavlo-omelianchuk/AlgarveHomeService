@@ -1,0 +1,44 @@
+{
+  "Price_List_massage": [
+    {
+      "title": "Therapeutic Massage 60min",
+      "time60": "60 min.",
+      "time90": "// 90 min.",
+      "price60": "55",
+      "price90": "70"
+    }
+  ],
+  "Price_List_Micropigmentation": [
+    {
+      "title": "Eyebrows micropigmentation",
+      "price60": "270",
+      "price90": "90"
+    },
+    {
+      "title": "Eyebrows design",
+      "price60": "40"
+    },
+    {
+      "title": "Eyebrows design + eyelash tint",
+      "price60": "50"
+    }
+  ],
+  "overTitle": "Best Offers",
+  "Price_List_Beauty": [
+    {
+      "title": "Deep face cleansing",
+      "time": "90",
+      "price60": "80"
+    }
+  ],
+  "alt": "Home Massage",
+  "background_Image": "../images/uploads/bgprices.webp",
+  "asterisc_Message": "*Choose section and fill up form request",
+  "Price_List_Hairdresser": [
+    {
+      "title": "Male cut",
+      "price60": "30"
+    }
+  ],
+  "title": "Algarve Home Massage & Beauty"
+}
