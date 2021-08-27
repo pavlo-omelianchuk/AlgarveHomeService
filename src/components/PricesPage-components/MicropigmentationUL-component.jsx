@@ -5,12 +5,12 @@ const PricesMicropigmentation = ({ priceListMicropigmentation }) => (
   <>
     <ul className="pricelist-wrapper">
       {priceListMicropigmentation.map((position) => {
-        const { name, price60, price90 } = position;
+        const { title, price60, price90 } = position;
         return (
-          <li key={name}>
+          <li key={title}>
             <div className="price-list-item">
               <div className="price-list-header">
-                <span className="price-list-name">{name}</span>
+                <span className="price-list-name">{title}</span>
                 <span className="price-list-separator" />
                 <span className="price-list-price">
                   {price60}

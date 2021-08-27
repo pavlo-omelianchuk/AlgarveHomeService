@@ -8,7 +8,7 @@ const PricesMassage = ({ priceListMassage }) => (
         const { title, price60, price90 } = position;
         if (price60) {
           return (
-            <li key={name}>
+            <li key={title}>
               <div className="price-list-item">
                 <div className="price-list-header">
                   <span className="price-list-name">{title}</span>

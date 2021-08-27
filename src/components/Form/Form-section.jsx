@@ -240,10 +240,10 @@ const SignupForm = ({
           <TreatmentSelect label="Choose treatment" name="treatment">
             <option value="">---</option>
             {treatments.map((treatment) => {
-              const { name, price60, price90 } = treatment;
+              const { title, price60, price90 } = treatment;
               return (
-                <option key={name} value={name}>
-                  {name}
+                <option key={title} value={title}>
+                  {title}
                   { ' - '}
                   {price60 || price90}
                   { ' '}
