@@ -1,0 +1,31 @@
+{
+  "logo": "../images/uploads/logoammbtheader.webp",
+  "alt": "Massage and Beauty Logo",
+  "logo_link_to": "/",
+  "menu_tab": [
+    {
+      "nav_title": "Home",
+      "Nav_Link": "/"
+    },
+    {
+      "nav_title": "Services",
+      "Nav_Link": "#services"
+    },
+    {
+      "nav_title": "Blog",
+      "Nav_Link": "#blog"
+    },
+    {
+      "nav_title": "Testimonials",
+      "Nav_Link": "#testimonials"
+    },
+    {
+      "nav_title": "Prices",
+      "Nav_Link": "/prices-massage"
+    },
+    {
+      "nav_title": "About us",
+      "Nav_Link": "/about-us"
+    }
+  ]
+}
