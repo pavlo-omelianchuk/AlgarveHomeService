@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Title from '../Titles/Title-component';
 import aboutUsData from '../../mock/about_us.json';
 
-const { title, intro } = aboutUsData;
+const { title } = aboutUsData;
 
 import PinkImg from '../Image/StaffPinkImg';
 

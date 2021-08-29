@@ -3,21 +3,13 @@ import Hero from './Hero-component';
 import VideoBckg from './HeroVideoBg-component';
 import HeadingElement from './HeadingElement-component';
 
-const HeroDesktop = () => {
-  return (
+const HeroSection = () => (
+  <div id="home">
+    <HeadingElement />
     <VideoBckg>
       <Hero />
     </VideoBckg>
-  );
-};
-
-const HeroSection = () => {
-  return (
-    <div id="home">
-      <HeadingElement />
-      <HeroDesktop />
-    </div>
-  );
-};
+  </div>
+);
 
 export default HeroSection;

@@ -1,5 +1,10 @@
 .privacy-wrapper {
-  max-width: 1320px;
+  width: 120ch;
+  margin-right: auto;
+  margin-left: auto;
+  @include respond(phone) {
+    width: 100%;
+  }
 
   .privacy-header {
     font-size: 3em;

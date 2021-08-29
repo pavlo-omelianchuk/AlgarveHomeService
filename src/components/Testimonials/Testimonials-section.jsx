@@ -15,7 +15,7 @@ const Testimonials = () => (
         <StyledBackground
           className="testimonials-background"
           alt={alt}
-          filename="bgtestimonials.webp"
+          filename={background_Image.match(imgRegEx)}
           bgContent={<TestimonialsCarousel />}
         />
       </Fade>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
-import TestemonialImg from '../Image/TestemonialImg';
+import TestimonialImg from '../Image/TestimonialImg';
 import PinkImg from '../Image/StaffPinkImg';
 
 const TestimonialsMaker = ({ overTitle, title, message, img, alt, name }) => (
@@ -16,7 +16,7 @@ const TestimonialsMaker = ({ overTitle, title, message, img, alt, name }) => (
       <div>
         <p className="testimonials-message">{message}</p>
         <div className="testimonials-person">
-          <TestemonialImg alt={alt} filename={img} />
+          <TestimonialImg alt={alt} filename={img} />
           <h6 className="testimonials-person-name">{name}</h6>
         </div>
       </div>
