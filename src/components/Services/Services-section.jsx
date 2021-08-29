@@ -5,11 +5,11 @@ import ServicesImg from '../Image/ServicesImgMaker';
 import servicesData from '../../mock/service.json';
 
 const { block_One, block_Two, block_Three, block_Four } = servicesData;
-
 const servicesArray = [block_One, block_Two, block_Three, block_Four];
 
+const imgRegEx = /(\w+\.\w+)/g;
+
 const Services = () => {
-  const imgRegEx = /([/])\w+\.\w+/g;
   return (
     <section id="services">
       <Container fluid>

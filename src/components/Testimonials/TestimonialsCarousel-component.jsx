@@ -2,11 +2,11 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-multi-carousel';
 import { nanoid } from 'nanoid';
-import TestemonialsMaker from './TestemonialMaker-component';
-import TestemonialsData from '../../mock/testemonials.json';
+import TestimonialsMaker from './TestimonialMaker-component';
+import TestimonialsData from '../../mock/testimonials.json';
 
 import 'react-multi-carousel/lib/styles.css';
-const { testemonials } = TestemonialsData;
+const { testimonials } = TestimonialsData;
 
 const responsiveCarousel = {
   desktop: {
@@ -27,10 +27,10 @@ const responsiveCarousel = {
 };
 const imgRegEx = /(\w+\.\w+)/g;
 
-const TestemonialsCarousel = () => {
+const TestimonialsCarousel = () => {
   return (
     <>
-      <div className="testemonials-background-overlay" />
+      <div className="testimonials-background-overlay" />
       <Carousel
         swipeable
         draggable={false}
@@ -39,15 +39,15 @@ const TestemonialsCarousel = () => {
         ssr={true}
         infinite
         autoPlay={false}
-        containerClass="testemonials-carousel-container"
+        containerClass="testimonials-carousel-container"
         dotListClass="custom-dot-list-style"
         itemClass="react-carousel-item"
         renderButtonGroupOutside
       >
-        {testemonials.map((testemonial) => {
+        {testimonials.map((testemonial) => {
           return (
             <Fade key={nanoid()}>
-              <TestemonialsMaker
+              <TestimonialsMaker
                 overTitle={testemonial.overTitle}
                 title={testemonial.title}
                 message={testemonial.message}
@@ -63,6 +63,6 @@ const TestemonialsCarousel = () => {
   );
 };
 
-export default TestemonialsCarousel;
+export default TestimonialsCarousel;
 
 // https://github.com/YIZHUANG/react-multi-carousel

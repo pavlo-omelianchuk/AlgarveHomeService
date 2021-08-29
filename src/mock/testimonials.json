@@ -1,52 +1,52 @@
 {
   "alt": "Hot stones massage",
-  "background_Image": "../images/uploads/bgtestemonials.webp",
-  "testemonials": [
+  "background_Image": "../images/uploads/bgtestimonials.webp",
+  "testimonials": [
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "I would like to express my thanks to masseur Olga. Massage was wonderful, I was able to completely relax and unwind. Olga works exactly with those areas which required the most attention. I can say with confidence that this is the best massage in Algarve! I only know a few specialists a high class like Olga. Would highly recommend to order a home treatment.",
-      "photo": "../images/uploads/testemonialssandradelta.jpg",
+      "photo": "../images/uploads/testimonialssandradelta.jpg",
       "name": "SANDRA DELTA, beauty session.",
       "alt": "Clients picture"
     },
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "Great service for a pregnant woman. Gentle, careful and takes her time. Meticulous, tracking every hair. Very enjoyable moment. Thanks.",
-      "photo": "../images/uploads/testemonialsAicha.webp",
+      "photo": "../images/uploads/testimonialsAicha.webp",
       "name": "AICHA, beauty session.",
       "alt": "Clients picture"
     },
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "I would like to express my gratitude to Tanya! She is a real professional. I found her very warm, attentive and welcoming. I would like to say thank you for the wonderful massage, I was enjoying a deep relaxation. Also many thanks for the facials, my skin feels delightfully soft and I look younger after a treatment",
-      "photo": "../images/uploads/testemonialsEmily.webp",
+      "photo": "../images/uploads/testimonialsEmily.webp",
       "name": "EMILY, massage session.",
       "alt": "Clients picture"
     },
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "I booked a micropigmentation with Lena to be done at my house. I get massage treatments regularly. When I saw an available appointment for eyebrow micropigmentation with Lena, I said YES please! I went for it and was very pleased as the procedure was performed very carefully and accurately. I feel delighted and sending a huge gratitude to the highly qualified specialist",
-      "photo": "../images/uploads/testemonialsSophie.webp",
+      "photo": "../images/uploads/testimonialsSophie.webp",
       "name": "SOPHIE, micropigmentation",
       "alt": "Clients picture"
     },
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "Great staff, friendly people, good prices and excellent work",
-      "photo": "../images/uploads/testemonialsClaire.webp",
+      "photo": "../images/uploads/testimonialsClaire.webp",
       "name": "CLAIRE, haircut session.",
       "alt": "Clients picture"
     },
     {
-      "overTitle": "Testemonials",
+      "overTitle": "Testimonials",
       "title": "WHAT PEOPLE SAY ABOUT US",
       "message": "Olga is incredibly friendly and accommodating. Her treatments are well priced and she is professional. I would highly recommend her services",
-      "photo": "../images/uploads/testemonialsArthur.webp",
+      "photo": "../images/uploads/testimonialsArthur.webp",
       "name": "ARTHUR, massage session.",
       "alt": "Clients picture"
     }

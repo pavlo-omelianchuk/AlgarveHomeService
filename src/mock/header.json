@@ -5,27 +5,27 @@
   "menu_tab": [
     {
       "nav_title": "Home",
-      "Nav_Link": "/"
+      "nav_link": "/"
     },
     {
       "nav_title": "Services",
-      "Nav_Link": "#services"
+      "nav_link": "/#services"
     },
     {
       "nav_title": "Blog",
-      "Nav_Link": "#blog"
+      "nav_link": "/blog"
     },
     {
       "nav_title": "Testimonials",
-      "Nav_Link": "#testimonials"
+      "nav_link": "/#testimonials"
     },
     {
       "nav_title": "Prices",
-      "Nav_Link": "/prices-massage"
+      "nav_link": "/prices-massage"
     },
     {
       "nav_title": "About us",
-      "Nav_Link": "/about-us"
+      "nav_link": "/about-us"
     }
   ]
 }

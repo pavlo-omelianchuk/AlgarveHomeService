@@ -1,69 +1,31 @@
 import React from 'react';
 import { Navbar, Nav, NavbarBrand } from 'react-bootstrap';
 import NavLink from '../NavBar-components/NavLink-component';
-import LogoImg from '../Image/LogoImg';
+import AboutImg from '../Image/AboutImg';
+import headerData from '../../mock/header.json';
 
-const Header = () => {
-  const header = [
-    '/',
-    `Algarve Home Massage & Beauty`,
-    '/',
-    'Home',
-    '/#services',
-    'Services',
-    '/blog',
-    'Blog',
-    '/#testemonials',
-    'Testemonials',
-    '/prices-massage',
-    'Prices',
-    '/about-us',
-    'About us',
-  ];
-  const [
-    logoHREF,
-    brandName,
-    linkURL1,
-    linkText1,
-    linkURL2,
-    linkText2,
-    linkURL3,
-    linkText3,
-    linkURL4,
-    linkText4,
-    linkURL5,
-    linkText5,
-    linkURL6,
-    linkText6,
-  ] = header;
-  return (
-    <Navbar expand="lg" fixed="top">
-      <NavbarBrand href={logoHREF}>
-        <LogoImg />
-      </NavbarBrand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto mr-5">
-          <NavLink to={linkURL1} className="px-4">
-            {linkText1}
-          </NavLink>
-          <NavLink to={linkURL2} className="px-4">
-            {linkText2}
-          </NavLink>
-          <NavLink to={linkURL3} className="px-4">
-            {linkText3}
-          </NavLink>
-          <NavLink to={linkURL4} className="px-4">
-            {linkText4}
-          </NavLink>
-          <NavLink to={linkURL5} className="px-4">
-            {linkText5}
-          </NavLink>
-          <NavLink to={linkURL6}>{linkText6}</NavLink>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-  );
-};
+const { logo_link_to, menu_tab, logo, alt } = headerData;
 
+const imgRegEx = /(\w+\.\w+)/g;
+
+const Header = () => (
+  <Navbar expand="lg" fixed="top">
+    <NavbarBrand href={logo_link_to}>
+      <AboutImg filename={logo.match(imgRegEx)} alt={alt} />
+    </NavbarBrand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="ml-auto mr-5">
+        {menu_tab &&
+          menu_tab.map((nav_item) => {
+            return (
+              <NavLink to={nav_item.nav_link} className="px-4">
+                {nav_item.nav_title}
+              </NavLink>
+            );
+          })}
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+);
 export default Header;

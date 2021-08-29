@@ -7,8 +7,6 @@ import Form from '../Form/Form-section';
 import { Tabs, Tab } from 'react-bootstrap';
 import prices_PageData from '../../mock/prices_Page.json';
 
-const imgRegEx = /([/])\w+\.\w+/g;
-
 const {
   Price_List_massage,
   Price_List_Micropigmentation,

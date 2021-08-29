@@ -12,7 +12,7 @@ const AboutImg = ({ filename, alt }) => {
             node {
               childImageSharp {
                 gatsbyImageData(
-                  placeholder: DOMINANT_COLOR
+                  placeholder: NONE
                   formats: WEBP
                   layout: CONSTRAINED
                 )

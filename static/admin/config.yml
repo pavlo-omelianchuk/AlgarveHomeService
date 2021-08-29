@@ -138,17 +138,17 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: Photo, name: photo, widget: image }
               - { label: Image_Description, name: alt, widget: string }
-      - label: 'Testemonials'
-        name: 'testemonials'
-        file: 'src/mock/testemonials.json'
+      - label: 'Testimonials'
+        name: 'testimonials'
+        file: 'src/mock/testimonials.json'
         fields:
           - { label: Background_Image, name: background_Image, widget: image }
           - { label: Background_Image_Description, name: alt, widget: string }
-          - label: Testemonials
-            name: testemonials
+          - label: Testimonials
+            name: testimonials
             widget: list
             fields:
-              - { label: OverTitle, name: overTitle, widget: string, default: 'Testemonials' }
+              - { label: OverTitle, name: overTitle, widget: string, default: 'Testimonials' }
               - { label: Title, name: title, widget: string, default: 'WHAT PEOPLE SAY ABOUT US' }
               - { label: 'Message', name: 'message', widget: 'text' }
               - { label: Photo, name: photo, widget: image }
@@ -175,14 +175,30 @@ collections:
           - { label: Link_to, name: link_to, widget: string }
           - { label: Background_Image, name: background_Image, widget: image }
           - { label: Background_Image_Description, name: alt, widget: string }
-      - label: 'FooterInfo'
+      - label: 'Footer Info'
         name: 'footer'
         file: 'src/mock/footer.json'
         fields:
           - { label: email, name: email, widget: string }
           - { label: 'phone_Number', name: 'phone_Number', widget: 'text' }
+          - { label: Facebook Page, name: fbLink, widget: string }
+          - { label: 'Instagram Page', name: 'instaLink', widget: 'text' }
           - { label: Logo, name: logo, widget: image }
           - { label: Logo_Description, name: alt, widget: string }
+      - label: 'Header Info'
+        name: 'header'
+        file: 'src/mock/header.json'
+        fields:
+          - { label: Logo, name: logo, widget: image }
+          - { label: Logo_Description, name: alt, widget: string }
+          - { label: Logo_Link_to, name: logo_link_to, widget: string }
+          - label: Menu Tab
+            name: menu_tab
+            widget: list
+            fields:
+              - { label: Nav_Title, name: nav_title, widget: string }
+              - { label: Nav_Link, name: nav_link, widget: string }
+
   - label: 'PricesPage'
     name: 'Prices_sections'
     files:

@@ -1,9 +1,18 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'gatsby';
-import FooterImg from '../Image/FooterImg';
+import AboutImg from '../Image/AboutImg';
+import footerData from '../../mock/footer.json';
 
-const Footer = ({ linkTo, props }) => {
+const imgRegEx = /(\w+\.\w+)/g;
+
+const { email, phone_Number, fbLink, instaLink, logo, alt } = footerData;
+
+const linkToMail = `mailto:${email}`;
+const linkToWhatsapp = `https://api.whatsapp.com/send?phone=${phone_Number}`;
+const linkToPhoneNumber = `tel:+${phone_Number}`;
+
+const Footer = ({ linkTo }) => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -13,16 +22,14 @@ const Footer = ({ linkTo, props }) => {
               <p className="footer__text">
                 Our contacts:
                 <br />
-                <a rel="noopener noreferrer" href="mailto:info.ahsmb@gmail.com">
-                  <i className="fa fa-envelope" aria-hidden="true"></i> info.ahsmb@gmail.com
+                <a rel="noopener noreferrer" href={linkToMail} target="_blank">
+                  <i className="fa fa-envelope" aria-hidden="true"></i>
+                  {email}
                 </a>
                 <br />
-                <a
-                  rel="noopener noreferrer"
-                  href="https://api.whatsapp.com/send?phone=+351 963 531 684"
-                >
+                <a rel="noopener noreferrer" href={linkToWhatsapp} target="_blank">
                   <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                  +351 963 531 684
+                  {phone_Number}
                 </a>
               </p>
             </div>
@@ -50,7 +57,7 @@ const Footer = ({ linkTo, props }) => {
               </Link>
             </span>
             <Link to={linkTo}>
-              <FooterImg />
+              <AboutImg filename={logo.match(imgRegEx)} alt={alt} />
             </Link>
             <br />
             <span id="privacy-footer">
@@ -65,18 +72,10 @@ const Footer = ({ linkTo, props }) => {
                 Follow us:
                 <br />
                 <span id="share-buttons">
-                  <a
-                    href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={fbLink} target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-facebook-square" aria-hidden="true"></i>
                   </a>
-                  <a
-                    href="https://www.instagram.com/home_service_massage_beauty/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={instaLink} target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </span>
@@ -100,24 +99,21 @@ const Footer = ({ linkTo, props }) => {
         </Row>
         <Row>
           <div className="footer-contacts-wrapper">
-            <a href="tel:+351963531684" className="col-xs-3" rel="noopener noreferrer">
+            <a href={linkToPhoneNumber} className="col-xs-3" rel="noopener noreferrer">
               <span className="fa fa-2x fa-mobile-phone"></span>
             </a>
             <a
-              href="https://wa.me/351963531684"
+              href={linkToWhatsapp}
               data-action="share/whatsapp/share"
               rel="noopener noreferrer"
+              target="_blank"
             >
               <span className="fa fa-2x fa-whatsapp"></span>
             </a>
-            <a
-              href="https://www.facebook.com/AlgarveHomeServiceMassageAndBeauty"
-              className="col-xs-3"
-              rel="noopener noreferrer"
-            >
+            <a href={fbLink} className="col-xs-3" rel="noopener noreferrer" target="_blank">
               <span className="fa fa-2x fa-facebook"></span>
             </a>
-            <a href="mailto:info.ahsmb@gmail.com" rel="noopener noreferrer">
+            <a href={linkToMail} rel="noopener noreferrer" target="_blank">
               <span className="fa fa-2x fa-at"></span>
             </a>
             <a

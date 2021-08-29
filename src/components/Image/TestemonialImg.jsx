@@ -36,7 +36,7 @@ const AboutImg = ({ filename, alt }) => {
 };
 
 AboutImg.propTypes = {
-  filename: PropTypes.string,
+  filename: PropTypes.array,
   alt: PropTypes.string,
 };
 

@@ -1,8 +1,12 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0.918);
-.navbar-toggler{
-  margin-right: 1.3rem;
-}
+  .navbar-brand{
+    width: 250px;
+    margin-left: 1rem;
+  }
+  .navbar-toggler {
+    margin-right: 1.3rem;
+  }
   .navbar-nav {
     margin-left: auto;
     display: flex;

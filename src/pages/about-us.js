@@ -4,7 +4,7 @@ import { headData } from '../mock/data';
 import { Container } from 'react-bootstrap';
 import PageWrapepr from '../layout/pageWrapper';
 import PageWelcomeBg from '../layout/PageWelcomeBg-section';
-import AboutUsComponent from '../components/AboutUs-components/AboutUsCreator-component'
+import AboutUsComponent from '../components/AboutUs-components/AboutUsCreator-component';
 import '../style/main.scss';
 
 const BlogPage = () => {
@@ -26,9 +26,7 @@ const BlogPage = () => {
         <>
           <PageWelcomeBg overTitle="" title={`About Us`} />
           <Container className="p-2">
-            <section id="privacy-policy">
-              <AboutUsComponent />
-            </section>
+            <AboutUsComponent />
           </Container>
         </>
       </PageWrapepr>

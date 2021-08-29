@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header/Header-section';
-import loadable from '@loadable/component';
+import Footer from '../components/Footer/Footer-section';
+// import loadable from '@loadable/component';
 
-const Footer = loadable(() => import('../components/Footer/Footer-section'));
+// const Footer = loadable(() => import('../components/Footer/Footer-section'));
 
 function PageWrapepr({ children, footerLinkTo }) {
   return (

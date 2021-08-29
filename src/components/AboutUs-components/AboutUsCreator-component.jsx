@@ -11,13 +11,16 @@ import { Link } from 'gatsby';
 
 const { title, intro, team } = aboutUsData;
 
+const imgRegEx = /(\w+\.\w+)/g;
+
 export default () => {
-  const imgRegEx = /(\w+\.\w+)/g;
-  
   return (
     <section id="about-us">
       <Container>
         <Title title={title} />;
+        <p>
+          {intro}
+        </p>
         <div className="staff-row">
           <StaffMaker />
         </div>

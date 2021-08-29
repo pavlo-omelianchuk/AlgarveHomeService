@@ -5,7 +5,7 @@ import Tilt from 'react-tilt';
 import ProjectImg from '../Image/ProjectImg';
 import effectData from '../../mock/effect.json';
 
-const imgRegEx = /([/])\w+\.\w+/g;
+const imgRegEx = /(\w+\.\w+)/g;
 
 const Promo = () => (
   <section id="promo">
