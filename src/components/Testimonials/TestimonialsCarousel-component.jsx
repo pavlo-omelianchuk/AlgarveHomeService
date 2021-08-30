@@ -27,42 +27,38 @@ const responsiveCarousel = {
 };
 const imgRegEx = /(\w+\.\w+)/g;
 
-const TestimonialsCarousel = () => {
-  return (
-    <>
-      <div className="testimonials-background-overlay" />
-      <Carousel
-        swipeable
-        draggable={false}
-        showDots={false}
-        responsive={responsiveCarousel}
-        ssr={true}
-        infinite
-        autoPlay={false}
-        containerClass="testimonials-carousel-container"
-        dotListClass="custom-dot-list-style"
-        itemClass="react-carousel-item"
-        renderButtonGroupOutside
-      >
-        {testimonials.map((testemonial) => {
-          return (
-            <Fade key={nanoid()}>
-              <TestimonialsMaker
-                overTitle={testemonial.overTitle}
-                title={testemonial.title}
-                message={testemonial.message}
-                img={testemonial.photo.match(imgRegEx)}
-                name={testemonial.name}
-                alt={testemonial.alt}
-              />
-            </Fade>
-          );
-        })}
-      </Carousel>
-    </>
-  );
-};
+const TestimonialsCarousel = () => (
+  <>
+    <div className="testimonials-background-overlay" />
+    <Carousel
+      swipeable
+      draggable={false}
+      showDots={false}
+      responsive={responsiveCarousel}
+      ssr={true}
+      infinite
+      autoPlay={false}
+      containerClass="testimonials-carousel-container"
+      dotListClass="custom-dot-list-style"
+      itemClass="react-carousel-item"
+      renderButtonGroupOutside
+    >
+      {testimonials.map((testimonial) => {
+        return (
+          <Fade key={nanoid()}>
+            <TestimonialsMaker
+              overTitle={testimonial.overTitle}
+              title={testimonial.title}
+              message={testimonial.message}
+              img={testimonial.photo.match(imgRegEx)}
+              name={testimonial.name}
+              alt={testimonial.alt}
+            />
+          </Fade>
+        );
+      })}
+    </Carousel>
+  </>
+);
 
 export default TestimonialsCarousel;
-
-// https://github.com/YIZHUANG/react-multi-carousel

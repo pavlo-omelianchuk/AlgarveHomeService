@@ -19,7 +19,7 @@ const Header = () => (
         {menu_tab &&
           menu_tab.map((nav_item) => {
             return (
-              <NavLink to={nav_item.nav_link} className="px-4">
+              <NavLink key={nav_item.nav_title} to={nav_item.nav_link} className="px-4">
                 {nav_item.nav_title}
               </NavLink>
             );

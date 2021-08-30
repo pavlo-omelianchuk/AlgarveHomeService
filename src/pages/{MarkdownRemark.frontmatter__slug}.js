@@ -9,10 +9,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
 export default function BlogTemplate({
-  data, // this prop will be injected by the GraphQL query below.
+  data, 
 }) {
   const { titleBlog, lang, description } = headData;
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { markdownRemark } = data; 
   const { frontmatter, html } = markdownRemark;
   const image = getImage(frontmatter.featured);
   return (

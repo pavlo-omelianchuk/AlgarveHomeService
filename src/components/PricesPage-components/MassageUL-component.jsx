@@ -35,6 +35,6 @@ const PricesMassage = ({ priceListMassage }) => (
   </>
 );
 PricesMassage.propTypes = {
-  priceListMassage: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  priceListMassage: PropTypes.array,
 };
 export default PricesMassage;

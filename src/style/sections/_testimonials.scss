@@ -5,6 +5,10 @@
   &-fluid {
     position: relative;
     padding: 0;
+    .google-review{
+      letter-spacing: 2px;
+      z-index: 20;
+    }
   }
   .testimonials-carousel-container {
     z-index: 6;
@@ -35,17 +39,17 @@
         @include respond(tab-port) {
           font-size: 2rem;
           max-height: 200px;
-          overflow-y: scroll;
+          overflow-y: auto;
         }
         @include respond(phone) {
           font-size: 1.3rem;
           max-height: 190px;
-          overflow-y: scroll;
+          overflow-y: auto;
         }
         @include respond(phone-xs) {
           font-size: 1rem;
           max-height: 150px;
-          overflow-y: scroll;
+          overflow-y: auto;
         }
       }
 

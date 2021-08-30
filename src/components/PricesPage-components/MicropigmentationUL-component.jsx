@@ -30,8 +30,6 @@ const PricesMicropigmentation = ({ priceListMicropigmentation }) => (
   </>
 );
 PricesMicropigmentation.propTypes = {
-  priceListMicropigmentation: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-  ),
+  priceListMicropigmentation: PropTypes.array,
 };
 export default PricesMicropigmentation;

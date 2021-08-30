@@ -27,8 +27,6 @@ const PricesHairdresser = ({priceListHairdresser}) => (
   </>
 );
 PricesHairdresser.propTypes = {
-  priceListHairdresser: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-  ),
+  priceListHairdresser: PropTypes.array,
 };
 export default PricesHairdresser;

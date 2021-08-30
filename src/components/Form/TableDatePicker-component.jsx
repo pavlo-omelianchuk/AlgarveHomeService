@@ -31,7 +31,6 @@ export default function TableDatePicker({ ...props }) {
         className="date"
         calendarClassName="calendar"
         timeFormat="HH:mm"
-        // dateFormat="dd MMMM yyyy"
         dateFormat="dd MMMM yyyy HH:mm"
         onChange={(val) => {
           setFieldValue(field.name, val);

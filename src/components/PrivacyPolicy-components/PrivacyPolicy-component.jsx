@@ -6,13 +6,7 @@ export default () => {
       <h1 className="privacy-header">1. Definitions and vocabulary used</h1>
       <p className="privacy-message">
         The purpose of this section is to define the most commonly used terms in the policy on
-        personal data.
-        <br />
-        “Application” : means the mobile application operated by Algarve Mobile Services for
-        Customers only, and which is available on iOS and Android.
-        <br />
-        “Algarve Mobile Services Pro Application” : means the mobile application operated by Algarve
-        Mobile Services for Partners only, and which is available on iOS and Android.
+        personal data.        
         <br />
         “Customer” : means any natural or legal person using the Platform with the aim of being put
         in contact with a Partner in order to receive an At-home Service.

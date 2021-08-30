@@ -30,6 +30,6 @@ const PricesBeauty = ({ priceListBeauty }) => (
   </>
 );
 PricesBeauty.propTypes = {
-  priceListBeauty: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  priceListBeauty: PropTypes.array,
 };
 export default PricesBeauty;

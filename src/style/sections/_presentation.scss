@@ -80,7 +80,7 @@
             letter-spacing: 0px;
             max-height: 150px;
             @include respond(tab-land) {
-              overflow: auto;
+              overflow:auto;
             }
           }
         }

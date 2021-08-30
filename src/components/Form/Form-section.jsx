@@ -12,11 +12,7 @@ const SuccesPopUp = () => {
       <div id="succes-PopUp" className="modal">
         <div className="succes-PopUp">
           <p>Thank you for your Request! Our managers will contact you as soon as possible!</p>
-          <span
-            className="cta-btn cta-btn--popup close"
-          >
-            Great
-          </span>
+          <span className="cta-btn cta-btn--popup close">Great</span>
         </div>
       </div>
     </>
@@ -148,7 +144,6 @@ const SignupForm = ({
                 modal.style.display = 'none';
               }
             };
-            // alert(JSON.stringify(values, null, 2)); //stringify resets localizaton and returns basic time(UTM)
             emailjs
               .send(
                 'ahsmb-gmail',
@@ -159,26 +154,11 @@ const SignupForm = ({
                   phoneNumber: values.phoneNumber,
                   location: values.location,
                   date: values.date.toLocaleString(),
-                  // acceptedTerms: values.acceptedTerms,
                   treatment: values.treatment,
                   message: values.message,
                 },
                 'user_sYM3nz1Wl6wCbCvu7XXBg'
-              ) //danylo new
-              // .send(
-              //   'service_4k0oxcm',
-              //   'template_jjonxy4',
-              //   {
-              //     clientsName: values.clientsName,
-              //     email: values.email,
-              //     phoneNumber: values.phoneNumber,
-              //     date: values.date.toLocaleString(),
-              //     // acceptedTerms: values.acceptedTerms,
-              //     treatment: values.treatment,
-              //     message: values.message,
-              //   },
-              //   'user_L88bJdNFhrP3czgos9xjl'
-              // ) //tvingo
+              )
               .then(
                 (result) => {
                   console.log(result.text);
@@ -244,10 +224,8 @@ const SignupForm = ({
               return (
                 <option key={title} value={title}>
                   {title}
-                  { ' - '}
-                  {price60 || price90}
-                  { ' '}
-                  { 'Euro'}
+                  {' - '}
+                  {price60 || price90} {'Euro'}
                 </option>
               );
             })}
@@ -292,7 +270,7 @@ TreatmentSelect.propTypes = {
   name: PropTypes.string,
 };
 SignupForm.propTypes = {
-  treatmentsMassage: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  treatmentsMassage: PropTypes.array,
   treatmentsMicropigmentation: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   ),

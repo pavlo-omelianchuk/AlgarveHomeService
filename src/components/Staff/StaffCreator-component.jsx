@@ -41,7 +41,7 @@ const StaffCarousel = () => (
     draggable={false}
     showDots
     responsive={responsiveCarousel}
-    ssr={true} // means to render carousel on server-side.
+    ssr={true} 
     infinite
     autoPlay
     autoPlaySpeed={4000}
@@ -68,4 +68,4 @@ const StaffCarousel = () => (
 
 export default StaffCarousel;
 
-// https://github.com/YIZHUANG/react-multi-carousel
+
