@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import PageWelcomeBgTitle from './PageWelcomeBgTitle-component'
+import PageWelcomeBgTitle from './PageWelcomeBgTitle-component';
 import StyledBackground from '../components/Image/LastCallBackgroundImage';
 import welcomePageBg from '../mock/prices_Page.json'
 
