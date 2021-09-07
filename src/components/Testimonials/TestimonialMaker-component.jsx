@@ -29,17 +29,18 @@ const TestimonialsMaker = ({ overTitle, title, message, img, alt, name }) => (
         >
           <span className="google-review cta-btn cta-btn--hero"> Write a review</span>
         <br />
-          <div
+          <span
             style={{ fontSize: '0.7em' }}>
             ***or see others in Google
-          </div>
+          </span>
         </a>
         <a className="mobile" href="https://g.co/kgs/TSXpaE" target="_blank">
           <span className="google-review cta-btn cta-btn--hero"> Write a review</span>
-          <div
+          <br />
+          <span
             style={{ fontSize: '0.7em' }}>
             ***or see others in Google
-          </div>
+          </span>
         </a>
       </p>
     </div>
